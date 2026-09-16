@@ -1,0 +1,73 @@
+# UR10e arm config (TEMPLATE) — read by RobotArmUR10.py.
+# Requires the `ur_rtde` python package (rtde_control / rtde_receive) and, for
+# the gripper, a Robotiq 2F gripper wired through the UR controller's tool
+# RS-485 port (exposed as a Modbus-over-socket gateway on port 63352).
+type: "ur10e"
+
+ur10_ip: "10.0.0.219"                # (SET) UR controller IP (Installation > Network on the pendant)
+gripper_ip: "10.0.0.187"
+
+# Tool center point offset from the robot flange: [x,y,z, rx,ry,rz] (m, rotvec rad).
+# Leave at zero to use whatever TCP is already configured on the controller.
+# Values are for the gripper tip -> change if necessary 
+# tcp_offset: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # (SET)
+tcp_offset: [0.0, 0.0, 0.2030, 0.0, 0.0, 0.0]
+# tcp_offset: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+payload_kg: 2.3 
+payload_cog: [0.0, 0.0, 0.081]                              # (SET) end-effector mass; 0 = skip setPayload()
+# payload_cog: [0.0, 0.0, 0.073]                              # (SET) end-effector mass; 0 = skip setPayload()
+
+# Hand-eye extrinsic: robot base -> camera optical frame (4x4).
+# ⚠️ (SET) MUST come from YOUR hand-eye calibration. The identity below is a
+#    placeholder and WILL send the arm to the wrong place — replace it.
+# T_base_in_cam: [
+#     [1.0, 0.0, 0.0, 0.0],
+#     [0.0, 1.0, 0.0, 0.0],
+#     [0.0, 0.0, 1.0, 0.0],
+#     [0.0, 0.0, 0.0, 1.0],
+# ]
+
+# Prior calibration (RealSense mount) — kept for rollback:
+# T_base_in_cam: [
+#     [ 0.99737000,  0.06120000, -0.03895000, -0.60448981],
+#     [-0.01789000, -0.31278000, -0.94966000,  0.06770255],
+#     [-0.07030000,  0.94785000, -0.31086000,  0.92436201],
+#     [ 0.00000000,  0.00000000,  0.00000000,  1.00000000],
+# ]
+
+# ZED calibration, 2026-08-28: 16 views, mean reproj 1.064px / max 1.803px,
+# 85.1 deg rotation spread. See real/calibration/data/zed_handeye_calib/
+# (calibration_report.json has the full report; T_base_in_cam.npy has this
+# matrix in binary form).
+T_base_in_cam: [
+    [ 0.04218438, -0.99035794, -0.13195312, -0.10062096],
+    [-0.99111635, -0.02480735, -0.13066363,  0.73718414],
+    [ 0.12613036,  0.13629285, -0.98260643,  1.05867879],
+    [ 0.00000000,  0.00000000,  0.00000000,  1.00000000],
+]
+
+# home_joints: [-1.5708, -1.5708, 1.5708, -1.5708, -1.5708, 0.0]   # (SET) 6 joints, radians
+# home_joints: [2.22878, -1.1800, 1.8816 ,-0.4864,-0.1218, 0.7106]   # (SET) 6 joints, radians
+home_joints: [1.7866, -1.3887 , 1.8116518 ,-0.696037,-0.86289,0.75066]   # (SET) 6 joints, radians
+
+# --- Cartesian servo tuning (rtde_c.servoL, used every closed-loop control step) ---
+servo_lookahead_time: 0.1     # (TUNE) s, RTDE servo smoothing window
+servo_gain: 300               # (TUNE) RTDE servo proportional gain (100-2000 typical)
+
+# --- Blocking move tuning (rtde_c.moveJ / moveL, used for go_home) ---
+joint_speed: 1.0              # rad/s
+joint_accel: 1.4              # rad/s^2
+lin_speed: 0.25               # m/s
+lin_accel: 0.5                # m/s^2
+
+safe_z_min: -0.12             # (SET) base-frame Z floor safety clamp, meters
+
+# --- Robotiq gripper (Modbus-over-socket via the UR tool port, :63352) ---
+gripper:
+  enabled: true                # (SET) false if you have no gripper / wire your own
+  port: 502
+  speed: 50                   # 0-255
+  force: 50                   # 0-255
+  mode: "Pinch"
+  auto_calibrate: false         # drive to both extremes once at connect to find travel range
+  invert: false                # (SET) true if 0=open..1=closed reads backwards on your unit

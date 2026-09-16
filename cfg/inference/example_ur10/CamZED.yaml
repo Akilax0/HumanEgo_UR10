@@ -1,0 +1,36 @@
+# Stereolabs ZED RGB-D camera config (TEMPLATE) — read by CamZED.py.
+# Counterpart of CamRS.yaml for a ZED camera. Replace the (SET) values for
+# your sensor. Output must be RGB + metric depth + K, same as CamRS.
+type: "zed"
+zed_device_serial: ""    # (SET) serial number as string; "" = first ZED found
+
+# Native capture settings. ZED resolution comes from a fixed enum, not
+# arbitrary w_raw/h_raw — CamZED reads the actual granted resolution back
+# from the SDK after open() and uses that for crop/intrinsics scaling.
+resolution: "HD720"      # HD2K | HD1080 | HD1200 | HD720 | SVGA | VGA
+fps: 30
+depth_mode: "NEURAL"     # PERFORMANCE | QUALITY | ULTRA | NEURAL | NEURAL_PLUS
+                          # (NEURAL/NEURAL_PLUS require a recent ZED SDK + supported GPU)
+
+# w: 640             # (SET) target resolution after crop/resize — match your training image source
+# h: 480
+w: 320
+h: 240
+warmup_frames_number: 5
+
+# depth -> 3D lifting robustness (used when estimating object poses from depth).
+# Same keys/semantics as CamRS.yaml; also doubles as the ZED SDK's
+# depth_minimum_distance / depth_maximum_distance at init.
+lift_roi_radius_px: 6
+lift_min_depth_m: 0.15
+lift_max_depth_m: 2.50
+lift_mad_k: 3.5
+lift_abs_gate_m: 0.010
+lift_min_valid: 5
+lift_edge_dist_min_px: 3.0
+
+# multi-frame averaging for the one-time object-pose init
+object_centric_n_frames: 5
+cluster_eps_m: 0.06
+cluster_min_points: 3
+point_robust_mad_k: 4.0

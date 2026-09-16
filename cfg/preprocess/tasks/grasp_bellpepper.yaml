@@ -1,0 +1,46 @@
+# Task config for the Gen2 "Grasp_Bellpepper_Yellow" recordings.
+# Single-object grasp: no obj2 (no plate/second object involved).
+
+AriaCam:
+  device: "gen2"            # skips the Gen1 90deg rotation; verified empirically for this device
+  # cam_size.rgb intentionally left unset here: falls through to the base default
+  # (1920x1280, cfg/preprocess/base/AriaCam.yaml) instead of native Gen2 2560x1920.
+  # Full native res was ~13x more storage per frame in preprocess/all_data/ for no
+  # measurable DINOSAM/CoTracker accuracy benefit.
+
+AriaHands:
+  hand_selection: "right"   # this recording is one-handed (right); MPS summary.json confirms
+                             # right-hand valid_pose_frame_fraction (0.76) >> left (0.20)
+  hand_match_tolerance_ms: 50
+
+  # The defaults below are frame-count windows tuned for Gen1's ~30fps. This recording
+  # is 10fps, so they're scaled down ~3x to represent the same real-world durations.
+  hand_min_frames: 10        # was 30
+  hand_interp_max_gap: 3     # was 10
+  grasp_smooth_win: 2        # was 5
+  grasp_flicker_max_len: 2   # was 5
+  smooth_sg_window: 7        # was 21 (must stay odd)
+
+AriaPhases:
+  finished_frames: 10              # was 30, scaled for 10fps
+  manip_clean_manual_offset: 3     # was 10, scaled for 10fps
+  stop_hold_frames: 5              # was 15, scaled for 10fps
+  stop_debounce_frames: 3          # was 8, scaled for 10fps
+  stop_min_on_frames: 25           # was 75, scaled for 10fps
+  stop_offset_frames: 3            # was 10, scaled for 10fps
+
+DINOSAM:
+  dinosam_prompt:
+    obj1: "red bell pepper ."
+    arm:  "human arms . human hands ."
+
+CamTriangulator:
+  export_ply: false    # running on a headless server (no display/GL) — Open3D's native
+                        # geometry code segfaults there; this file is diagnostic-only,
+                        # not read by training/inference, so it's safe to skip.
+  pose_method:
+    obj1: "pca2"
+    default: "pca2"
+
+DatasetGen:
+  export_obj_and_traj_ply: false   # same reason — headless server, Open3D not usable

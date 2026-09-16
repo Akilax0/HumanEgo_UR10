@@ -1,0 +1,3516 @@
+===== Initializing Conda Environment =====
+===== Launching training =====
+Loading config from: cfg/training/grasp_bellpepper/HumanEgo.yaml
+[Data Split] Cross-session evaluation:
+  Eval sessions  (1): ['mps_Grasp_BellPepper_Red_000_vrs']
+  Train sessions (126): 126 sessions (mps_Grasp_BellPepper_Red_001_vrs .. mps_Grasp_BellPepper_Red_126_vrs)
+Data Sources: aria: 126
+  Train: 126 sessions, Eval: 1 sessions
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_001_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_002_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_003_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_004_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_005_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_006_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_007_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_008_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_009_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_010_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_011_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_012_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_013_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_014_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_015_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_016_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_017_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_018_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_019_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_020_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_021_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_022_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_023_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_024_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_025_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_026_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_027_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_028_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_029_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_030_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_031_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_032_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_033_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_034_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_035_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_036_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_037_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_038_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_039_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_040_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_041_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_042_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_043_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_044_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_045_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_046_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_047_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_048_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_049_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_050_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_051_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_052_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_053_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_054_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_055_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_056_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_057_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_058_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_059_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_060_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_061_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_062_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_063_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_064_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_065_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_066_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_067_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_068_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_069_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_070_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_071_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_072_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_073_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_074_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_075_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_076_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_077_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_078_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_079_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_080_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_081_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_082_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_083_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_084_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_085_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_086_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_087_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_088_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_089_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_090_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_091_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_092_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_093_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_094_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_095_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_096_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_097_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_098_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_099_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_100_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_101_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_102_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_103_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_104_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_105_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_106_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_107_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_108_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_109_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_110_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_111_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_112_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_113_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_114_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_115_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_116_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_117_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_118_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_119_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_120_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_121_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_122_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_123_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_124_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_125_vrs
+     ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_126_vrs
+      ./data/grasp_bellpepper/aria/mps_Grasp_BellPepper_Red_000_vrs
+Computing dataset statistics for 126 sessions...
+[FlowMatchingDataloader] Built 7846 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=True | VisForesight=True | TempContrastive=True
+  - 3D PCD Feats : True
+Stats Computed!
+ Mean: [0.05942199379205704, 0.2838086187839508, 0.8806265592575073]
+ Std: [0.09375907480716705, 0.07712840288877487, 0.14247041940689087]
+Saved computed stats to: ./runs/grasp_bellpepper/HumanEgo/dataset_stats.json
+╭────────────────── GRASP POLICY TRAIN CONFIG (ULTIMATE FM) ───────────────────╮
+│ Device: cuda  AMP=True                                                       │
+│ Train/Eval: 126 sessions / 1 sessions                                        │
+│ Paradigm: Centric=object_centric | Frame=camera_frame | Action=absolute |    │
+│ Image=rgb_WoArm_WArmObjKpts.png                                              │
+│ Aux: ObjDynamics=False | VisForesight=False | TempContrastive=False          │
+│ Architecture: RegionAttn=True | PCD=False | OT-CFM=False | Hands=Single      │
+│ Legacy: PreNorm=True | CtxNorm=True | DoneInFlow=False | LegacyImg=True |    │
+│ LegacyRNG=True | AugInterp=True                                              │
+│ Model: patch=16 D=384 L=6 heads=8                                            │
+│ Loss Weights: w_p=5.0 w_r=1.0 w_g=10.0 lam_f=20.0 lam_c=0.1                  │
+│ Training: Batch=32 Epochs=400 LR=0.0001 EMA=True(0.999)                      │
+│ Out dir: ./runs/grasp_bellpepper/HumanEgo                                    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[FlowMatchingDataloader] Built 7846 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=False | VisForesight=False | TempContrastive=False
+  - 3D PCD Feats : False
+[FlowMatchingDataloader] Built 26 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=False | VisForesight=False | TempContrastive=False
+  - 3D PCD Feats : False
+╭────────────── DATASET ──────────────╮
+│ train samples=7846  eval samples=26 │
+╰─────────────────────────────────────╯
+EP 001/400 | Total Loss: 2.2984 (Flow:2.176*1.0=2.176, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.8270*5.0=4.135, Rot:0.7309*1.0=0.731, 
+Grasp:0.4971*10.0=4.971, Done:0.6114*0.2=0.122
+Eval k=1   : 338.47mm  145.8°   89.4%
+Eval k=50  : 268.10mm  145.1°   73.2%
+Eval W 1-50: 317.58mm  134.1° 72.2%| Score: 1.5866
+---------------------------------------------------------------------------
+EP 002/400 | Total Loss: 0.7577 (Flow:0.637*1.0=0.637, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.2219*5.0=1.110, Rot:0.2119*1.0=0.212, 
+Grasp:0.1768*10.0=1.768, Done:0.6042*0.2=0.121
+Eval k=1   : 326.48mm  112.6°   96.0%
+Eval k=50  : 267.35mm  126.7°   91.7%
+Eval W 1-50: 282.85mm  121.2° 85.6%| Score: 1.4090
+---------------------------------------------------------------------------
+EP 003/400 | Total Loss: 0.5445 (Flow:0.424*1.0=0.424, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.1495*5.0=0.748, Rot:0.1419*1.0=0.142, 
+Grasp:0.1142*10.0=1.142, Done:0.6043*0.2=0.121
+Eval k=1   : 231.57mm  100.0°   98.0%
+Eval k=50  : 203.71mm  100.2°   96.0%
+Eval W 1-50: 226.57mm   95.4° 96.3%| Score: 1.0841
+---------------------------------------------------------------------------
+EP 004/400 | Total Loss: 0.4796 (Flow:0.358*1.0=0.358, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.1309*5.0=0.654, Rot:0.1132*1.0=0.113, 
+Grasp:0.0942*10.0=0.942, Done:0.6060*0.2=0.121
+Eval k=1   : 176.89mm   63.5°   98.0%
+Eval k=50  : 167.68mm   63.2°   98.0%
+Eval W 1-50: 178.53mm   60.1° 98.0%| Score: 0.6815
+---------------------------------------------------------------------------
+EP 005/400 | Total Loss: 0.4418 (Flow:0.321*1.0=0.321, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.1195*5.0=0.598, Rot:0.0976*1.0=0.098, 
+Grasp:0.0835*10.0=0.835, Done:0.6028*0.2=0.121
+Eval k=1   : 147.52mm   44.7°   98.0%
+Eval k=50  : 122.84mm   45.5°   98.0%
+Eval W 1-50: 133.51mm   42.2° 98.0%| Score: 0.4571
+---------------------------------------------------------------------------
+EP 006/400 | Total Loss: 0.4087 (Flow:0.288*1.0=0.288, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.1084*5.0=0.542, Rot:0.0864*1.0=0.086, 
+Grasp:0.0737*10.0=0.737, Done:0.6029*0.2=0.121
+Eval k=1   :  92.81mm   28.2°   98.0%
+Eval k=50  :  84.68mm   32.1°   98.0%
+Eval W 1-50:  89.77mm   28.9° 98.0%| Score: 0.2809
+---------------------------------------------------------------------------
+EP 007/400 | Total Loss: 0.3900 (Flow:0.269*1.0=0.269, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.1025*5.0=0.512, Rot:0.0807*1.0=0.081, 
+Grasp:0.0670*10.0=0.670, Done:0.6039*0.2=0.121
+Eval k=1   :  75.11mm   24.0°   98.0%
+Eval k=50  :  64.16mm   29.2°   98.0%
+Eval W 1-50:  68.78mm   25.1° 98.0%| Score: 0.2216
+---------------------------------------------------------------------------
+EP 008/400 | Total Loss: 0.3723 (Flow:0.251*1.0=0.251, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0981*5.0=0.490, Rot:0.0718*1.0=0.072, 
+Grasp:0.0610*10.0=0.610, Done:0.6056*0.2=0.121
+Eval k=1   :  63.52mm   19.8°   98.0%
+Eval k=50  :  55.88mm   22.5°   98.0%
+Eval W 1-50:  60.72mm   21.4° 98.0%| Score: 0.1765
+---------------------------------------------------------------------------
+EP 009/400 | Total Loss: 0.3628 (Flow:0.242*1.0=0.242, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0933*5.0=0.467, Rot:0.0687*1.0=0.069, 
+Grasp:0.0608*10.0=0.608, Done:0.6042*0.2=0.121
+Eval k=1   :  48.35mm   18.7°   98.0%
+Eval k=50  :  46.92mm   20.6°   98.0%
+Eval W 1-50:  48.13mm   18.9° 98.0%| Score: 0.1386
+---------------------------------------------------------------------------
+EP 010/400 | Total Loss: 0.3490 (Flow:0.228*1.0=0.228, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0904*5.0=0.452, Rot:0.0651*1.0=0.065, 
+Grasp:0.0534*10.0=0.534, Done:0.6046*0.2=0.121
+Eval k=1   :  47.11mm   13.4°   98.0%
+Eval k=50  :  46.95mm   14.9°   98.0%
+Eval W 1-50:  47.13mm   14.5° 98.0%| Score: 0.0937
+---------------------------------------------------------------------------
+EP 011/400 | Total Loss: 0.3330 (Flow:0.212*1.0=0.212, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0838*5.0=0.419, Rot:0.0603*1.0=0.060, 
+Grasp:0.0505*10.0=0.505, Done:0.6033*0.2=0.121
+Eval k=1   :  33.88mm   13.5°   98.0%
+Eval k=50  :  32.52mm   15.5°   98.0%
+Eval W 1-50:  33.10mm   14.2° 98.0%| Score: 0.0766
+---------------------------------------------------------------------------
+EP 012/400 | Total Loss: 0.3255 (Flow:0.205*1.0=0.205, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0812*5.0=0.406, Rot:0.0570*1.0=0.057, 
+Grasp:0.0485*10.0=0.485, Done:0.6043*0.2=0.121
+Eval k=1   :  33.37mm   11.8°   98.0%
+Eval k=50  :  34.89mm   12.7°   98.0%
+Eval W 1-50:  34.82mm   12.3° 98.0%| Score: 0.0603
+---------------------------------------------------------------------------
+EP 013/400 | Total Loss: 0.3209 (Flow:0.200*1.0=0.200, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0793*5.0=0.396, Rot:0.0562*1.0=0.056, 
+Grasp:0.0477*10.0=0.477, Done:0.6030*0.2=0.121
+Eval k=1   :  29.97mm   12.4°   98.0%
+Eval k=50  :  31.64mm   13.7°   98.0%
+Eval W 1-50:  31.34mm   13.1° 98.0%| Score: 0.0646
+---------------------------------------------------------------------------
+EP 014/400 | Total Loss: 0.3114 (Flow:0.191*1.0=0.191, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0758*5.0=0.379, Rot:0.0540*1.0=0.054, 
+Grasp:0.0447*10.0=0.447, Done:0.6028*0.2=0.121
+Eval k=1   :  29.20mm   13.4°   98.0%
+Eval k=50  :  30.74mm   13.7°   98.0%
+Eval W 1-50:  29.79mm   13.5° 98.0%| Score: 0.0664
+---------------------------------------------------------------------------
+EP 015/400 | Total Loss: 0.3045 (Flow:0.184*1.0=0.184, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0726*5.0=0.363, Rot:0.0512*1.0=0.051, 
+Grasp:0.0441*10.0=0.441, Done:0.6037*0.2=0.121
+Eval k=1   :  25.16mm   11.1°   98.0%
+Eval k=50  :  25.42mm   11.3°   98.0%
+Eval W 1-50:  26.11mm   11.2° 98.0%| Score: 0.0404
+---------------------------------------------------------------------------
+EP 016/400 | Total Loss: 0.3164 (Flow:0.195*1.0=0.195, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0758*5.0=0.379, Rot:0.0564*1.0=0.056, 
+Grasp:0.0479*10.0=0.479, Done:0.6048*0.2=0.121
+Eval k=1   :  22.70mm   11.4°   98.0%
+Eval k=50  :  22.88mm   11.8°   98.0%
+Eval W 1-50:  22.87mm   11.7° 98.0%| Score: 0.0419
+---------------------------------------------------------------------------
+EP 017/400 | Total Loss: 0.3080 (Flow:0.187*1.0=0.187, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0751*5.0=0.375, Rot:0.0526*1.0=0.053, 
+Grasp:0.0433*10.0=0.433, Done:0.6029*0.2=0.121
+Eval k=1   :  25.68mm   10.8°   98.0%
+Eval k=50  :  25.93mm   10.5°   98.0%
+Eval W 1-50:  26.58mm   10.6° 98.0%| Score: 0.0342
+---------------------------------------------------------------------------
+EP 018/400 | Total Loss: 0.2971 (Flow:0.176*1.0=0.176, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0693*5.0=0.347, Rot:0.0490*1.0=0.049, 
+Grasp:0.0430*10.0=0.430, Done:0.6038*0.2=0.121
+Eval k=1   :  21.48mm   10.1°   98.0%
+Eval k=50  :  22.09mm   10.7°   98.0%
+Eval W 1-50:  21.93mm   10.4° 98.0%| Score: 0.0276
+---------------------------------------------------------------------------
+EP 019/400 | Total Loss: 0.2889 (Flow:0.168*1.0=0.168, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-04
+    ↳ Flow Details: Pos:0.0664*5.0=0.332, Rot:0.0465*1.0=0.047, 
+Grasp:0.0406*10.0=0.406, Done:0.6040*0.2=0.121
+Eval k=1   :  22.69mm    9.6°   98.0%
+Eval k=50  :  23.38mm   10.5°   98.0%
+Eval W 1-50:  23.92mm   10.2° 98.0%| Score: 0.0280
+---------------------------------------------------------------------------
+EP 020/400 | Total Loss: 0.2952 (Flow:0.175*1.0=0.175, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0703*5.0=0.351, Rot:0.0482*1.0=0.048, 
+Grasp:0.0402*10.0=0.402, Done:0.6033*0.2=0.121
+Eval k=1   :  24.08mm    9.1°   98.0%
+Eval k=50  :  24.22mm    9.8°   98.0%
+Eval W 1-50:  24.30mm    9.4° 98.0%| Score: 0.0203
+---------------------------------------------------------------------------
+EP 021/400 | Total Loss: 0.2886 (Flow:0.168*1.0=0.168, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0663*5.0=0.332, Rot:0.0461*1.0=0.046, 
+Grasp:0.0408*10.0=0.408, Done:0.6030*0.2=0.121
+Eval k=1   :  21.81mm   10.1°   98.0%
+Eval k=50  :  22.72mm   10.6°   98.0%
+Eval W 1-50:  22.51mm   10.3° 98.0%| Score: 0.0273
+---------------------------------------------------------------------------
+EP 022/400 | Total Loss: 0.2881 (Flow:0.167*1.0=0.167, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0683*5.0=0.342, Rot:0.0451*1.0=0.045, 
+Grasp:0.0377*10.0=0.377, Done:0.6041*0.2=0.121
+Eval k=1   :  19.36mm    9.9°   98.0%
+Eval k=50  :  20.42mm   10.8°   98.0%
+Eval W 1-50:  20.05mm   10.4° 98.0%| Score: 0.0264
+---------------------------------------------------------------------------
+EP 023/400 | Total Loss: 0.2862 (Flow:0.166*1.0=0.166, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0649*5.0=0.324, Rot:0.0454*1.0=0.045, 
+Grasp:0.0410*10.0=0.410, Done:0.6031*0.2=0.121
+Eval k=1   :  20.06mm    9.8°   98.0%
+Eval k=50  :  21.64mm   10.8°   98.0%
+Eval W 1-50:  22.35mm   10.4° 98.0%| Score: 0.0286
+---------------------------------------------------------------------------
+EP 024/400 | Total Loss: 0.2787 (Flow:0.158*1.0=0.158, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0639*5.0=0.319, Rot:0.0425*1.0=0.042, 
+Grasp:0.0367*10.0=0.367, Done:0.6033*0.2=0.121
+Eval k=1   :  23.82mm    9.4°   98.0%
+Eval k=50  :  19.92mm   10.1°   98.0%
+Eval W 1-50:  20.76mm    9.8° 98.0%| Score: 0.0212
+---------------------------------------------------------------------------
+EP 025/400 | Total Loss: 0.2695 (Flow:0.149*1.0=0.149, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0601*5.0=0.300, Rot:0.0400*1.0=0.040, 
+Grasp:0.0347*10.0=0.347, Done:0.6036*0.2=0.121
+Eval k=1   :  18.44mm    9.3°   98.0%
+Eval k=50  :  19.79mm    9.6°   98.0%
+Eval W 1-50:  19.75mm    9.4° 98.0%| Score: 0.0154
+---------------------------------------------------------------------------
+EP 026/400 | Total Loss: 0.2728 (Flow:0.152*1.0=0.152, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0603*5.0=0.301, Rot:0.0420*1.0=0.042, 
+Grasp:0.0366*10.0=0.366, Done:0.6028*0.2=0.121
+Eval k=1   :  17.60mm    9.6°   98.0%
+Eval k=50  :  13.17mm   10.1°   98.0%
+Eval W 1-50:  18.53mm    9.7° 98.0%| Score: 0.0179
+---------------------------------------------------------------------------
+EP 027/400 | Total Loss: 0.2756 (Flow:0.155*1.0=0.155, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0627*5.0=0.314, Rot:0.0416*1.0=0.042, 
+Grasp:0.0359*10.0=0.359, Done:0.6034*0.2=0.121
+Eval k=1   :  17.47mm    9.3°   98.0%
+Eval k=50  :  18.25mm    9.7°   98.0%
+Eval W 1-50:  18.59mm    9.5° 98.0%| Score: 0.0151
+---------------------------------------------------------------------------
+EP 028/400 | Total Loss: 0.2630 (Flow:0.142*1.0=0.142, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0570*5.0=0.285, Rot:0.0386*1.0=0.039, 
+Grasp:0.0336*10.0=0.336, Done:0.6039*0.2=0.121
+Eval k=1   :  16.18mm    8.9°   98.0%
+Eval k=50  :  17.25mm    9.0°   98.0%
+Eval W 1-50:  16.93mm    8.9° 98.0%| Score: 0.0076
+---------------------------------------------------------------------------
+EP 029/400 | Total Loss: 0.2681 (Flow:0.148*1.0=0.148, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0592*5.0=0.296, Rot:0.0405*1.0=0.041, 
+Grasp:0.0345*10.0=0.345, Done:0.6023*0.2=0.120
+Eval k=1   :  17.97mm    8.6°   98.0%
+Eval k=50  :  18.76mm    8.8°   98.0%
+Eval W 1-50:  18.59mm    8.6° 98.0%| Score: 0.0064
+---------------------------------------------------------------------------
+EP 030/400 | Total Loss: 0.2737 (Flow:0.153*1.0=0.153, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0616*5.0=0.308, Rot:0.0414*1.0=0.041, 
+Grasp:0.0358*10.0=0.358, Done:0.6033*0.2=0.121
+Eval k=1   :  17.55mm    8.8°   98.0%
+Eval k=50  :  18.09mm    9.6°   98.0%
+Eval W 1-50:  18.03mm    9.4° 98.0%| Score: 0.0137
+---------------------------------------------------------------------------
+EP 031/400 | Total Loss: 0.2715 (Flow:0.151*1.0=0.151, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0625*5.0=0.312, Rot:0.0402*1.0=0.040, 
+Grasp:0.0331*10.0=0.331, Done:0.6031*0.2=0.121
+Eval k=1   :  17.35mm    8.7°   98.0%
+Eval k=50  :  17.63mm    9.1°   98.0%
+Eval W 1-50:  17.82mm    8.8° 98.0%| Score: 0.0080
+---------------------------------------------------------------------------
+EP 032/400 | Total Loss: 0.2645 (Flow:0.144*1.0=0.144, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-05
+    ↳ Flow Details: Pos:0.0583*5.0=0.291, Rot:0.0374*1.0=0.037, 
+Grasp:0.0338*10.0=0.338, Done:0.6042*0.2=0.121
+Eval k=1   :  17.66mm    8.8°   98.0%
+Eval k=50  :  18.89mm    8.9°   98.0%
+Eval W 1-50:  18.45mm    8.8° 98.0%| Score: 0.0082
+---------------------------------------------------------------------------
+EP 033/400 | Total Loss: 0.2574 (Flow:0.137*1.0=0.137, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0574*5.0=0.287, Rot:0.0363*1.0=0.036, 
+Grasp:0.0289*10.0=0.289, Done:0.6030*0.2=0.121
+Eval k=1   :  17.16mm    8.1°   98.0%
+Eval k=50  :  17.79mm    8.5°   98.0%
+Eval W 1-50:  17.90mm    8.3° 98.0%| Score: 0.0032
+---------------------------------------------------------------------------
+EP 034/400 | Total Loss: 0.2602 (Flow:0.139*1.0=0.139, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0571*5.0=0.286, Rot:0.0372*1.0=0.037, 
+Grasp:0.0314*10.0=0.314, Done:0.6040*0.2=0.121
+Eval k=1   :  15.86mm    8.7°   98.0%
+Eval k=50  :  16.47mm    9.4°   98.0%
+Eval W 1-50:  16.36mm    9.3° 98.0%| Score: 0.0113
+---------------------------------------------------------------------------
+EP 035/400 | Total Loss: 0.2617 (Flow:0.141*1.0=0.141, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0577*5.0=0.288, Rot:0.0373*1.0=0.037, 
+Grasp:0.0323*10.0=0.323, Done:0.6023*0.2=0.120
+Eval k=1   :  17.07mm    8.2°   98.0%
+Eval k=50  :  18.37mm    8.4°   98.0%
+Eval W 1-50:  18.25mm    8.2° 98.0%| Score: 0.0017
+---------------------------------------------------------------------------
+EP 036/400 | Total Loss: 0.2595 (Flow:0.138*1.0=0.138, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0579*5.0=0.290, Rot:0.0358*1.0=0.036, 
+Grasp:0.0301*10.0=0.301, Done:0.6051*0.2=0.121
+Eval k=1   :  16.80mm    8.3°   98.0%
+Eval k=50  :  18.29mm    8.7°   98.0%
+Eval W 1-50:  18.23mm    8.6° 98.0%| Score: 0.0059
+---------------------------------------------------------------------------
+EP 037/400 | Total Loss: 0.2623 (Flow:0.142*1.0=0.142, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0576*5.0=0.288, Rot:0.0372*1.0=0.037, 
+Grasp:0.0331*10.0=0.331, Done:0.6028*0.2=0.121
+Eval k=1   :  16.44mm    8.5°   98.0%
+Eval k=50  :  16.68mm    8.9°   98.0%
+Eval W 1-50:  17.74mm    8.9° 98.0%| Score: 0.0084
+---------------------------------------------------------------------------
+EP 038/400 | Total Loss: 0.2554 (Flow:0.135*1.0=0.135, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0561*5.0=0.281, Rot:0.0356*1.0=0.036, 
+Grasp:0.0293*10.0=0.293, Done:0.6028*0.2=0.121
+Eval k=1   :  15.93mm    8.0°   98.0%
+Eval k=50  :  17.19mm    8.4°   98.0%
+Eval W 1-50:  16.80mm    8.2° 98.0%| Score: 0.0009
+---------------------------------------------------------------------------
+EP 039/400 | Total Loss: 0.2554 (Flow:0.135*1.0=0.135, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0554*5.0=0.277, Rot:0.0355*1.0=0.036, 
+Grasp:0.0304*10.0=0.304, Done:0.6027*0.2=0.121
+Eval k=1   :  16.67mm    7.9°   98.0%
+Eval k=50  :  17.06mm    8.2°   98.0%
+Eval W 1-50:  17.30mm    8.1° 98.0%| Score: 0.0003
+---------------------------------------------------------------------------
+EP 040/400 | Total Loss: 0.2569 (Flow:0.137*1.0=0.137, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0560*5.0=0.280, Rot:0.0356*1.0=0.036, 
+Grasp:0.0312*10.0=0.312, Done:0.6019*0.2=0.120
+Eval k=1   :  15.68mm    7.8°   98.0%
+Eval k=50  :  16.85mm    8.4°   98.0%
+Eval W 1-50:  16.65mm    8.2° 98.0%| Score: 0.0005
+---------------------------------------------------------------------------
+EP 041/400 | Total Loss: 0.2519 (Flow:0.131*1.0=0.131, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0546*5.0=0.273, Rot:0.0344*1.0=0.034, 
+Grasp:0.0288*10.0=0.288, Done:0.6028*0.2=0.121
+Eval k=1   :  16.17mm    8.3°   98.0%
+Eval k=50  :  17.03mm    8.4°   98.0%
+Eval W 1-50:  17.12mm    8.2° 98.0%| Score: 0.0015
+---------------------------------------------------------------------------
+EP 042/400 | Total Loss: 0.2510 (Flow:0.130*1.0=0.130, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.8e-05
+    ↳ Flow Details: Pos:0.0534*5.0=0.267, Rot:0.0328*1.0=0.033, 
+Grasp:0.0305*10.0=0.305, Done:0.6037*0.2=0.121
+Eval k=1   :  16.30mm    8.3°   98.0%
+Eval k=50  :  17.27mm    8.8°   98.0%
+Eval W 1-50:  17.14mm    8.6° 98.0%| Score: 0.0053
+---------------------------------------------------------------------------
+EP 043/400 | Total Loss: 0.2504 (Flow:0.130*1.0=0.130, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0531*5.0=0.265, Rot:0.0352*1.0=0.035, 
+Grasp:0.0292*10.0=0.292, Done:0.6025*0.2=0.120
+Eval k=1   :  16.36mm    8.0°   98.0%
+Eval k=50  :  16.64mm    8.3°   98.0%
+Eval W 1-50:  16.63mm    8.2° 98.0%| Score: 0.0006
+---------------------------------------------------------------------------
+EP 044/400 | Total Loss: 0.2516 (Flow:0.131*1.0=0.131, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0539*5.0=0.269, Rot:0.0336*1.0=0.034, 
+Grasp:0.0302*10.0=0.302, Done:0.6021*0.2=0.120
+Eval k=1   :  16.33mm    8.2°   98.0%
+Eval k=50  :  17.66mm    8.5°   98.0%
+Eval W 1-50:  17.21mm    8.5° 98.0%| Score: 0.0038
+---------------------------------------------------------------------------
+EP 045/400 | Total Loss: 0.2544 (Flow:0.134*1.0=0.134, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0558*5.0=0.279, Rot:0.0340*1.0=0.034, 
+Grasp:0.0299*10.0=0.299, Done:0.6024*0.2=0.120
+Eval k=1   :  15.60mm    8.3°   98.0%
+Eval k=50  :  15.90mm    8.3°   98.0%
+Eval W 1-50:  16.12mm    8.3° 98.0%| Score: 0.0012
+---------------------------------------------------------------------------
+EP 046/400 | Total Loss: 0.2468 (Flow:0.126*1.0=0.126, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0521*5.0=0.261, Rot:0.0325*1.0=0.032, 
+Grasp:0.0286*10.0=0.286, Done:0.6028*0.2=0.121
+Eval k=1   :  15.95mm    8.1°   98.0%
+Eval k=50  :  16.19mm    8.3°   98.0%
+Eval W 1-50:  16.22mm    8.2° 98.0%| Score: 0.0000
+---------------------------------------------------------------------------
+EP 047/400 | Total Loss: 0.2494 (Flow:0.129*1.0=0.129, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0520*5.0=0.260, Rot:0.0337*1.0=0.034, 
+Grasp:0.0307*10.0=0.307, Done:0.6021*0.2=0.120
+Eval k=1   :  15.92mm    8.4°   98.0%
+Eval k=50  :  15.72mm    8.8°   98.0%
+Eval W 1-50:  16.28mm    8.7° 98.0%| Score: 0.0053
+---------------------------------------------------------------------------
+EP 048/400 | Total Loss: 0.2531 (Flow:0.133*1.0=0.133, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0543*5.0=0.272, Rot:0.0344*1.0=0.034, 
+Grasp:0.0306*10.0=0.306, Done:0.6024*0.2=0.120
+Eval k=1   :  14.97mm    8.3°   98.0%
+Eval k=50  :  15.71mm    8.7°   98.0%
+Eval W 1-50:  15.43mm    8.6° 98.0%| Score: 0.0031
+---------------------------------------------------------------------------
+EP 049/400 | Total Loss: 0.2447 (Flow:0.124*1.0=0.124, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-05
+    ↳ Flow Details: Pos:0.0526*5.0=0.263, Rot:0.0315*1.0=0.031, 
+Grasp:0.0263*10.0=0.263, Done:0.6032*0.2=0.121
+Eval k=1   :  15.55mm    7.7°   98.0%
+Eval k=50  :  16.48mm    8.2°   98.0%
+Eval W 1-50:  16.49mm    8.1° 98.0%| Score: -0.0007
+---------------------------------------------------------------------------
+EP 050/400 | Total Loss: 0.2431 (Flow:0.123*1.0=0.123, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0511*5.0=0.255, Rot:0.0306*1.0=0.031, 
+Grasp:0.0275*10.0=0.275, Done:0.6028*0.2=0.121
+Eval k=1   :  15.37mm    8.0°   98.0%
+Eval k=50  :  16.11mm    8.4°   98.0%
+Eval W 1-50:  15.93mm    8.2° 98.0%| Score: 0.0003
+---------------------------------------------------------------------------
+EP 051/400 | Total Loss: 0.2422 (Flow:0.122*1.0=0.122, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0504*5.0=0.252, Rot:0.0309*1.0=0.031, 
+Grasp:0.0276*10.0=0.276, Done:0.6026*0.2=0.121
+Eval k=1   :  15.00mm    8.2°   98.0%
+Eval k=50  :  16.68mm    8.4°   98.0%
+Eval W 1-50:  16.24mm    8.3° 98.0%| Score: 0.0011
+---------------------------------------------------------------------------
+EP 052/400 | Total Loss: 0.2424 (Flow:0.122*1.0=0.122, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0509*5.0=0.254, Rot:0.0308*1.0=0.031, 
+Grasp:0.0268*10.0=0.268, Done:0.6035*0.2=0.121
+Eval k=1   :  15.19mm    7.9°   98.0%
+Eval k=50  :  15.51mm    8.4°   98.0%
+Eval W 1-50:  15.57mm    8.3° 98.0%| Score: 0.0002
+---------------------------------------------------------------------------
+EP 053/400 | Total Loss: 0.2355 (Flow:0.115*1.0=0.115, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0486*5.0=0.243, Rot:0.0292*1.0=0.029, 
+Grasp:0.0246*10.0=0.246, Done:0.6023*0.2=0.120
+Eval k=1   :  14.49mm    8.0°   98.0%
+Eval k=50  :  15.99mm    8.6°   98.0%
+Eval W 1-50:  16.00mm    8.4° 98.0%| Score: 0.0016
+---------------------------------------------------------------------------
+EP 054/400 | Total Loss: 0.2378 (Flow:0.117*1.0=0.117, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0479*5.0=0.240, Rot:0.0300*1.0=0.030, 
+Grasp:0.0274*10.0=0.274, Done:0.6026*0.2=0.121
+Eval k=1   :  15.57mm    7.3°   98.0%
+Eval k=50  :  16.98mm    7.8°   98.0%
+Eval W 1-50:  16.85mm    7.6° 98.0%| Score: -0.0047
+---------------------------------------------------------------------------
+EP 055/400 | Total Loss: 0.2423 (Flow:0.122*1.0=0.122, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0499*5.0=0.250, Rot:0.0308*1.0=0.031, 
+Grasp:0.0284*10.0=0.284, Done:0.6025*0.2=0.121
+Eval k=1   :  15.04mm    7.9°   98.0%
+Eval k=50  :  16.10mm    8.4°   98.0%
+Eval W 1-50:  16.06mm    8.3° 98.0%| Score: 0.0013
+---------------------------------------------------------------------------
+EP 056/400 | Total Loss: 0.2472 (Flow:0.127*1.0=0.127, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.6e-05
+    ↳ Flow Details: Pos:0.0518*5.0=0.259, Rot:0.0331*1.0=0.033, 
+Grasp:0.0290*10.0=0.290, Done:0.6028*0.2=0.121
+Eval k=1   :  13.98mm    7.5°   98.0%
+Eval k=50  :  14.84mm    8.2°   98.0%
+Eval W 1-50:  14.67mm    8.1° 98.0%| Score: -0.0026
+---------------------------------------------------------------------------
+EP 057/400 | Total Loss: 0.2449 (Flow:0.124*1.0=0.124, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-05
+    ↳ Flow Details: Pos:0.0513*5.0=0.256, Rot:0.0314*1.0=0.031, 
+Grasp:0.0285*10.0=0.285, Done:0.6029*0.2=0.121
+Eval k=1   :  14.93mm    7.5°   98.0%
+Eval k=50  :  16.30mm    7.9°   98.0%
+Eval W 1-50:  15.94mm    7.7° 98.0%| Score: -0.0047
+---------------------------------------------------------------------------
+EP 058/400 | Total Loss: 0.2456 (Flow:0.125*1.0=0.125, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-05
+    ↳ Flow Details: Pos:0.0521*5.0=0.261, Rot:0.0319*1.0=0.032, 
+Grasp:0.0278*10.0=0.278, Done:0.6023*0.2=0.120
+Eval k=1   :  15.13mm    7.6°   98.0%
+Eval k=50  :  16.03mm    8.1°   98.0%
+Eval W 1-50:  16.36mm    8.0° 98.0%| Score: -0.0020
+---------------------------------------------------------------------------
+EP 059/400 | Total Loss: 0.2408 (Flow:0.120*1.0=0.120, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-05
+    ↳ Flow Details: Pos:0.0504*5.0=0.252, Rot:0.0291*1.0=0.029, 
+Grasp:0.0272*10.0=0.272, Done:0.6023*0.2=0.120
+Eval k=1   :  13.55mm    7.4°   98.0%
+Eval k=50  :  14.26mm    7.9°   98.0%
+Eval W 1-50:  14.23mm    7.7° 98.0%| Score: -0.0065
+---------------------------------------------------------------------------
+EP 060/400 | Total Loss: 0.2404 (Flow:0.120*1.0=0.120, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-05
+    ↳ Flow Details: Pos:0.0499*5.0=0.249, Rot:0.0306*1.0=0.031, 
+Grasp:0.0269*10.0=0.269, Done:0.6020*0.2=0.120
+Eval k=1   :  14.55mm    7.4°   98.0%
+Eval k=50  :  15.71mm    7.6°   98.0%
+Eval W 1-50:  15.65mm    7.5° 98.0%| Score: -0.0076
+---------------------------------------------------------------------------
+EP 061/400 | Total Loss: 0.2345 (Flow:0.113*1.0=0.113, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-05
+    ↳ Flow Details: Pos:0.0462*5.0=0.231, Rot:0.0291*1.0=0.029, 
+Grasp:0.0266*10.0=0.266, Done:0.6048*0.2=0.121
+Eval k=1   :  14.88mm    7.5°   98.0%
+Eval k=50  :  16.32mm    8.1°   98.0%
+Eval W 1-50:  16.15mm    7.9° 98.0%| Score: -0.0029
+---------------------------------------------------------------------------
+EP 062/400 | Total Loss: 0.2355 (Flow:0.115*1.0=0.115, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-05
+    ↳ Flow Details: Pos:0.0471*5.0=0.236, Rot:0.0291*1.0=0.029, 
+Grasp:0.0268*10.0=0.268, Done:0.6030*0.2=0.121
+Eval k=1   :  14.74mm    7.6°   98.0%
+Eval k=50  :  16.11mm    8.5°   98.0%
+Eval W 1-50:  15.84mm    8.2° 98.0%| Score: -0.0004
+---------------------------------------------------------------------------
+EP 063/400 | Total Loss: 0.2392 (Flow:0.119*1.0=0.119, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-05
+    ↳ Flow Details: Pos:0.0499*5.0=0.250, Rot:0.0297*1.0=0.030, 
+Grasp:0.0260*10.0=0.260, Done:0.6021*0.2=0.120
+Eval k=1   :  15.76mm    7.5°   98.0%
+Eval k=50  :  16.57mm    7.9°   98.0%
+Eval W 1-50:  16.73mm    7.8° 98.0%| Score: -0.0033
+---------------------------------------------------------------------------
+EP 064/400 | Total Loss: 0.2338 (Flow:0.113*1.0=0.113, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-05
+    ↳ Flow Details: Pos:0.0466*5.0=0.233, Rot:0.0294*1.0=0.029, 
+Grasp:0.0258*10.0=0.258, Done:0.6021*0.2=0.120
+Eval k=1   :  14.55mm    7.6°   98.0%
+Eval k=50  :  15.40mm    8.4°   98.0%
+Eval W 1-50:  15.49mm    8.1° 98.0%| Score: -0.0014
+---------------------------------------------------------------------------
+EP 065/400 | Total Loss: 0.2411 (Flow:0.121*1.0=0.121, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-05
+    ↳ Flow Details: Pos:0.0508*5.0=0.254, Rot:0.0296*1.0=0.030, 
+Grasp:0.0267*10.0=0.267, Done:0.6023*0.2=0.120
+Eval k=1   :  14.84mm    7.4°   98.0%
+Eval k=50  :  15.79mm    7.9°   98.0%
+Eval W 1-50:  15.76mm    7.8° 98.0%| Score: -0.0044
+---------------------------------------------------------------------------
+EP 066/400 | Total Loss: 0.2388 (Flow:0.118*1.0=0.118, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-05
+    ↳ Flow Details: Pos:0.0506*5.0=0.253, Rot:0.0292*1.0=0.029, 
+Grasp:0.0250*10.0=0.250, Done:0.6018*0.2=0.120
+Eval k=1   :  15.05mm    7.3°   98.0%
+Eval k=50  :  15.95mm    7.8°   98.0%
+Eval W 1-50:  15.97mm    7.6° 98.0%| Score: -0.0060
+---------------------------------------------------------------------------
+EP 067/400 | Total Loss: 0.2397 (Flow:0.119*1.0=0.119, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-05
+    ↳ Flow Details: Pos:0.0495*5.0=0.247, Rot:0.0295*1.0=0.029, 
+Grasp:0.0273*10.0=0.273, Done:0.6022*0.2=0.120
+Eval k=1   :  13.93mm    7.4°   98.0%
+Eval k=50  :  15.46mm    8.2°   98.0%
+Eval W 1-50:  15.04mm    7.9° 98.0%| Score: -0.0036
+---------------------------------------------------------------------------
+EP 068/400 | Total Loss: 0.2301 (Flow:0.110*1.0=0.110, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-05
+    ↳ Flow Details: Pos:0.0453*5.0=0.227, Rot:0.0283*1.0=0.028, 
+Grasp:0.0248*10.0=0.248, Done:0.6014*0.2=0.120
+Eval k=1   :  14.32mm    7.5°   98.0%
+Eval k=50  :  15.97mm    7.9°   98.0%
+Eval W 1-50:  15.88mm    7.7° 98.0%| Score: -0.0048
+---------------------------------------------------------------------------
+EP 069/400 | Total Loss: 0.2473 (Flow:0.127*1.0=0.127, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.3e-05
+    ↳ Flow Details: Pos:0.0525*5.0=0.263, Rot:0.0320*1.0=0.032, 
+Grasp:0.0286*10.0=0.286, Done:0.6035*0.2=0.121
+Eval k=1   :  14.39mm    7.5°   98.0%
+Eval k=50  :  15.62mm    7.7°   98.0%
+Eval W 1-50:  15.39mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 070/400 | Total Loss: 0.2320 (Flow:0.112*1.0=0.112, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.3e-05
+    ↳ Flow Details: Pos:0.0479*5.0=0.240, Rot:0.0273*1.0=0.027, 
+Grasp:0.0235*10.0=0.235, Done:0.6016*0.2=0.120
+Eval k=1   :  13.54mm    7.3°   98.0%
+Eval k=50  :  14.92mm    7.8°   98.0%
+Eval W 1-50:  14.49mm    7.7° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 071/400 | Total Loss: 0.2272 (Flow:0.107*1.0=0.107, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.3e-05
+    ↳ Flow Details: Pos:0.0446*5.0=0.223, Rot:0.0270*1.0=0.027, 
+Grasp:0.0235*10.0=0.235, Done:0.6032*0.2=0.121
+Eval k=1   :  13.64mm    7.3°   98.0%
+Eval k=50  :  14.07mm    7.5°   98.0%
+Eval W 1-50:  13.83mm    7.4° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 072/400 | Total Loss: 0.2384 (Flow:0.118*1.0=0.118, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.3e-05
+    ↳ Flow Details: Pos:0.0492*5.0=0.246, Rot:0.0294*1.0=0.029, 
+Grasp:0.0266*10.0=0.266, Done:0.6015*0.2=0.120
+Eval k=1   :  13.91mm    7.5°   98.0%
+Eval k=50  :  15.47mm    8.1°   98.0%
+Eval W 1-50:  15.22mm    7.9° 98.0%| Score: -0.0036
+---------------------------------------------------------------------------
+EP 073/400 | Total Loss: 0.2354 (Flow:0.115*1.0=0.115, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.3e-05
+    ↳ Flow Details: Pos:0.0490*5.0=0.245, Rot:0.0281*1.0=0.028, 
+Grasp:0.0247*10.0=0.247, Done:0.6014*0.2=0.120
+Eval k=1   :  15.04mm    6.9°   98.0%
+Eval k=50  :  15.62mm    7.6°   98.0%
+Eval W 1-50:  15.85mm    7.5° 98.0%| Score: -0.0074
+---------------------------------------------------------------------------
+EP 074/400 | Total Loss: 0.2279 (Flow:0.108*1.0=0.108, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.2e-05
+    ↳ Flow Details: Pos:0.0457*5.0=0.229, Rot:0.0267*1.0=0.027, 
+Grasp:0.0231*10.0=0.231, Done:0.6010*0.2=0.120
+Eval k=1   :  14.45mm    7.5°   98.0%
+Eval k=50  :  15.64mm    8.0°   98.0%
+Eval W 1-50:  15.57mm    7.8° 98.0%| Score: -0.0045
+---------------------------------------------------------------------------
+EP 075/400 | Total Loss: 0.2291 (Flow:0.109*1.0=0.109, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.2e-05
+    ↳ Flow Details: Pos:0.0457*5.0=0.228, Rot:0.0264*1.0=0.026, 
+Grasp:0.0244*10.0=0.244, Done:0.6017*0.2=0.120
+Eval k=1   :  14.83mm    7.0°   98.0%
+Eval k=50  :  15.89mm    7.5°   98.0%
+Eval W 1-50:  15.79mm    7.3° 98.0%| Score: -0.0090
+---------------------------------------------------------------------------
+EP 076/400 | Total Loss: 0.2258 (Flow:0.106*1.0=0.106, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.2e-05
+    ↳ Flow Details: Pos:0.0439*5.0=0.219, Rot:0.0261*1.0=0.026, 
+Grasp:0.0241*10.0=0.241, Done:0.6010*0.2=0.120
+Eval k=1   :  14.78mm    6.8°   98.0%
+Eval k=50  :  16.13mm    7.5°   98.0%
+Eval W 1-50:  15.88mm    7.3° 98.0%| Score: -0.0093
+---------------------------------------------------------------------------
+EP 077/400 | Total Loss: 0.2296 (Flow:0.109*1.0=0.109, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.2e-05
+    ↳ Flow Details: Pos:0.0461*5.0=0.230, Rot:0.0271*1.0=0.027, 
+Grasp:0.0238*10.0=0.238, Done:0.6020*0.2=0.120
+Eval k=1   :  15.05mm    6.9°   98.0%
+Eval k=50  :  15.64mm    7.4°   98.0%
+Eval W 1-50:  15.47mm    7.2° 98.0%| Score: -0.0105
+---------------------------------------------------------------------------
+EP 078/400 | Total Loss: 0.2254 (Flow:0.105*1.0=0.105, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.2e-05
+    ↳ Flow Details: Pos:0.0441*5.0=0.220, Rot:0.0261*1.0=0.026, 
+Grasp:0.0231*10.0=0.231, Done:0.6031*0.2=0.121
+Eval k=1   :  14.12mm    7.0°   98.0%
+Eval k=50  :  15.25mm    7.8°   98.0%
+Eval W 1-50:  15.11mm    7.7° 98.0%| Score: -0.0064
+---------------------------------------------------------------------------
+EP 079/400 | Total Loss: 0.2276 (Flow:0.107*1.0=0.107, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.1e-05
+    ↳ Flow Details: Pos:0.0460*5.0=0.230, Rot:0.0273*1.0=0.027, 
+Grasp:0.0219*10.0=0.219, Done:0.6017*0.2=0.120
+Eval k=1   :  13.86mm    6.9°   98.0%
+Eval k=50  :  14.74mm    7.3°   98.0%
+Eval W 1-50:  14.67mm    7.2° 98.0%| Score: -0.0112
+---------------------------------------------------------------------------
+EP 080/400 | Total Loss: 0.2316 (Flow:0.111*1.0=0.111, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.1e-05
+    ↳ Flow Details: Pos:0.0472*5.0=0.236, Rot:0.0274*1.0=0.027, 
+Grasp:0.0241*10.0=0.241, Done:0.6013*0.2=0.120
+Eval k=1   :  13.72mm    7.4°   98.0%
+Eval k=50  :  14.75mm    7.9°   98.0%
+Eval W 1-50:  14.65mm    7.7° 98.0%| Score: -0.0059
+---------------------------------------------------------------------------
+EP 081/400 | Total Loss: 0.2238 (Flow:0.104*1.0=0.104, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.1e-05
+    ↳ Flow Details: Pos:0.0442*5.0=0.221, Rot:0.0254*1.0=0.025, 
+Grasp:0.0219*10.0=0.219, Done:0.6017*0.2=0.120
+Eval k=1   :  13.71mm    7.1°   98.0%
+Eval k=50  :  14.24mm    7.8°   98.0%
+Eval W 1-50:  14.54mm    7.5° 98.0%| Score: -0.0083
+---------------------------------------------------------------------------
+EP 082/400 | Total Loss: 0.2237 (Flow:0.104*1.0=0.104, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.1e-05
+    ↳ Flow Details: Pos:0.0452*5.0=0.226, Rot:0.0255*1.0=0.026, 
+Grasp:0.0204*10.0=0.204, Done:0.6010*0.2=0.120
+Eval k=1   :  14.07mm    7.2°   98.0%
+Eval k=50  :  14.63mm    7.9°   98.0%
+Eval W 1-50:  14.60mm    7.7° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 083/400 | Total Loss: 0.2320 (Flow:0.112*1.0=0.112, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.0e-05
+    ↳ Flow Details: Pos:0.0483*5.0=0.242, Rot:0.0264*1.0=0.026, 
+Grasp:0.0232*10.0=0.232, Done:0.6022*0.2=0.120
+Eval k=1   :  14.25mm    7.1°   98.0%
+Eval k=50  :  14.98mm    7.9°   98.0%
+Eval W 1-50:  15.05mm    7.8° 98.0%| Score: -0.0048
+---------------------------------------------------------------------------
+EP 084/400 | Total Loss: 0.2264 (Flow:0.106*1.0=0.106, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.0e-05
+    ↳ Flow Details: Pos:0.0454*5.0=0.227, Rot:0.0264*1.0=0.026, 
+Grasp:0.0222*10.0=0.222, Done:0.6017*0.2=0.120
+Eval k=1   :  13.66mm    7.3°   98.0%
+Eval k=50  :  14.66mm    8.0°   98.0%
+Eval W 1-50:  14.87mm    7.8° 98.0%| Score: -0.0054
+---------------------------------------------------------------------------
+EP 085/400 | Total Loss: 0.2248 (Flow:0.105*1.0=0.105, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.0e-05
+    ↳ Flow Details: Pos:0.0448*5.0=0.224, Rot:0.0263*1.0=0.026, 
+Grasp:0.0216*10.0=0.216, Done:0.6008*0.2=0.120
+Eval k=1   :  14.24mm    6.9°   98.0%
+Eval k=50  :  15.12mm    7.7°   98.0%
+Eval W 1-50:  15.03mm    7.5° 98.0%| Score: -0.0081
+---------------------------------------------------------------------------
+EP 086/400 | Total Loss: 0.2250 (Flow:0.105*1.0=0.105, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.0e-05
+    ↳ Flow Details: Pos:0.0443*5.0=0.221, Rot:0.0258*1.0=0.026, 
+Grasp:0.0230*10.0=0.230, Done:0.6008*0.2=0.120
+Eval k=1   :  15.20mm    7.3°   98.0%
+Eval k=50  :  15.83mm    7.8°   98.0%
+Eval W 1-50:  15.97mm    7.7° 98.0%| Score: -0.0052
+---------------------------------------------------------------------------
+EP 087/400 | Total Loss: 0.2211 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.9e-05
+    ↳ Flow Details: Pos:0.0428*5.0=0.214, Rot:0.0248*1.0=0.025, 
+Grasp:0.0218*10.0=0.218, Done:0.6010*0.2=0.120
+Eval k=1   :  13.92mm    7.2°   98.0%
+Eval k=50  :  15.30mm    7.6°   98.0%
+Eval W 1-50:  15.17mm    7.6° 98.0%| Score: -0.0072
+---------------------------------------------------------------------------
+EP 088/400 | Total Loss: 0.2236 (Flow:0.103*1.0=0.103, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.9e-05
+    ↳ Flow Details: Pos:0.0444*5.0=0.222, Rot:0.0266*1.0=0.027, 
+Grasp:0.0208*10.0=0.208, Done:0.6007*0.2=0.120
+Eval k=1   :  14.15mm    7.1°   98.0%
+Eval k=50  :  15.24mm    7.6°   98.0%
+Eval W 1-50:  15.26mm    7.5° 98.0%| Score: -0.0080
+---------------------------------------------------------------------------
+EP 089/400 | Total Loss: 0.2179 (Flow:0.098*1.0=0.098, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.9e-05
+    ↳ Flow Details: Pos:0.0421*5.0=0.210, Rot:0.0248*1.0=0.025, 
+Grasp:0.0199*10.0=0.199, Done:0.5999*0.2=0.120
+Eval k=1   :  14.13mm    7.4°   98.0%
+Eval k=50  :  15.06mm    8.0°   98.0%
+Eval W 1-50:  15.00mm    7.8° 98.0%| Score: -0.0050
+---------------------------------------------------------------------------
+EP 090/400 | Total Loss: 0.2207 (Flow:0.100*1.0=0.100, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.9e-05
+    ↳ Flow Details: Pos:0.0413*5.0=0.206, Rot:0.0249*1.0=0.025, 
+Grasp:0.0235*10.0=0.235, Done:0.6015*0.2=0.120
+Eval k=1   :  13.62mm    7.1°   98.0%
+Eval k=50  :  14.77mm    7.7°   98.0%
+Eval W 1-50:  14.79mm    7.5° 98.0%| Score: -0.0077
+---------------------------------------------------------------------------
+EP 091/400 | Total Loss: 0.2332 (Flow:0.113*1.0=0.113, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.9e-05
+    ↳ Flow Details: Pos:0.0477*5.0=0.238, Rot:0.0277*1.0=0.028, 
+Grasp:0.0250*10.0=0.250, Done:0.6007*0.2=0.120
+Eval k=1   :  13.15mm    7.1°   98.0%
+Eval k=50  :  14.97mm    7.7°   98.0%
+Eval W 1-50:  14.91mm    7.6° 98.0%| Score: -0.0075
+---------------------------------------------------------------------------
+EP 092/400 | Total Loss: 0.2209 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.8e-05
+    ↳ Flow Details: Pos:0.0436*5.0=0.218, Rot:0.0244*1.0=0.024, 
+Grasp:0.0207*10.0=0.207, Done:0.6007*0.2=0.120
+Eval k=1   :  13.25mm    6.9°   98.0%
+Eval k=50  :  39.22mm   10.2°   98.0%
+Eval W 1-50:  14.70mm    7.6° 98.0%| Score: -0.0078
+---------------------------------------------------------------------------
+EP 093/400 | Total Loss: 0.2207 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.8e-05
+    ↳ Flow Details: Pos:0.0418*5.0=0.209, Rot:0.0254*1.0=0.025, 
+Grasp:0.0226*10.0=0.226, Done:0.5999*0.2=0.120
+Eval k=1   :  13.98mm    6.8°   98.0%
+Eval k=50  :  15.55mm    7.7°   98.0%
+Eval W 1-50:  15.31mm    7.5° 98.0%| Score: -0.0078
+---------------------------------------------------------------------------
+EP 094/400 | Total Loss: 0.2208 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.8e-05
+    ↳ Flow Details: Pos:0.0428*5.0=0.214, Rot:0.0247*1.0=0.025, 
+Grasp:0.0217*10.0=0.217, Done:0.6008*0.2=0.120
+Eval k=1   :  13.57mm    7.3°   98.0%
+Eval k=50  :  14.41mm    8.1°   98.0%
+Eval W 1-50:  14.44mm    7.9° 98.0%| Score: -0.0043
+---------------------------------------------------------------------------
+EP 095/400 | Total Loss: 0.2154 (Flow:0.095*1.0=0.095, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.8e-05
+    ↳ Flow Details: Pos:0.0410*5.0=0.205, Rot:0.0233*1.0=0.023, 
+Grasp:0.0199*10.0=0.199, Done:0.6002*0.2=0.120
+Eval k=1   :  12.80mm    6.9°   98.0%
+Eval k=50  :  13.73mm    7.7°   98.0%
+Eval W 1-50:  13.90mm    7.5° 98.0%| Score: -0.0096
+---------------------------------------------------------------------------
+EP 096/400 | Total Loss: 0.2206 (Flow:0.100*1.0=0.100, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.7e-05
+    ↳ Flow Details: Pos:0.0429*5.0=0.214, Rot:0.0245*1.0=0.025, 
+Grasp:0.0213*10.0=0.213, Done:0.6012*0.2=0.120
+Eval k=1   :  14.16mm    6.6°   98.0%
+Eval k=50  :  15.25mm    7.6°   98.0%
+Eval W 1-50:  15.31mm    7.3° 98.0%| Score: -0.0101
+---------------------------------------------------------------------------
+EP 097/400 | Total Loss: 0.2193 (Flow:0.099*1.0=0.099, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.7e-05
+    ↳ Flow Details: Pos:0.0419*5.0=0.210, Rot:0.0242*1.0=0.024, 
+Grasp:0.0218*10.0=0.218, Done:0.6005*0.2=0.120
+Eval k=1   :  14.31mm    7.0°   98.0%
+Eval k=50  :  14.94mm    7.5°   98.0%
+Eval W 1-50:  15.11mm    7.4° 98.0%| Score: -0.0087
+---------------------------------------------------------------------------
+EP 098/400 | Total Loss: 0.2144 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.7e-05
+    ↳ Flow Details: Pos:0.0397*5.0=0.199, Rot:0.0234*1.0=0.023, 
+Grasp:0.0206*10.0=0.206, Done:0.6005*0.2=0.120
+Eval k=1   :  13.33mm    6.8°   98.0%
+Eval k=50  :  14.20mm    7.4°   98.0%
+Eval W 1-50:  14.33mm    7.3° 98.0%| Score: -0.0108
+---------------------------------------------------------------------------
+EP 099/400 | Total Loss: 0.2193 (Flow:0.099*1.0=0.099, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.7e-05
+    ↳ Flow Details: Pos:0.0422*5.0=0.211, Rot:0.0244*1.0=0.024, 
+Grasp:0.0212*10.0=0.212, Done:0.6010*0.2=0.120
+Eval k=1   :  13.84mm    6.9°   98.0%
+Eval k=50  :  14.93mm    7.7°   98.0%
+Eval W 1-50:  14.80mm    7.5° 98.0%| Score: -0.0086
+---------------------------------------------------------------------------
+EP 100/400 | Total Loss: 0.2221 (Flow:0.102*1.0=0.102, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.6e-05
+    ↳ Flow Details: Pos:0.0438*5.0=0.219, Rot:0.0249*1.0=0.025, 
+Grasp:0.0213*10.0=0.213, Done:0.6005*0.2=0.120
+Eval k=1   :  12.76mm    7.1°   98.0%
+Eval k=50  :  14.51mm    7.6°   98.0%
+Eval W 1-50:  14.29mm    7.5° 98.0%| Score: -0.0089
+---------------------------------------------------------------------------
+
+>>> Starting Professional Visualization Eval at Epoch 100 <<<
+  -> Rendering session: mps_Grasp_BellPepper_Red_000_vrs
+[FlowMatchingDataloader] Built 26 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=False | VisForesight=False | TempContrastive=False
+  - 3D PCD Feats : False
+[OK] Evaluator: GT-vs-Pred Hand Traj Teacher-forced (absolute) Visualization 
+finished.
+EP 101/400 | Total Loss: 0.2244 (Flow:0.104*1.0=0.104, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.6e-05
+    ↳ Flow Details: Pos:0.0441*5.0=0.220, Rot:0.0258*1.0=0.026, 
+Grasp:0.0228*10.0=0.228, Done:0.6002*0.2=0.120
+Eval k=1   :  13.16mm    6.9°   98.0%
+Eval k=50  :  14.90mm    7.5°   98.0%
+Eval W 1-50:  14.49mm    7.3° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 102/400 | Total Loss: 0.2252 (Flow:0.105*1.0=0.105, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.6e-05
+    ↳ Flow Details: Pos:0.0441*5.0=0.221, Rot:0.0266*1.0=0.027, 
+Grasp:0.0230*10.0=0.230, Done:0.6005*0.2=0.120
+Eval k=1   :  13.13mm    6.9°   98.0%
+Eval k=50  :  14.16mm    7.6°   98.0%
+Eval W 1-50:  14.03mm    7.4° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 103/400 | Total Loss: 0.2145 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.5e-05
+    ↳ Flow Details: Pos:0.0409*5.0=0.204, Rot:0.0227*1.0=0.023, 
+Grasp:0.0194*10.0=0.194, Done:0.6007*0.2=0.120
+Eval k=1   :  13.52mm    7.0°   98.0%
+Eval k=50  :  15.06mm    7.7°   98.0%
+Eval W 1-50:  14.77mm    7.5° 98.0%| Score: -0.0082
+---------------------------------------------------------------------------
+EP 104/400 | Total Loss: 0.2205 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.5e-05
+    ↳ Flow Details: Pos:0.0427*5.0=0.213, Rot:0.0248*1.0=0.025, 
+Grasp:0.0218*10.0=0.218, Done:0.5994*0.2=0.120
+Eval k=1   :  13.55mm    6.9°   98.0%
+Eval k=50  :  14.95mm    7.5°   98.0%
+Eval W 1-50:  14.89mm    7.4° 98.0%| Score: -0.0090
+---------------------------------------------------------------------------
+EP 105/400 | Total Loss: 0.2169 (Flow:0.097*1.0=0.097, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.5e-05
+    ↳ Flow Details: Pos:0.0407*5.0=0.204, Rot:0.0242*1.0=0.024, 
+Grasp:0.0210*10.0=0.210, Done:0.6013*0.2=0.120
+Eval k=1   :  13.67mm    6.6°   98.0%
+Eval k=50  :  15.01mm    7.3°   98.0%
+Eval W 1-50:  14.88mm    7.2° 98.0%| Score: -0.0115
+---------------------------------------------------------------------------
+EP 106/400 | Total Loss: 0.2208 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.5e-05
+    ↳ Flow Details: Pos:0.0429*5.0=0.214, Rot:0.0248*1.0=0.025, 
+Grasp:0.0216*10.0=0.216, Done:0.5999*0.2=0.120
+Eval k=1   :  14.00mm    6.9°   98.0%
+Eval k=50  :  15.15mm    7.5°   98.0%
+Eval W 1-50:  15.19mm    7.4° 98.0%| Score: -0.0087
+---------------------------------------------------------------------------
+EP 107/400 | Total Loss: 0.2142 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.4e-05
+    ↳ Flow Details: Pos:0.0405*5.0=0.202, Rot:0.0232*1.0=0.023, 
+Grasp:0.0199*10.0=0.199, Done:0.5987*0.2=0.120
+Eval k=1   :  13.56mm    6.6°   98.0%
+Eval k=50  :  15.01mm    7.7°   98.0%
+Eval W 1-50:  15.08mm    7.4° 98.0%| Score: -0.0089
+---------------------------------------------------------------------------
+EP 108/400 | Total Loss: 0.2177 (Flow:0.098*1.0=0.098, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.4e-05
+    ↳ Flow Details: Pos:0.0423*5.0=0.212, Rot:0.0244*1.0=0.024, 
+Grasp:0.0197*10.0=0.197, Done:0.5993*0.2=0.120
+Eval k=1   :  13.62mm    6.7°   98.0%
+Eval k=50  :  14.43mm    7.6°   98.0%
+Eval W 1-50:  14.56mm    7.4° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 109/400 | Total Loss: 0.2121 (Flow:0.092*1.0=0.092, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.4e-05
+    ↳ Flow Details: Pos:0.0391*5.0=0.195, Rot:0.0229*1.0=0.023, 
+Grasp:0.0197*10.0=0.197, Done:0.6002*0.2=0.120
+Eval k=1   :  12.97mm    7.4°   98.0%
+Eval k=50  :  13.82mm    7.9°   98.0%
+Eval W 1-50:  13.93mm    7.8° 98.0%| Score: -0.0058
+---------------------------------------------------------------------------
+EP 110/400 | Total Loss: 0.2156 (Flow:0.096*1.0=0.096, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.4e-05
+    ↳ Flow Details: Pos:0.0405*5.0=0.203, Rot:0.0236*1.0=0.024, 
+Grasp:0.0207*10.0=0.207, Done:0.5998*0.2=0.120
+Eval k=1   :  13.43mm    7.0°   98.0%
+Eval k=50  :  14.93mm    7.6°   98.0%
+Eval W 1-50:  14.93mm    7.4° 98.0%| Score: -0.0091
+---------------------------------------------------------------------------
+EP 111/400 | Total Loss: 0.2145 (Flow:0.095*1.0=0.095, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.3e-05
+    ↳ Flow Details: Pos:0.0406*5.0=0.203, Rot:0.0226*1.0=0.023, 
+Grasp:0.0203*10.0=0.203, Done:0.5988*0.2=0.120
+Eval k=1   :  13.19mm    6.5°   98.0%
+Eval k=50  :  14.45mm    7.5°   98.0%
+Eval W 1-50:  14.30mm    7.2° 98.0%| Score: -0.0118
+---------------------------------------------------------------------------
+EP 112/400 | Total Loss: 0.2224 (Flow:0.103*1.0=0.103, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.3e-05
+    ↳ Flow Details: Pos:0.0419*5.0=0.209, Rot:0.0255*1.0=0.025, 
+Grasp:0.0247*10.0=0.247, Done:0.5983*0.2=0.120
+Eval k=1   :  14.60mm    7.0°   98.0%
+Eval k=50  :  15.69mm    8.0°   98.0%
+Eval W 1-50:  15.76mm    7.7° 98.0%| Score: -0.0049
+---------------------------------------------------------------------------
+EP 113/400 | Total Loss: 0.2189 (Flow:0.099*1.0=0.099, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.3e-05
+    ↳ Flow Details: Pos:0.0426*5.0=0.213, Rot:0.0241*1.0=0.024, 
+Grasp:0.0206*10.0=0.206, Done:0.5998*0.2=0.120
+Eval k=1   :  13.41mm    7.1°   98.0%
+Eval k=50  :  15.33mm    7.5°   98.0%
+Eval W 1-50:  14.80mm    7.4° 98.0%| Score: -0.0097
+---------------------------------------------------------------------------
+EP 114/400 | Total Loss: 0.2141 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.2e-05
+    ↳ Flow Details: Pos:0.0409*5.0=0.204, Rot:0.0225*1.0=0.023, 
+Grasp:0.0193*10.0=0.193, Done:0.5999*0.2=0.120
+Eval k=1   :  13.49mm    6.7°   98.0%
+Eval k=50  :  14.75mm    7.0°   98.0%
+Eval W 1-50:  14.71mm    6.9° 98.0%| Score: -0.0142
+---------------------------------------------------------------------------
+EP 115/400 | Total Loss: 0.2233 (Flow:0.104*1.0=0.104, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.2e-05
+    ↳ Flow Details: Pos:0.0442*5.0=0.221, Rot:0.0250*1.0=0.025, 
+Grasp:0.0222*10.0=0.222, Done:0.5987*0.2=0.120
+Eval k=1   :  13.38mm    7.0°   98.0%
+Eval k=50  :  15.43mm    7.6°   98.0%
+Eval W 1-50:  14.92mm    7.5° 98.0%| Score: -0.0077
+---------------------------------------------------------------------------
+EP 116/400 | Total Loss: 0.2193 (Flow:0.099*1.0=0.099, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.2e-05
+    ↳ Flow Details: Pos:0.0435*5.0=0.217, Rot:0.0242*1.0=0.024, 
+Grasp:0.0197*10.0=0.197, Done:0.5993*0.2=0.120
+Eval k=1   :  14.42mm    6.6°   98.0%
+Eval k=50  :  14.60mm    7.2°   98.0%
+Eval W 1-50:  14.89mm    7.1° 98.0%| Score: -0.0121
+---------------------------------------------------------------------------
+EP 117/400 | Total Loss: 0.2232 (Flow:0.104*1.0=0.104, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.1e-05
+    ↳ Flow Details: Pos:0.0439*5.0=0.219, Rot:0.0254*1.0=0.025, 
+Grasp:0.0224*10.0=0.224, Done:0.5981*0.2=0.120
+Eval k=1   :  13.87mm    7.1°   98.0%
+Eval k=50  :  15.71mm    7.4°   98.0%
+Eval W 1-50:  15.42mm    7.3° 98.0%| Score: -0.0097
+---------------------------------------------------------------------------
+EP 118/400 | Total Loss: 0.2133 (Flow:0.093*1.0=0.093, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.1e-05
+    ↳ Flow Details: Pos:0.0412*5.0=0.206, Rot:0.0227*1.0=0.023, 
+Grasp:0.0178*10.0=0.178, Done:0.6004*0.2=0.120
+Eval k=1   :  13.04mm    7.1°   98.0%
+Eval k=50  :  14.26mm    8.0°   98.0%
+Eval W 1-50:  14.37mm    7.8° 98.0%| Score: -0.0055
+---------------------------------------------------------------------------
+EP 119/400 | Total Loss: 0.2091 (Flow:0.089*1.0=0.089, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.1e-05
+    ↳ Flow Details: Pos:0.0385*5.0=0.192, Rot:0.0218*1.0=0.022, 
+Grasp:0.0187*10.0=0.187, Done:0.5982*0.2=0.120
+Eval k=1   :  13.58mm    6.8°   98.0%
+Eval k=50  :  14.57mm    7.5°   98.0%
+Eval W 1-50:  14.53mm    7.3° 98.0%| Score: -0.0105
+---------------------------------------------------------------------------
+EP 120/400 | Total Loss: 0.2138 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.1e-05
+    ↳ Flow Details: Pos:0.0403*5.0=0.202, Rot:0.0229*1.0=0.023, 
+Grasp:0.0201*10.0=0.201, Done:0.5975*0.2=0.120
+Eval k=1   :  13.37mm    6.9°   98.0%
+Eval k=50  :  14.88mm    7.7°   98.0%
+Eval W 1-50:  14.48mm    7.5° 98.0%| Score: -0.0090
+---------------------------------------------------------------------------
+EP 121/400 | Total Loss: 0.2204 (Flow:0.101*1.0=0.101, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.0e-05
+    ↳ Flow Details: Pos:0.0430*5.0=0.215, Rot:0.0248*1.0=0.025, 
+Grasp:0.0212*10.0=0.212, Done:0.5994*0.2=0.120
+Eval k=1   :  13.45mm    6.7°   98.0%
+Eval k=50  :  15.04mm    7.3°   98.0%
+Eval W 1-50:  14.98mm    7.2° 98.0%| Score: -0.0112
+---------------------------------------------------------------------------
+EP 122/400 | Total Loss: 0.2114 (Flow:0.092*1.0=0.092, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.0e-05
+    ↳ Flow Details: Pos:0.0403*5.0=0.201, Rot:0.0216*1.0=0.022, 
+Grasp:0.0186*10.0=0.186, Done:0.5970*0.2=0.119
+Eval k=1   :  12.97mm    7.0°   98.0%
+Eval k=50  :  14.06mm    7.8°   98.0%
+Eval W 1-50:  14.05mm    7.6° 98.0%| Score: -0.0084
+---------------------------------------------------------------------------
+EP 123/400 | Total Loss: 0.2097 (Flow:0.090*1.0=0.090, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.0e-05
+    ↳ Flow Details: Pos:0.0392*5.0=0.196, Rot:0.0213*1.0=0.021, 
+Grasp:0.0186*10.0=0.186, Done:0.5981*0.2=0.120
+Eval k=1   :  13.16mm    6.5°   98.0%
+Eval k=50  :  14.12mm    7.3°   98.0%
+Eval W 1-50:  14.16mm    7.2° 98.0%| Score: -0.0120
+---------------------------------------------------------------------------
+EP 124/400 | Total Loss: 0.2168 (Flow:0.097*1.0=0.097, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.9e-05
+    ↳ Flow Details: Pos:0.0416*5.0=0.208, Rot:0.0239*1.0=0.024, 
+Grasp:0.0205*10.0=0.205, Done:0.5976*0.2=0.120
+Eval k=1   :  14.03mm    6.8°   98.0%
+Eval k=50  :  15.41mm    7.9°   98.0%
+Eval W 1-50:  15.34mm    7.6° 98.0%| Score: -0.0071
+---------------------------------------------------------------------------
+EP 125/400 | Total Loss: 0.2094 (Flow:0.090*1.0=0.090, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.9e-05
+    ↳ Flow Details: Pos:0.0391*5.0=0.196, Rot:0.0216*1.0=0.022, 
+Grasp:0.0180*10.0=0.180, Done:0.5988*0.2=0.120
+Eval k=1   :  12.72mm    6.7°   98.0%
+Eval k=50  :  13.97mm    7.6°   98.0%
+Eval W 1-50:  13.66mm    7.4° 98.0%| Score: -0.0101
+---------------------------------------------------------------------------
+EP 126/400 | Total Loss: 0.2079 (Flow:0.088*1.0=0.088, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.9e-05
+    ↳ Flow Details: Pos:0.0383*5.0=0.191, Rot:0.0214*1.0=0.021, 
+Grasp:0.0178*10.0=0.178, Done:0.5989*0.2=0.120
+Eval k=1   :  13.36mm    6.8°   98.0%
+Eval k=50  :  14.71mm    7.6°   98.0%
+Eval W 1-50:  14.54mm    7.4° 98.0%| Score: -0.0100
+---------------------------------------------------------------------------
+EP 127/400 | Total Loss: 0.2110 (Flow:0.092*1.0=0.092, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.8e-05
+    ↳ Flow Details: Pos:0.0404*5.0=0.202, Rot:0.0220*1.0=0.022, 
+Grasp:0.0178*10.0=0.178, Done:0.5965*0.2=0.119
+Eval k=1   :  13.22mm    7.1°   98.0%
+Eval k=50  :  15.07mm    7.6°   98.0%
+Eval W 1-50:  14.85mm    7.4° 98.0%| Score: -0.0089
+---------------------------------------------------------------------------
+EP 128/400 | Total Loss: 0.2077 (Flow:0.088*1.0=0.088, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.8e-05
+    ↳ Flow Details: Pos:0.0386*5.0=0.193, Rot:0.0212*1.0=0.021, 
+Grasp:0.0178*10.0=0.178, Done:0.5970*0.2=0.119
+Eval k=1   :  13.33mm    6.9°   98.0%
+Eval k=50  :  14.82mm    7.6°   98.0%
+Eval W 1-50:  14.55mm    7.4° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 129/400 | Total Loss: 0.2103 (Flow:0.091*1.0=0.091, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.8e-05
+    ↳ Flow Details: Pos:0.0392*5.0=0.196, Rot:0.0218*1.0=0.022, 
+Grasp:0.0187*10.0=0.187, Done:0.5987*0.2=0.120
+Eval k=1   :  13.29mm    6.6°   98.0%
+Eval k=50  :  14.24mm    7.2°   98.0%
+Eval W 1-50:  14.13mm    7.1° 98.0%| Score: -0.0127
+---------------------------------------------------------------------------
+EP 130/400 | Total Loss: 0.2089 (Flow:0.090*1.0=0.090, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.7e-05
+    ↳ Flow Details: Pos:0.0386*5.0=0.193, Rot:0.0221*1.0=0.022, 
+Grasp:0.0184*10.0=0.184, Done:0.5965*0.2=0.119
+Eval k=1   :  12.72mm    6.6°   98.0%
+Eval k=50  :  14.47mm    7.3°   98.0%
+Eval W 1-50:  14.19mm    7.2° 98.0%| Score: -0.0120
+---------------------------------------------------------------------------
+EP 131/400 | Total Loss: 0.2140 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.7e-05
+    ↳ Flow Details: Pos:0.0407*5.0=0.203, Rot:0.0229*1.0=0.023, 
+Grasp:0.0196*10.0=0.196, Done:0.5984*0.2=0.120
+Eval k=1   :  13.91mm    6.8°   98.0%
+Eval k=50  :  15.97mm    7.8°   98.0%
+Eval W 1-50:  15.54mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 132/400 | Total Loss: 0.2136 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.7e-05
+    ↳ Flow Details: Pos:0.0401*5.0=0.201, Rot:0.0225*1.0=0.022, 
+Grasp:0.0205*10.0=0.205, Done:0.5972*0.2=0.119
+Eval k=1   :  12.89mm    6.8°   98.0%
+Eval k=50  :  14.18mm    7.9°   98.0%
+Eval W 1-50:  13.85mm    7.5° 98.0%| Score: -0.0087
+---------------------------------------------------------------------------
+EP 133/400 | Total Loss: 0.2086 (Flow:0.089*1.0=0.089, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.7e-05
+    ↳ Flow Details: Pos:0.0388*5.0=0.194, Rot:0.0213*1.0=0.021, 
+Grasp:0.0182*10.0=0.182, Done:0.5966*0.2=0.119
+Eval k=1   :  12.66mm    6.6°   98.0%
+Eval k=50  :  14.52mm    7.6°   98.0%
+Eval W 1-50:  14.17mm    7.4° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 134/400 | Total Loss: 0.2105 (Flow:0.091*1.0=0.091, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.6e-05
+    ↳ Flow Details: Pos:0.0389*5.0=0.194, Rot:0.0221*1.0=0.022, 
+Grasp:0.0195*10.0=0.195, Done:0.5967*0.2=0.119
+Eval k=1   :  13.69mm    6.9°   98.0%
+Eval k=50  :  14.62mm    7.7°   98.0%
+Eval W 1-50:  14.47mm    7.5° 98.0%| Score: -0.0089
+---------------------------------------------------------------------------
+EP 135/400 | Total Loss: 0.2131 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.6e-05
+    ↳ Flow Details: Pos:0.0413*5.0=0.207, Rot:0.0221*1.0=0.022, 
+Grasp:0.0186*10.0=0.186, Done:0.5959*0.2=0.119
+Eval k=1   :  13.14mm    6.6°   98.0%
+Eval k=50  :  14.74mm    7.8°   98.0%
+Eval W 1-50:  14.39mm    7.5° 98.0%| Score: -0.0089
+---------------------------------------------------------------------------
+EP 136/400 | Total Loss: 0.2131 (Flow:0.094*1.0=0.094, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.6e-05
+    ↳ Flow Details: Pos:0.0408*5.0=0.204, Rot:0.0229*1.0=0.023, 
+Grasp:0.0190*10.0=0.190, Done:0.5959*0.2=0.119
+Eval k=1   :  14.23mm    6.8°   98.0%
+Eval k=50  :  15.55mm    7.9°   98.0%
+Eval W 1-50:  15.50mm    7.6° 98.0%| Score: -0.0064
+---------------------------------------------------------------------------
+EP 137/400 | Total Loss: 0.2101 (Flow:0.091*1.0=0.091, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.5e-05
+    ↳ Flow Details: Pos:0.0395*5.0=0.198, Rot:0.0211*1.0=0.021, 
+Grasp:0.0189*10.0=0.189, Done:0.5960*0.2=0.119
+Eval k=1   :  13.64mm    6.6°   98.0%
+Eval k=50  :  16.17mm    7.3°   98.0%
+Eval W 1-50:  15.47mm    7.1° 98.0%| Score: -0.0116
+---------------------------------------------------------------------------
+EP 138/400 | Total Loss: 0.2118 (Flow:0.093*1.0=0.093, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.5e-05
+    ↳ Flow Details: Pos:0.0393*5.0=0.196, Rot:0.0221*1.0=0.022, 
+Grasp:0.0206*10.0=0.206, Done:0.5952*0.2=0.119
+Eval k=1   :  13.36mm    7.0°   98.0%
+Eval k=50  :  14.74mm    8.1°   98.0%
+Eval W 1-50:  14.53mm    7.9° 98.0%| Score: -0.0047
+---------------------------------------------------------------------------
+EP 139/400 | Total Loss: 0.2110 (Flow:0.092*1.0=0.092, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.5e-05
+    ↳ Flow Details: Pos:0.0397*5.0=0.198, Rot:0.0217*1.0=0.022, 
+Grasp:0.0197*10.0=0.197, Done:0.5940*0.2=0.119
+Eval k=1   :  12.69mm    6.7°   98.0%
+Eval k=50  :  14.66mm    7.4°   98.0%
+Eval W 1-50:  14.43mm    7.4° 98.0%| Score: -0.0101
+---------------------------------------------------------------------------
+EP 140/400 | Total Loss: 0.2082 (Flow:0.089*1.0=0.089, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.4e-05
+    ↳ Flow Details: Pos:0.0394*5.0=0.197, Rot:0.0205*1.0=0.021, 
+Grasp:0.0176*10.0=0.176, Done:0.5959*0.2=0.119
+Eval k=1   :  13.60mm    6.6°   98.0%
+Eval k=50  :  14.67mm    7.5°   98.0%
+Eval W 1-50:  14.47mm    7.4° 98.0%| Score: -0.0100
+---------------------------------------------------------------------------
+EP 141/400 | Total Loss: 0.2052 (Flow:0.086*1.0=0.086, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.4e-05
+    ↳ Flow Details: Pos:0.0380*5.0=0.190, Rot:0.0201*1.0=0.020, 
+Grasp:0.0173*10.0=0.173, Done:0.5950*0.2=0.119
+Eval k=1   :  13.56mm    6.5°   98.0%
+Eval k=50  :  15.75mm    7.4°   98.0%
+Eval W 1-50:  15.47mm    7.2° 98.0%| Score: -0.0104
+---------------------------------------------------------------------------
+EP 142/400 | Total Loss: 0.2015 (Flow:0.083*1.0=0.083, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.4e-05
+    ↳ Flow Details: Pos:0.0358*5.0=0.179, Rot:0.0201*1.0=0.020, 
+Grasp:0.0168*10.0=0.168, Done:0.5945*0.2=0.119
+Eval k=1   :  13.47mm    7.0°   98.0%
+Eval k=50  :  15.37mm    7.8°   98.0%
+Eval W 1-50:  15.02mm    7.6° 98.0%| Score: -0.0074
+---------------------------------------------------------------------------
+EP 143/400 | Total Loss: 0.2063 (Flow:0.087*1.0=0.087, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.3e-05
+    ↳ Flow Details: Pos:0.0383*5.0=0.191, Rot:0.0211*1.0=0.021, 
+Grasp:0.0174*10.0=0.174, Done:0.5940*0.2=0.119
+Eval k=1   :  12.78mm    6.7°   98.0%
+Eval k=50  :  14.25mm    7.7°   98.0%
+Eval W 1-50:  14.05mm    7.5° 98.0%| Score: -0.0092
+---------------------------------------------------------------------------
+EP 144/400 | Total Loss: 0.2114 (Flow:0.093*1.0=0.093, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.3e-05
+    ↳ Flow Details: Pos:0.0401*5.0=0.200, Rot:0.0225*1.0=0.022, 
+Grasp:0.0194*10.0=0.194, Done:0.5924*0.2=0.118
+Eval k=1   :  13.29mm    6.5°   98.0%
+Eval k=50  :  15.17mm    7.6°   98.0%
+Eval W 1-50:  14.94mm    7.3° 98.0%| Score: -0.0097
+---------------------------------------------------------------------------
+EP 145/400 | Total Loss: 0.2079 (Flow:0.088*1.0=0.088, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.3e-05
+    ↳ Flow Details: Pos:0.0378*5.0=0.189, Rot:0.0213*1.0=0.021, 
+Grasp:0.0191*10.0=0.191, Done:0.5971*0.2=0.119
+Eval k=1   :  12.71mm    6.7°   98.0%
+Eval k=50  :  14.80mm    7.1°   98.0%
+Eval W 1-50:  14.52mm    7.1° 98.0%| Score: -0.0129
+---------------------------------------------------------------------------
+EP 146/400 | Total Loss: 0.2121 (Flow:0.093*1.0=0.093, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.2e-05
+    ↳ Flow Details: Pos:0.0404*5.0=0.202, Rot:0.0219*1.0=0.022, 
+Grasp:0.0196*10.0=0.196, Done:0.5937*0.2=0.119
+Eval k=1   :  12.77mm    6.3°   98.0%
+Eval k=50  :  14.84mm    7.4°   98.0%
+Eval W 1-50:  14.57mm    7.2° 98.0%| Score: -0.0118
+---------------------------------------------------------------------------
+EP 147/400 | Total Loss: 0.2039 (Flow:0.085*1.0=0.085, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.2e-05
+    ↳ Flow Details: Pos:0.0373*5.0=0.187, Rot:0.0203*1.0=0.020, 
+Grasp:0.0168*10.0=0.168, Done:0.5947*0.2=0.119
+Eval k=1   :  12.21mm    6.6°   98.0%
+Eval k=50  :  13.67mm    7.6°   98.0%
+Eval W 1-50:  13.68mm    7.4° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 148/400 | Total Loss: 0.2102 (Flow:0.091*1.0=0.091, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.2e-05
+    ↳ Flow Details: Pos:0.0397*5.0=0.199, Rot:0.0216*1.0=0.022, 
+Grasp:0.0188*10.0=0.188, Done:0.5943*0.2=0.119
+Eval k=1   :  12.83mm    6.5°   98.0%
+Eval k=50  :  14.78mm    7.4°   98.0%
+Eval W 1-50:  14.55mm    7.3° 98.0%| Score: -0.0108
+---------------------------------------------------------------------------
+EP 149/400 | Total Loss: 0.2092 (Flow:0.091*1.0=0.091, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.1e-05
+    ↳ Flow Details: Pos:0.0395*5.0=0.198, Rot:0.0219*1.0=0.022, 
+Grasp:0.0184*10.0=0.184, Done:0.5918*0.2=0.118
+Eval k=1   :  13.79mm    6.6°   98.0%
+Eval k=50  :  16.03mm    7.6°   98.0%
+Eval W 1-50:  15.71mm    7.3° 98.0%| Score: -0.0091
+---------------------------------------------------------------------------
+EP 150/400 | Total Loss: 0.2011 (Flow:0.082*1.0=0.082, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.1e-05
+    ↳ Flow Details: Pos:0.0352*5.0=0.176, Rot:0.0199*1.0=0.020, 
+Grasp:0.0176*10.0=0.176, Done:0.5932*0.2=0.119
+Eval k=1   :  13.03mm    6.5°   98.0%
+Eval k=50  :  14.73mm    7.6°   98.0%
+Eval W 1-50:  14.58mm    7.3° 98.0%| Score: -0.0106
+---------------------------------------------------------------------------
+EP 151/400 | Total Loss: 0.2059 (Flow:0.087*1.0=0.087, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.1e-05
+    ↳ Flow Details: Pos:0.0388*5.0=0.194, Rot:0.0202*1.0=0.020, 
+Grasp:0.0171*10.0=0.171, Done:0.5923*0.2=0.118
+Eval k=1   :  13.66mm    6.6°   98.0%
+Eval k=50  :  15.00mm    7.6°   98.0%
+Eval W 1-50:  14.92mm    7.4° 98.0%| Score: -0.0093
+---------------------------------------------------------------------------
+EP 152/400 | Total Loss: 0.2073 (Flow:0.088*1.0=0.088, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.0e-05
+    ↳ Flow Details: Pos:0.0382*5.0=0.191, Rot:0.0217*1.0=0.022, 
+Grasp:0.0179*10.0=0.179, Done:0.5952*0.2=0.119
+Eval k=1   :  12.64mm    6.8°   98.0%
+Eval k=50  :  14.47mm    7.7°   98.0%
+Eval W 1-50:  14.22mm    7.5° 98.0%| Score: -0.0085
+---------------------------------------------------------------------------
+EP 153/400 | Total Loss: 0.2091 (Flow:0.091*1.0=0.091, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.0e-05
+    ↳ Flow Details: Pos:0.0393*5.0=0.196, Rot:0.0216*1.0=0.022, 
+Grasp:0.0190*10.0=0.190, Done:0.5914*0.2=0.118
+Eval k=1   :  13.21mm    6.5°   98.0%
+Eval k=50  :  15.24mm    7.2°   98.0%
+Eval W 1-50:  14.97mm    7.0° 98.0%| Score: -0.0127
+---------------------------------------------------------------------------
+EP 154/400 | Total Loss: 0.2089 (Flow:0.090*1.0=0.090, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.9e-05
+    ↳ Flow Details: Pos:0.0400*5.0=0.200, Rot:0.0211*1.0=0.021, 
+Grasp:0.0177*10.0=0.177, Done:0.5923*0.2=0.118
+Eval k=1   :  12.89mm    6.7°   98.0%
+Eval k=50  :  14.72mm    7.5°   98.0%
+Eval W 1-50:  14.54mm    7.3° 98.0%| Score: -0.0107
+---------------------------------------------------------------------------
+EP 155/400 | Total Loss: 0.2002 (Flow:0.082*1.0=0.082, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.9e-05
+    ↳ Flow Details: Pos:0.0351*5.0=0.176, Rot:0.0192*1.0=0.019, 
+Grasp:0.0174*10.0=0.174, Done:0.5930*0.2=0.119
+Eval k=1   :  13.04mm    6.6°   98.0%
+Eval k=50  :  14.98mm    7.3°   98.0%
+Eval W 1-50:  14.84mm    7.2° 98.0%| Score: -0.0112
+---------------------------------------------------------------------------
+EP 156/400 | Total Loss: 0.2012 (Flow:0.083*1.0=0.083, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.9e-05
+    ↳ Flow Details: Pos:0.0368*5.0=0.184, Rot:0.0191*1.0=0.019, 
+Grasp:0.0163*10.0=0.163, Done:0.5909*0.2=0.118
+Eval k=1   :  13.08mm    6.3°   98.0%
+Eval k=50  :  15.18mm    7.3°   98.0%
+Eval W 1-50:  15.01mm    7.1° 98.0%| Score: -0.0116
+---------------------------------------------------------------------------
+EP 157/400 | Total Loss: 0.1971 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.8e-05
+    ↳ Flow Details: Pos:0.0350*5.0=0.175, Rot:0.0182*1.0=0.018, 
+Grasp:0.0151*10.0=0.151, Done:0.5929*0.2=0.119
+Eval k=1   :  12.19mm    6.6°   98.0%
+Eval k=50  :  13.88mm    7.9°   98.0%
+Eval W 1-50:  13.75mm    7.7° 98.0%| Score: -0.0077
+---------------------------------------------------------------------------
+EP 158/400 | Total Loss: 0.2014 (Flow:0.083*1.0=0.083, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.8e-05
+    ↳ Flow Details: Pos:0.0373*5.0=0.186, Rot:0.0193*1.0=0.019, 
+Grasp:0.0156*10.0=0.156, Done:0.5917*0.2=0.118
+Eval k=1   :  12.87mm    6.7°   98.0%
+Eval k=50  :  14.42mm    7.6°   98.0%
+Eval W 1-50:  14.26mm    7.4° 98.0%| Score: -0.0096
+---------------------------------------------------------------------------
+EP 159/400 | Total Loss: 0.2089 (Flow:0.090*1.0=0.090, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.8e-05
+    ↳ Flow Details: Pos:0.0396*5.0=0.198, Rot:0.0208*1.0=0.021, 
+Grasp:0.0180*10.0=0.180, Done:0.5956*0.2=0.119
+Eval k=1   :  12.92mm    6.2°   98.0%
+Eval k=50  :  14.88mm    7.3°   98.0%
+Eval W 1-50:  14.57mm    7.1° 98.0%| Score: -0.0124
+---------------------------------------------------------------------------
+EP 160/400 | Total Loss: 0.2023 (Flow:0.084*1.0=0.084, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.7e-05
+    ↳ Flow Details: Pos:0.0372*5.0=0.186, Rot:0.0204*1.0=0.020, 
+Grasp:0.0162*10.0=0.162, Done:0.5901*0.2=0.118
+Eval k=1   :  13.48mm    6.3°   98.0%
+Eval k=50  :  15.04mm    7.6°   98.0%
+Eval W 1-50:  14.87mm    7.3° 98.0%| Score: -0.0107
+---------------------------------------------------------------------------
+EP 161/400 | Total Loss: 0.2009 (Flow:0.083*1.0=0.083, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.7e-05
+    ↳ Flow Details: Pos:0.0360*5.0=0.180, Rot:0.0198*1.0=0.020, 
+Grasp:0.0169*10.0=0.169, Done:0.5911*0.2=0.118
+Eval k=1   :  13.41mm    6.5°   98.0%
+Eval k=50  :  15.79mm    7.7°   98.0%
+Eval W 1-50:  15.45mm    7.4° 98.0%| Score: -0.0085
+---------------------------------------------------------------------------
+EP 162/400 | Total Loss: 0.2037 (Flow:0.086*1.0=0.086, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.7e-05
+    ↳ Flow Details: Pos:0.0375*5.0=0.187, Rot:0.0208*1.0=0.021, 
+Grasp:0.0171*10.0=0.171, Done:0.5898*0.2=0.118
+Eval k=1   :  13.93mm    6.1°   98.0%
+Eval k=50  :  15.69mm    7.3°   98.0%
+Eval W 1-50:  15.62mm    7.1° 98.0%| Score: -0.0115
+---------------------------------------------------------------------------
+EP 163/400 | Total Loss: 0.2072 (Flow:0.089*1.0=0.089, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.6e-05
+    ↳ Flow Details: Pos:0.0394*5.0=0.197, Rot:0.0209*1.0=0.021, 
+Grasp:0.0172*10.0=0.172, Done:0.5915*0.2=0.118
+Eval k=1   :  12.31mm    6.4°   98.0%
+Eval k=50  :  14.31mm    7.6°   98.0%
+Eval W 1-50:  13.98mm    7.4° 98.0%| Score: -0.0104
+---------------------------------------------------------------------------
+EP 164/400 | Total Loss: 0.2071 (Flow:0.089*1.0=0.089, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.6e-05
+    ↳ Flow Details: Pos:0.0388*5.0=0.194, Rot:0.0210*1.0=0.021, 
+Grasp:0.0181*10.0=0.181, Done:0.5907*0.2=0.118
+Eval k=1   :  13.30mm    6.3°   98.0%
+Eval k=50  :  15.62mm    7.2°   98.0%
+Eval W 1-50:  15.40mm    7.0° 98.0%| Score: -0.0125
+---------------------------------------------------------------------------
+EP 165/400 | Total Loss: 0.2016 (Flow:0.084*1.0=0.084, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.6e-05
+    ↳ Flow Details: Pos:0.0365*5.0=0.183, Rot:0.0197*1.0=0.020, 
+Grasp:0.0172*10.0=0.172, Done:0.5886*0.2=0.118
+Eval k=1   :  13.05mm    6.4°   98.0%
+Eval k=50  :  14.75mm    7.5°   98.0%
+Eval W 1-50:  14.50mm    7.3° 98.0%| Score: -0.0105
+---------------------------------------------------------------------------
+EP 166/400 | Total Loss: 0.2083 (Flow:0.090*1.0=0.090, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.5e-05
+    ↳ Flow Details: Pos:0.0391*5.0=0.195, Rot:0.0220*1.0=0.022, 
+Grasp:0.0182*10.0=0.182, Done:0.5914*0.2=0.118
+Eval k=1   :  12.55mm    6.5°   98.0%
+Eval k=50  :  13.92mm    7.8°   98.0%
+Eval W 1-50:  13.87mm    7.5° 98.0%| Score: -0.0095
+---------------------------------------------------------------------------
+EP 167/400 | Total Loss: 0.1990 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.5e-05
+    ↳ Flow Details: Pos:0.0356*5.0=0.178, Rot:0.0194*1.0=0.019, 
+Grasp:0.0156*10.0=0.156, Done:0.5921*0.2=0.118
+Eval k=1   :  13.25mm    6.5°   98.0%
+Eval k=50  :  14.70mm    7.8°   98.0%
+Eval W 1-50:  14.46mm    7.6° 98.0%| Score: -0.0081
+---------------------------------------------------------------------------
+EP 168/400 | Total Loss: 0.1974 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.4e-05
+    ↳ Flow Details: Pos:0.0346*5.0=0.173, Rot:0.0186*1.0=0.019, 
+Grasp:0.0163*10.0=0.163, Done:0.5906*0.2=0.118
+Eval k=1   :  12.81mm    6.6°   98.0%
+Eval k=50  :  14.52mm    7.9°   98.0%
+Eval W 1-50:  14.29mm    7.6° 98.0%| Score: -0.0074
+---------------------------------------------------------------------------
+EP 169/400 | Total Loss: 0.1995 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.4e-05
+    ↳ Flow Details: Pos:0.0358*5.0=0.179, Rot:0.0195*1.0=0.019, 
+Grasp:0.0161*10.0=0.161, Done:0.5900*0.2=0.118
+Eval k=1   :  13.03mm    6.6°   98.0%
+Eval k=50  :  14.92mm    7.9°   98.0%
+Eval W 1-50:  14.72mm    7.7° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 170/400 | Total Loss: 0.1994 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.4e-05
+    ↳ Flow Details: Pos:0.0368*5.0=0.184, Rot:0.0189*1.0=0.019, 
+Grasp:0.0148*10.0=0.148, Done:0.5903*0.2=0.118
+Eval k=1   :  12.74mm    6.4°   98.0%
+Eval k=50  :  14.63mm    7.3°   98.0%
+Eval W 1-50:  14.60mm    7.2° 98.0%| Score: -0.0115
+---------------------------------------------------------------------------
+EP 171/400 | Total Loss: 0.1950 (Flow:0.078*1.0=0.078, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.3e-05
+    ↳ Flow Details: Pos:0.0348*5.0=0.174, Rot:0.0181*1.0=0.018, 
+Grasp:0.0145*10.0=0.145, Done:0.5873*0.2=0.117
+Eval k=1   :  12.92mm    6.3°   98.0%
+Eval k=50  :  14.77mm    7.6°   98.0%
+Eval W 1-50:  14.37mm    7.3° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 172/400 | Total Loss: 0.2031 (Flow:0.085*1.0=0.085, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.3e-05
+    ↳ Flow Details: Pos:0.0390*5.0=0.195, Rot:0.0193*1.0=0.019, 
+Grasp:0.0149*10.0=0.149, Done:0.5909*0.2=0.118
+Eval k=1   :  12.95mm    6.7°   98.0%
+Eval k=50  :  14.58mm    7.5°   98.0%
+Eval W 1-50:  14.33mm    7.3° 98.0%| Score: -0.0105
+---------------------------------------------------------------------------
+EP 173/400 | Total Loss: 0.1993 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.3e-05
+    ↳ Flow Details: Pos:0.0358*5.0=0.179, Rot:0.0195*1.0=0.020, 
+Grasp:0.0155*10.0=0.155, Done:0.5918*0.2=0.118
+Eval k=1   :  13.03mm    6.5°   98.0%
+Eval k=50  :  15.00mm    7.6°   98.0%
+Eval W 1-50:  14.77mm    7.4° 98.0%| Score: -0.0098
+---------------------------------------------------------------------------
+EP 174/400 | Total Loss: 0.1999 (Flow:0.082*1.0=0.082, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.2e-05
+    ↳ Flow Details: Pos:0.0369*5.0=0.184, Rot:0.0191*1.0=0.019, 
+Grasp:0.0155*10.0=0.155, Done:0.5886*0.2=0.118
+Eval k=1   :  12.37mm    6.5°   98.0%
+Eval k=50  :  14.30mm    7.5°   98.0%
+Eval W 1-50:  14.14mm    7.4° 98.0%| Score: -0.0100
+---------------------------------------------------------------------------
+EP 175/400 | Total Loss: 0.2039 (Flow:0.086*1.0=0.086, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.2e-05
+    ↳ Flow Details: Pos:0.0377*5.0=0.189, Rot:0.0198*1.0=0.020, 
+Grasp:0.0176*10.0=0.176, Done:0.5894*0.2=0.118
+Eval k=1   :  13.00mm    6.6°   98.0%
+Eval k=50  :  14.59mm    7.4°   98.0%
+Eval W 1-50:  14.64mm    7.3° 98.0%| Score: -0.0104
+---------------------------------------------------------------------------
+EP 176/400 | Total Loss: 0.1980 (Flow:0.080*1.0=0.080, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.2e-05
+    ↳ Flow Details: Pos:0.0350*5.0=0.175, Rot:0.0187*1.0=0.019, 
+Grasp:0.0161*10.0=0.161, Done:0.5915*0.2=0.118
+Eval k=1   :  12.22mm    6.6°   98.0%
+Eval k=50  :  13.69mm    7.6°   98.0%
+Eval W 1-50:  13.71mm    7.4° 98.0%| Score: -0.0104
+---------------------------------------------------------------------------
+EP 177/400 | Total Loss: 0.1966 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.1e-05
+    ↳ Flow Details: Pos:0.0350*5.0=0.175, Rot:0.0188*1.0=0.019, 
+Grasp:0.0149*10.0=0.149, Done:0.5895*0.2=0.118
+Eval k=1   :  13.01mm    6.5°   98.0%
+Eval k=50  :  14.70mm    7.6°   98.0%
+Eval W 1-50:  14.63mm    7.4° 98.0%| Score: -0.0098
+---------------------------------------------------------------------------
+EP 178/400 | Total Loss: 0.2008 (Flow:0.083*1.0=0.083, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.1e-05
+    ↳ Flow Details: Pos:0.0359*5.0=0.179, Rot:0.0202*1.0=0.020, 
+Grasp:0.0171*10.0=0.171, Done:0.5891*0.2=0.118
+Eval k=1   :  12.89mm    6.8°   98.0%
+Eval k=50  :  15.25mm    8.1°   98.0%
+Eval W 1-50:  14.90mm    7.8° 98.0%| Score: -0.0051
+---------------------------------------------------------------------------
+EP 179/400 | Total Loss: 0.1997 (Flow:0.082*1.0=0.082, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.0e-05
+    ↳ Flow Details: Pos:0.0365*5.0=0.182, Rot:0.0188*1.0=0.019, 
+Grasp:0.0159*10.0=0.159, Done:0.5887*0.2=0.118
+Eval k=1   :  13.25mm    6.5°   98.0%
+Eval k=50  :  15.65mm    7.8°   98.0%
+Eval W 1-50:  15.19mm    7.6° 98.0%| Score: -0.0073
+---------------------------------------------------------------------------
+EP 180/400 | Total Loss: 0.2032 (Flow:0.086*1.0=0.086, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.0e-05
+    ↳ Flow Details: Pos:0.0375*5.0=0.187, Rot:0.0204*1.0=0.020, 
+Grasp:0.0171*10.0=0.171, Done:0.5883*0.2=0.118
+Eval k=1   :  13.20mm    6.3°   98.0%
+Eval k=50  :  15.44mm    7.3°   98.0%
+Eval W 1-50:  15.04mm    7.2° 98.0%| Score: -0.0112
+---------------------------------------------------------------------------
+EP 181/400 | Total Loss: 0.2007 (Flow:0.083*1.0=0.083, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.0e-05
+    ↳ Flow Details: Pos:0.0365*5.0=0.182, Rot:0.0199*1.0=0.020, 
+Grasp:0.0164*10.0=0.164, Done:0.5883*0.2=0.118
+Eval k=1   :  12.69mm    6.7°   98.0%
+Eval k=50  :  14.44mm    8.2°   98.0%
+Eval W 1-50:  14.12mm    7.8° 98.0%| Score: -0.0054
+---------------------------------------------------------------------------
+EP 182/400 | Total Loss: 0.1976 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.9e-05
+    ↳ Flow Details: Pos:0.0347*5.0=0.174, Rot:0.0185*1.0=0.018, 
+Grasp:0.0160*10.0=0.160, Done:0.5921*0.2=0.118
+Eval k=1   :  13.26mm    6.5°   98.0%
+Eval k=50  :  15.65mm    7.4°   98.0%
+Eval W 1-50:  15.64mm    7.2° 98.0%| Score: -0.0100
+---------------------------------------------------------------------------
+EP 183/400 | Total Loss: 0.1991 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.9e-05
+    ↳ Flow Details: Pos:0.0365*5.0=0.182, Rot:0.0187*1.0=0.019, 
+Grasp:0.0153*10.0=0.153, Done:0.5894*0.2=0.118
+Eval k=1   :  13.10mm    6.5°   98.0%
+Eval k=50  :  14.92mm    7.7°   98.0%
+Eval W 1-50:  14.78mm    7.5° 98.0%| Score: -0.0085
+---------------------------------------------------------------------------
+EP 184/400 | Total Loss: 0.1965 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.9e-05
+    ↳ Flow Details: Pos:0.0350*5.0=0.175, Rot:0.0185*1.0=0.018, 
+Grasp:0.0153*10.0=0.153, Done:0.5882*0.2=0.118
+Eval k=1   :  13.17mm    6.1°   98.0%
+Eval k=50  :  15.34mm    7.4°   98.0%
+Eval W 1-50:  15.12mm    7.1° 98.0%| Score: -0.0122
+---------------------------------------------------------------------------
+EP 185/400 | Total Loss: 0.2022 (Flow:0.084*1.0=0.084, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.8e-05
+    ↳ Flow Details: Pos:0.0371*5.0=0.186, Rot:0.0193*1.0=0.019, 
+Grasp:0.0171*10.0=0.171, Done:0.5894*0.2=0.118
+Eval k=1   :  12.94mm    6.2°   98.0%
+Eval k=50  :  14.52mm    7.6°   98.0%
+Eval W 1-50:  14.45mm    7.3° 98.0%| Score: -0.0101
+---------------------------------------------------------------------------
+EP 186/400 | Total Loss: 0.1936 (Flow:0.076*1.0=0.076, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.8e-05
+    ↳ Flow Details: Pos:0.0337*5.0=0.169, Rot:0.0180*1.0=0.018, 
+Grasp:0.0148*10.0=0.148, Done:0.5871*0.2=0.117
+Eval k=1   :  12.24mm    6.6°   98.0%
+Eval k=50  :  14.53mm    7.6°   98.0%
+Eval W 1-50:  14.25mm    7.4° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 187/400 | Total Loss: 0.1939 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.8e-05
+    ↳ Flow Details: Pos:0.0337*5.0=0.169, Rot:0.0178*1.0=0.018, 
+Grasp:0.0154*10.0=0.154, Done:0.5865*0.2=0.117
+Eval k=1   :  12.86mm    6.5°   98.0%
+Eval k=50  :  14.89mm    7.5°   98.0%
+Eval W 1-50:  14.58mm    7.3° 98.0%| Score: -0.0107
+---------------------------------------------------------------------------
+EP 188/400 | Total Loss: 0.1949 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.7e-05
+    ↳ Flow Details: Pos:0.0345*5.0=0.172, Rot:0.0183*1.0=0.018, 
+Grasp:0.0148*10.0=0.148, Done:0.5872*0.2=0.117
+Eval k=1   :  12.71mm    6.6°   98.0%
+Eval k=50  :  14.76mm    8.0°   98.0%
+Eval W 1-50:  14.51mm    7.6° 98.0%| Score: -0.0073
+---------------------------------------------------------------------------
+EP 189/400 | Total Loss: 0.1968 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.7e-05
+    ↳ Flow Details: Pos:0.0344*5.0=0.172, Rot:0.0188*1.0=0.019, 
+Grasp:0.0161*10.0=0.161, Done:0.5885*0.2=0.118
+Eval k=1   :  12.50mm    6.2°   98.0%
+Eval k=50  :  14.31mm    7.2°   98.0%
+Eval W 1-50:  14.38mm    7.1° 98.0%| Score: -0.0126
+---------------------------------------------------------------------------
+EP 190/400 | Total Loss: 0.1971 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.6e-05
+    ↳ Flow Details: Pos:0.0349*5.0=0.175, Rot:0.0192*1.0=0.019, 
+Grasp:0.0156*10.0=0.156, Done:0.5879*0.2=0.118
+Eval k=1   :  13.16mm    6.4°   98.0%
+Eval k=50  :  14.79mm    7.6°   98.0%
+Eval W 1-50:  14.74mm    7.4° 98.0%| Score: -0.0097
+---------------------------------------------------------------------------
+EP 191/400 | Total Loss: 0.1946 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.6e-05
+    ↳ Flow Details: Pos:0.0335*5.0=0.167, Rot:0.0188*1.0=0.019, 
+Grasp:0.0154*10.0=0.154, Done:0.5889*0.2=0.118
+Eval k=1   :  13.08mm    6.3°   98.0%
+Eval k=50  :  15.07mm    7.5°   98.0%
+Eval W 1-50:  14.82mm    7.2° 98.0%| Score: -0.0110
+---------------------------------------------------------------------------
+EP 192/400 | Total Loss: 0.1917 (Flow:0.074*1.0=0.074, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.6e-05
+    ↳ Flow Details: Pos:0.0332*5.0=0.166, Rot:0.0178*1.0=0.018, 
+Grasp:0.0137*10.0=0.137, Done:0.5882*0.2=0.118
+Eval k=1   :  12.58mm    6.5°   98.0%
+Eval k=50  :  14.91mm    7.7°   98.0%
+Eval W 1-50:  14.57mm    7.5° 98.0%| Score: -0.0081
+---------------------------------------------------------------------------
+EP 193/400 | Total Loss: 0.1933 (Flow:0.076*1.0=0.076, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.5e-05
+    ↳ Flow Details: Pos:0.0334*5.0=0.167, Rot:0.0175*1.0=0.018, 
+Grasp:0.0154*10.0=0.154, Done:0.5865*0.2=0.117
+Eval k=1   :  12.87mm    6.2°   98.0%
+Eval k=50  :  15.05mm    7.3°   98.0%
+Eval W 1-50:  14.65mm    7.1° 98.0%| Score: -0.0124
+---------------------------------------------------------------------------
+EP 194/400 | Total Loss: 0.1964 (Flow:0.078*1.0=0.078, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.5e-05
+    ↳ Flow Details: Pos:0.0351*5.0=0.176, Rot:0.0187*1.0=0.019, 
+Grasp:0.0144*10.0=0.144, Done:0.5909*0.2=0.118
+Eval k=1   :  12.34mm    6.4°   98.0%
+Eval k=50  :  14.42mm    7.6°   98.0%
+Eval W 1-50:  14.08mm    7.2° 98.0%| Score: -0.0119
+---------------------------------------------------------------------------
+EP 195/400 | Total Loss: 0.1996 (Flow:0.082*1.0=0.082, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.5e-05
+    ↳ Flow Details: Pos:0.0361*5.0=0.180, Rot:0.0198*1.0=0.020, 
+Grasp:0.0163*10.0=0.163, Done:0.5868*0.2=0.117
+Eval k=1   :  12.12mm    6.3°   98.0%
+Eval k=50  :  14.64mm    7.7°   98.0%
+Eval W 1-50:  14.25mm    7.4° 98.0%| Score: -0.0101
+---------------------------------------------------------------------------
+EP 196/400 | Total Loss: 0.1976 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.4e-05
+    ↳ Flow Details: Pos:0.0354*5.0=0.177, Rot:0.0185*1.0=0.018, 
+Grasp:0.0166*10.0=0.166, Done:0.5839*0.2=0.117
+Eval k=1   :  13.08mm    6.1°   98.0%
+Eval k=50  :  15.45mm    7.4°   98.0%
+Eval W 1-50:  15.18mm    7.1° 98.0%| Score: -0.0118
+---------------------------------------------------------------------------
+EP 197/400 | Total Loss: 0.1977 (Flow:0.081*1.0=0.081, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.4e-05
+    ↳ Flow Details: Pos:0.0347*5.0=0.174, Rot:0.0198*1.0=0.020, 
+Grasp:0.0169*10.0=0.169, Done:0.5843*0.2=0.117
+Eval k=1   :  12.55mm    6.5°   98.0%
+Eval k=50  :  14.88mm    7.4°   98.0%
+Eval W 1-50:  14.51mm    7.2° 98.0%| Score: -0.0113
+---------------------------------------------------------------------------
+EP 198/400 | Total Loss: 0.1998 (Flow:0.082*1.0=0.082, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.3e-05
+    ↳ Flow Details: Pos:0.0357*5.0=0.179, Rot:0.0194*1.0=0.019, 
+Grasp:0.0172*10.0=0.172, Done:0.5867*0.2=0.117
+Eval k=1   :  13.06mm    6.5°   98.0%
+Eval k=50  :  15.21mm    7.9°   98.0%
+Eval W 1-50:  14.96mm    7.5° 98.0%| Score: -0.0078
+---------------------------------------------------------------------------
+EP 199/400 | Total Loss: 0.1943 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.3e-05
+    ↳ Flow Details: Pos:0.0345*5.0=0.173, Rot:0.0181*1.0=0.018, 
+Grasp:0.0143*10.0=0.143, Done:0.5872*0.2=0.117
+Eval k=1   :  12.85mm    6.4°   98.0%
+Eval k=50  :  15.00mm    7.7°   98.0%
+Eval W 1-50:  14.46mm    7.4° 98.0%| Score: -0.0096
+---------------------------------------------------------------------------
+EP 200/400 | Total Loss: 0.1949 (Flow:0.078*1.0=0.078, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.3e-05
+    ↳ Flow Details: Pos:0.0352*5.0=0.176, Rot:0.0175*1.0=0.018, 
+Grasp:0.0145*10.0=0.145, Done:0.5855*0.2=0.117
+Eval k=1   :  12.92mm    6.4°   98.0%
+Eval k=50  :  14.93mm    7.8°   98.0%
+Eval W 1-50:  14.65mm    7.5° 98.0%| Score: -0.0086
+---------------------------------------------------------------------------
+
+>>> Starting Professional Visualization Eval at Epoch 200 <<<
+  -> Rendering session: mps_Grasp_BellPepper_Red_000_vrs
+[FlowMatchingDataloader] Built 26 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=False | VisForesight=False | TempContrastive=False
+  - 3D PCD Feats : False
+[OK] Evaluator: GT-vs-Pred Hand Traj Teacher-forced (absolute) Visualization 
+finished.
+EP 201/400 | Total Loss: 0.1943 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.2e-05
+    ↳ Flow Details: Pos:0.0342*5.0=0.171, Rot:0.0182*1.0=0.018, 
+Grasp:0.0147*10.0=0.147, Done:0.5868*0.2=0.117
+Eval k=1   :  12.58mm    6.2°   98.0%
+Eval k=50  :  15.18mm    7.6°   98.0%
+Eval W 1-50:  14.72mm    7.3° 98.0%| Score: -0.0099
+---------------------------------------------------------------------------
+EP 202/400 | Total Loss: 0.1955 (Flow:0.078*1.0=0.078, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.2e-05
+    ↳ Flow Details: Pos:0.0351*5.0=0.176, Rot:0.0182*1.0=0.018, 
+Grasp:0.0142*10.0=0.142, Done:0.5884*0.2=0.118
+Eval k=1   :  12.98mm    6.3°   98.0%
+Eval k=50  :  15.34mm    7.6°   98.0%
+Eval W 1-50:  14.91mm    7.3° 98.0%| Score: -0.0102
+---------------------------------------------------------------------------
+EP 203/400 | Total Loss: 0.1937 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.2e-05
+    ↳ Flow Details: Pos:0.0345*5.0=0.173, Rot:0.0181*1.0=0.018, 
+Grasp:0.0139*10.0=0.139, Done:0.5857*0.2=0.117
+Eval k=1   :  13.19mm    6.4°   98.0%
+Eval k=50  :  15.17mm    8.0°   98.0%
+Eval W 1-50:  14.75mm    7.7° 98.0%| Score: -0.0068
+---------------------------------------------------------------------------
+EP 204/400 | Total Loss: 0.1903 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-05
+    ↳ Flow Details: Pos:0.0324*5.0=0.162, Rot:0.0172*1.0=0.017, 
+Grasp:0.0145*10.0=0.145, Done:0.5838*0.2=0.117
+Eval k=1   :  13.17mm    6.2°   98.0%
+Eval k=50  :  16.09mm    7.5°   98.0%
+Eval W 1-50:  15.45mm    7.2° 98.0%| Score: -0.0110
+---------------------------------------------------------------------------
+EP 205/400 | Total Loss: 0.1971 (Flow:0.080*1.0=0.080, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-05
+    ↳ Flow Details: Pos:0.0359*5.0=0.180, Rot:0.0190*1.0=0.019, 
+Grasp:0.0149*10.0=0.149, Done:0.5847*0.2=0.117
+Eval k=1   :  13.14mm    6.2°   98.0%
+Eval k=50  :  15.64mm    7.6°   98.0%
+Eval W 1-50:  15.17mm    7.3° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 206/400 | Total Loss: 0.1944 (Flow:0.078*1.0=0.078, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-05
+    ↳ Flow Details: Pos:0.0352*5.0=0.176, Rot:0.0180*1.0=0.018, 
+Grasp:0.0139*10.0=0.139, Done:0.5843*0.2=0.117
+Eval k=1   :  13.54mm    6.3°   98.0%
+Eval k=50  :  15.70mm    7.6°   98.0%
+Eval W 1-50:  15.27mm    7.3° 98.0%| Score: -0.0102
+---------------------------------------------------------------------------
+EP 207/400 | Total Loss: 0.1937 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-05
+    ↳ Flow Details: Pos:0.0346*5.0=0.173, Rot:0.0182*1.0=0.018, 
+Grasp:0.0142*10.0=0.142, Done:0.5832*0.2=0.117
+Eval k=1   :  13.73mm    6.8°   98.0%
+Eval k=50  :  15.61mm    8.2°   98.0%
+Eval W 1-50:  15.15mm    7.9° 98.0%| Score: -0.0040
+---------------------------------------------------------------------------
+EP 208/400 | Total Loss: 0.1893 (Flow:0.072*1.0=0.072, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-05
+    ↳ Flow Details: Pos:0.0324*5.0=0.162, Rot:0.0168*1.0=0.017, 
+Grasp:0.0131*10.0=0.131, Done:0.5875*0.2=0.118
+Eval k=1   :  12.77mm    6.2°   98.0%
+Eval k=50  :  14.78mm    7.2°   98.0%
+Eval W 1-50:  14.35mm    6.9° 98.0%| Score: -0.0143
+---------------------------------------------------------------------------
+EP 209/400 | Total Loss: 0.1969 (Flow:0.080*1.0=0.080, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.9e-05
+    ↳ Flow Details: Pos:0.0362*5.0=0.181, Rot:0.0185*1.0=0.018, 
+Grasp:0.0149*10.0=0.149, Done:0.5832*0.2=0.117
+Eval k=1   :  12.56mm    6.2°   98.0%
+Eval k=50  :  15.40mm    7.4°   98.0%
+Eval W 1-50:  14.85mm    7.3° 98.0%| Score: -0.0105
+---------------------------------------------------------------------------
+EP 210/400 | Total Loss: 0.1956 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.9e-05
+    ↳ Flow Details: Pos:0.0356*5.0=0.178, Rot:0.0186*1.0=0.019, 
+Grasp:0.0146*10.0=0.146, Done:0.5821*0.2=0.116
+Eval k=1   :  12.66mm    6.4°   98.0%
+Eval k=50  :  14.97mm    7.6°   98.0%
+Eval W 1-50:  14.64mm    7.3° 98.0%| Score: -0.0100
+---------------------------------------------------------------------------
+EP 211/400 | Total Loss: 0.1872 (Flow:0.070*1.0=0.070, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.9e-05
+    ↳ Flow Details: Pos:0.0317*5.0=0.159, Rot:0.0163*1.0=0.016, 
+Grasp:0.0127*10.0=0.127, Done:0.5857*0.2=0.117
+Eval k=1   :  12.62mm    6.4°   98.0%
+Eval k=50  :  15.27mm    7.7°   98.0%
+Eval W 1-50:  14.51mm    7.4° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 212/400 | Total Loss: 0.1945 (Flow:0.078*1.0=0.078, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.8e-05
+    ↳ Flow Details: Pos:0.0354*5.0=0.177, Rot:0.0177*1.0=0.018, 
+Grasp:0.0143*10.0=0.143, Done:0.5830*0.2=0.117
+Eval k=1   :  12.73mm    6.2°   98.0%
+Eval k=50  :  15.28mm    7.4°   98.0%
+Eval W 1-50:  14.92mm    7.1° 98.0%| Score: -0.0118
+---------------------------------------------------------------------------
+EP 213/400 | Total Loss: 0.1890 (Flow:0.072*1.0=0.072, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.8e-05
+    ↳ Flow Details: Pos:0.0325*5.0=0.163, Rot:0.0166*1.0=0.017, 
+Grasp:0.0137*10.0=0.137, Done:0.5829*0.2=0.117
+Eval k=1   :  12.90mm    6.4°   98.0%
+Eval k=50  :  15.07mm    7.6°   98.0%
+Eval W 1-50:  14.85mm    7.3° 98.0%| Score: -0.0102
+---------------------------------------------------------------------------
+EP 214/400 | Total Loss: 0.1889 (Flow:0.072*1.0=0.072, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.7e-05
+    ↳ Flow Details: Pos:0.0329*5.0=0.164, Rot:0.0163*1.0=0.016, 
+Grasp:0.0131*10.0=0.131, Done:0.5835*0.2=0.117
+Eval k=1   :  12.69mm    6.5°   98.0%
+Eval k=50  :  14.60mm    7.7°   98.0%
+Eval W 1-50:  14.39mm    7.5° 98.0%| Score: -0.0088
+---------------------------------------------------------------------------
+EP 215/400 | Total Loss: 0.1855 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.7e-05
+    ↳ Flow Details: Pos:0.0312*5.0=0.156, Rot:0.0161*1.0=0.016, 
+Grasp:0.0126*10.0=0.126, Done:0.5823*0.2=0.116
+Eval k=1   :  12.94mm    6.3°   98.0%
+Eval k=50  :  15.43mm    7.5°   98.0%
+Eval W 1-50:  15.10mm    7.3° 98.0%| Score: -0.0099
+---------------------------------------------------------------------------
+EP 216/400 | Total Loss: 0.1912 (Flow:0.075*1.0=0.075, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.7e-05
+    ↳ Flow Details: Pos:0.0337*5.0=0.169, Rot:0.0177*1.0=0.018, 
+Grasp:0.0138*10.0=0.138, Done:0.5813*0.2=0.116
+Eval k=1   :  12.62mm    6.7°   98.0%
+Eval k=50  :  15.35mm    7.9°   98.0%
+Eval W 1-50:  14.88mm    7.7° 98.0%| Score: -0.0061
+---------------------------------------------------------------------------
+EP 217/400 | Total Loss: 0.1902 (Flow:0.074*1.0=0.074, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.6e-05
+    ↳ Flow Details: Pos:0.0331*5.0=0.165, Rot:0.0167*1.0=0.017, 
+Grasp:0.0142*10.0=0.142, Done:0.5817*0.2=0.116
+Eval k=1   :  12.05mm    6.7°   98.0%
+Eval k=50  :  14.64mm    7.9°   98.0%
+Eval W 1-50:  14.28mm    7.6° 98.0%| Score: -0.0073
+---------------------------------------------------------------------------
+EP 218/400 | Total Loss: 0.1941 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.6e-05
+    ↳ Flow Details: Pos:0.0343*5.0=0.171, Rot:0.0178*1.0=0.018, 
+Grasp:0.0154*10.0=0.154, Done:0.5834*0.2=0.117
+Eval k=1   :  20.49mm   10.9°   96.0%
+Eval k=50  :  23.26mm   12.3°   96.0%
+Eval W 1-50:  22.75mm   12.0° 96.1%| Score: 0.0470
+---------------------------------------------------------------------------
+EP 219/400 | Total Loss: 0.1904 (Flow:0.074*1.0=0.074, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.6e-05
+    ↳ Flow Details: Pos:0.0329*5.0=0.165, Rot:0.0178*1.0=0.018, 
+Grasp:0.0137*10.0=0.137, Done:0.5832*0.2=0.117
+Eval k=1   :  12.37mm    6.6°   98.0%
+Eval k=50  :  14.99mm    8.0°   98.0%
+Eval W 1-50:  14.63mm    7.8° 98.0%| Score: -0.0056
+---------------------------------------------------------------------------
+EP 220/400 | Total Loss: 0.1941 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.5e-05
+    ↳ Flow Details: Pos:0.0346*5.0=0.173, Rot:0.0180*1.0=0.018, 
+Grasp:0.0145*10.0=0.145, Done:0.5843*0.2=0.117
+Eval k=1   :  12.74mm    6.4°   98.0%
+Eval k=50  :  15.30mm    7.8°   98.0%
+Eval W 1-50:  14.92mm    7.5° 98.0%| Score: -0.0084
+---------------------------------------------------------------------------
+EP 221/400 | Total Loss: 0.1892 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.5e-05
+    ↳ Flow Details: Pos:0.0328*5.0=0.164, Rot:0.0173*1.0=0.017, 
+Grasp:0.0131*10.0=0.131, Done:0.5824*0.2=0.116
+Eval k=1   :  13.20mm    6.5°   98.0%
+Eval k=50  :  15.73mm    7.7°   98.0%
+Eval W 1-50:  15.35mm    7.4° 98.0%| Score: -0.0088
+---------------------------------------------------------------------------
+EP 222/400 | Total Loss: 0.1936 (Flow:0.077*1.0=0.077, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.4e-05
+    ↳ Flow Details: Pos:0.0349*5.0=0.174, Rot:0.0181*1.0=0.018, 
+Grasp:0.0142*10.0=0.142, Done:0.5810*0.2=0.116
+Eval k=1   :  12.76mm    6.3°   98.0%
+Eval k=50  :  14.95mm    7.6°   98.0%
+Eval W 1-50:  14.68mm    7.3° 98.0%| Score: -0.0103
+---------------------------------------------------------------------------
+EP 223/400 | Total Loss: 0.1894 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.4e-05
+    ↳ Flow Details: Pos:0.0329*5.0=0.165, Rot:0.0174*1.0=0.017, 
+Grasp:0.0133*10.0=0.133, Done:0.5814*0.2=0.116
+Eval k=1   :  12.28mm    6.2°   98.0%
+Eval k=50  :  14.67mm    7.8°   98.0%
+Eval W 1-50:  14.34mm    7.4° 98.0%| Score: -0.0095
+---------------------------------------------------------------------------
+EP 224/400 | Total Loss: 0.1928 (Flow:0.076*1.0=0.076, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.4e-05
+    ↳ Flow Details: Pos:0.0338*5.0=0.169, Rot:0.0177*1.0=0.018, 
+Grasp:0.0144*10.0=0.144, Done:0.5847*0.2=0.117
+Eval k=1   :  22.09mm   11.7°   98.0%
+Eval k=50  :  24.53mm   14.1°   98.0%
+Eval W 1-50:  24.33mm   13.6° 98.0%| Score: 0.0626
+---------------------------------------------------------------------------
+EP 225/400 | Total Loss: 0.1891 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.3e-05
+    ↳ Flow Details: Pos:0.0328*5.0=0.164, Rot:0.0169*1.0=0.017, 
+Grasp:0.0136*10.0=0.136, Done:0.5811*0.2=0.116
+Eval k=1   :  12.92mm    6.4°   98.0%
+Eval k=50  :  15.63mm    7.7°   98.0%
+Eval W 1-50:  15.08mm    7.5° 98.0%| Score: -0.0081
+---------------------------------------------------------------------------
+EP 226/400 | Total Loss: 0.1839 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.3e-05
+    ↳ Flow Details: Pos:0.0310*5.0=0.155, Rot:0.0152*1.0=0.015, 
+Grasp:0.0120*10.0=0.120, Done:0.5817*0.2=0.116
+Eval k=1   :  12.94mm    6.3°   98.0%
+Eval k=50  :  15.70mm    8.0°   98.0%
+Eval W 1-50:  15.36mm    7.6° 98.0%| Score: -0.0066
+---------------------------------------------------------------------------
+EP 227/400 | Total Loss: 0.1963 (Flow:0.079*1.0=0.079, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.3e-05
+    ↳ Flow Details: Pos:0.0359*5.0=0.180, Rot:0.0184*1.0=0.018, 
+Grasp:0.0145*10.0=0.145, Done:0.5848*0.2=0.117
+Eval k=1   :  13.40mm    6.5°   98.0%
+Eval k=50  :  16.35mm    7.8°   98.0%
+Eval W 1-50:  15.83mm    7.6° 98.0%| Score: -0.0066
+---------------------------------------------------------------------------
+EP 228/400 | Total Loss: 0.1965 (Flow:0.080*1.0=0.080, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.2e-05
+    ↳ Flow Details: Pos:0.0358*5.0=0.179, Rot:0.0186*1.0=0.019, 
+Grasp:0.0148*10.0=0.148, Done:0.5843*0.2=0.117
+Eval k=1   :  12.41mm    6.4°   98.0%
+Eval k=50  :  15.10mm    7.8°   98.0%
+Eval W 1-50:  14.58mm    7.5° 98.0%| Score: -0.0084
+---------------------------------------------------------------------------
+EP 229/400 | Total Loss: 0.1868 (Flow:0.070*1.0=0.070, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.2e-05
+    ↳ Flow Details: Pos:0.0315*5.0=0.157, Rot:0.0166*1.0=0.017, 
+Grasp:0.0129*10.0=0.129, Done:0.5835*0.2=0.117
+Eval k=1   :  12.02mm    6.6°   98.0%
+Eval k=50  :  13.89mm    8.2°   98.0%
+Eval W 1-50:  13.61mm    7.9° 98.0%| Score: -0.0057
+---------------------------------------------------------------------------
+EP 230/400 | Total Loss: 0.1889 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.2e-05
+    ↳ Flow Details: Pos:0.0330*5.0=0.165, Rot:0.0169*1.0=0.017, 
+Grasp:0.0130*10.0=0.130, Done:0.5814*0.2=0.116
+Eval k=1   :  13.09mm    6.2°   98.0%
+Eval k=50  :  15.62mm    7.7°   98.0%
+Eval W 1-50:  15.19mm    7.5° 98.0%| Score: -0.0082
+---------------------------------------------------------------------------
+EP 231/400 | Total Loss: 0.1816 (Flow:0.065*1.0=0.065, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.1e-05
+    ↳ Flow Details: Pos:0.0293*5.0=0.146, Rot:0.0152*1.0=0.015, 
+Grasp:0.0117*10.0=0.117, Done:0.5841*0.2=0.117
+Eval k=1   :  12.26mm    6.4°   98.0%
+Eval k=50  :  14.93mm    8.0°   98.0%
+Eval W 1-50:  14.51mm    7.7° 98.0%| Score: -0.0067
+---------------------------------------------------------------------------
+EP 232/400 | Total Loss: 0.1880 (Flow:0.071*1.0=0.071, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.1e-05
+    ↳ Flow Details: Pos:0.0331*5.0=0.165, Rot:0.0166*1.0=0.017, 
+Grasp:0.0118*10.0=0.118, Done:0.5829*0.2=0.117
+Eval k=1   :  12.47mm    6.3°   98.0%
+Eval k=50  :  15.21mm    7.8°   98.0%
+Eval W 1-50:  14.94mm    7.5° 98.0%| Score: -0.0080
+---------------------------------------------------------------------------
+EP 233/400 | Total Loss: 0.1897 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.0e-05
+    ↳ Flow Details: Pos:0.0329*5.0=0.164, Rot:0.0172*1.0=0.017, 
+Grasp:0.0136*10.0=0.136, Done:0.5822*0.2=0.116
+Eval k=1   :  12.85mm    6.3°   98.0%
+Eval k=50  :  15.67mm    7.6°   98.0%
+Eval W 1-50:  15.17mm    7.4° 98.0%| Score: -0.0091
+---------------------------------------------------------------------------
+EP 234/400 | Total Loss: 0.1818 (Flow:0.065*1.0=0.065, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.0e-05
+    ↳ Flow Details: Pos:0.0298*5.0=0.149, Rot:0.0150*1.0=0.015, 
+Grasp:0.0118*10.0=0.118, Done:0.5819*0.2=0.116
+Eval k=1   :  12.37mm    6.4°   98.0%
+Eval k=50  :  14.23mm    8.0°   98.0%
+Eval W 1-50:  14.04mm    7.7° 98.0%| Score: -0.0070
+---------------------------------------------------------------------------
+EP 235/400 | Total Loss: 0.1900 (Flow:0.074*1.0=0.074, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 4.0e-05
+    ↳ Flow Details: Pos:0.0331*5.0=0.166, Rot:0.0174*1.0=0.017, 
+Grasp:0.0136*10.0=0.136, Done:0.5812*0.2=0.116
+Eval k=1   :  12.86mm    6.4°   98.0%
+Eval k=50  :  14.72mm    7.6°   98.0%
+Eval W 1-50:  14.54mm    7.4° 98.0%| Score: -0.0097
+---------------------------------------------------------------------------
+EP 236/400 | Total Loss: 0.1878 (Flow:0.072*1.0=0.072, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.9e-05
+    ↳ Flow Details: Pos:0.0326*5.0=0.163, Rot:0.0167*1.0=0.017, 
+Grasp:0.0129*10.0=0.129, Done:0.5798*0.2=0.116
+Eval k=1   :  12.70mm    6.2°   98.0%
+Eval k=50  :  15.14mm    7.5°   98.0%
+Eval W 1-50:  14.78mm    7.3° 98.0%| Score: -0.0107
+---------------------------------------------------------------------------
+EP 237/400 | Total Loss: 0.1887 (Flow:0.072*1.0=0.072, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.9e-05
+    ↳ Flow Details: Pos:0.0323*5.0=0.161, Rot:0.0172*1.0=0.017, 
+Grasp:0.0137*10.0=0.137, Done:0.5812*0.2=0.116
+Eval k=1   :  13.01mm    6.5°   98.0%
+Eval k=50  :  15.68mm    7.9°   98.0%
+Eval W 1-50:  15.16mm    7.7° 98.0%| Score: -0.0063
+---------------------------------------------------------------------------
+EP 238/400 | Total Loss: 0.1921 (Flow:0.076*1.0=0.076, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.9e-05
+    ↳ Flow Details: Pos:0.0340*5.0=0.170, Rot:0.0179*1.0=0.018, 
+Grasp:0.0142*10.0=0.142, Done:0.5805*0.2=0.116
+Eval k=1   :  12.80mm    6.7°   98.0%
+Eval k=50  :  15.73mm    8.1°   98.0%
+Eval W 1-50:  15.31mm    7.8° 98.0%| Score: -0.0049
+---------------------------------------------------------------------------
+EP 239/400 | Total Loss: 0.1907 (Flow:0.074*1.0=0.074, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.8e-05
+    ↳ Flow Details: Pos:0.0337*5.0=0.169, Rot:0.0168*1.0=0.017, 
+Grasp:0.0137*10.0=0.137, Done:0.5815*0.2=0.116
+Eval k=1   :  12.14mm    6.2°   98.0%
+Eval k=50  :  14.73mm    7.7°   98.0%
+Eval W 1-50:  14.56mm    7.4° 98.0%| Score: -0.0092
+---------------------------------------------------------------------------
+EP 240/400 | Total Loss: 0.1850 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.8e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.156, Rot:0.0167*1.0=0.017, 
+Grasp:0.0123*10.0=0.123, Done:0.5801*0.2=0.116
+Eval k=1   :  12.64mm    6.5°   98.0%
+Eval k=50  :  14.88mm    7.8°   98.0%
+Eval W 1-50:  14.47mm    7.5° 98.0%| Score: -0.0081
+---------------------------------------------------------------------------
+EP 241/400 | Total Loss: 0.1872 (Flow:0.071*1.0=0.071, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.8e-05
+    ↳ Flow Details: Pos:0.0321*5.0=0.160, Rot:0.0169*1.0=0.017, 
+Grasp:0.0127*10.0=0.127, Done:0.5815*0.2=0.116
+Eval k=1   :  12.79mm    6.6°   98.0%
+Eval k=50  :  15.50mm    8.1°   98.0%
+Eval W 1-50:  15.10mm    7.8° 98.0%| Score: -0.0048
+---------------------------------------------------------------------------
+EP 242/400 | Total Loss: 0.1815 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.7e-05
+    ↳ Flow Details: Pos:0.0298*5.0=0.149, Rot:0.0148*1.0=0.015, 
+Grasp:0.0121*10.0=0.121, Done:0.5793*0.2=0.116
+Eval k=1   :  12.72mm    6.7°   98.0%
+Eval k=50  :  15.23mm    7.9°   98.0%
+Eval W 1-50:  14.88mm    7.8° 98.0%| Score: -0.0055
+---------------------------------------------------------------------------
+EP 243/400 | Total Loss: 0.1913 (Flow:0.075*1.0=0.075, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.7e-05
+    ↳ Flow Details: Pos:0.0340*5.0=0.170, Rot:0.0167*1.0=0.017, 
+Grasp:0.0139*10.0=0.139, Done:0.5815*0.2=0.116
+Eval k=1   :  12.99mm    6.7°   98.0%
+Eval k=50  :  15.00mm    8.4°   98.0%
+Eval W 1-50:  14.79mm    8.0° 98.0%| Score: -0.0033
+---------------------------------------------------------------------------
+EP 244/400 | Total Loss: 0.1853 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.7e-05
+    ↳ Flow Details: Pos:0.0313*5.0=0.157, Rot:0.0158*1.0=0.016, 
+Grasp:0.0121*10.0=0.121, Done:0.5835*0.2=0.117
+Eval k=1   :  13.01mm    6.4°   98.0%
+Eval k=50  :  14.99mm    7.8°   98.0%
+Eval W 1-50:  14.80mm    7.6° 98.0%| Score: -0.0077
+---------------------------------------------------------------------------
+EP 245/400 | Total Loss: 0.1869 (Flow:0.071*1.0=0.071, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.6e-05
+    ↳ Flow Details: Pos:0.0322*5.0=0.161, Rot:0.0166*1.0=0.017, 
+Grasp:0.0126*10.0=0.126, Done:0.5800*0.2=0.116
+Eval k=1   :  12.46mm    6.7°   98.0%
+Eval k=50  :  14.94mm    8.1°   98.0%
+Eval W 1-50:  14.41mm    7.9° 98.0%| Score: -0.0047
+---------------------------------------------------------------------------
+EP 246/400 | Total Loss: 0.1837 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.6e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.156, Rot:0.0152*1.0=0.015, 
+Grasp:0.0118*10.0=0.118, Done:0.5806*0.2=0.116
+Eval k=1   :  12.41mm    6.5°   98.0%
+Eval k=50  :  14.78mm    7.8°   98.0%
+Eval W 1-50:  14.32mm    7.7° 98.0%| Score: -0.0071
+---------------------------------------------------------------------------
+EP 247/400 | Total Loss: 0.1832 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.5e-05
+    ↳ Flow Details: Pos:0.0309*5.0=0.154, Rot:0.0159*1.0=0.016, 
+Grasp:0.0118*10.0=0.118, Done:0.5777*0.2=0.116
+Eval k=1   :  12.59mm    6.5°   98.0%
+Eval k=50  :  14.91mm    7.9°   98.0%
+Eval W 1-50:  14.76mm    7.6° 98.0%| Score: -0.0075
+---------------------------------------------------------------------------
+EP 248/400 | Total Loss: 0.1852 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.5e-05
+    ↳ Flow Details: Pos:0.0315*5.0=0.157, Rot:0.0161*1.0=0.016, 
+Grasp:0.0125*10.0=0.125, Done:0.5789*0.2=0.116
+Eval k=1   :  12.67mm    6.5°   98.0%
+Eval k=50  :  14.93mm    7.9°   98.0%
+Eval W 1-50:  14.84mm    7.7° 98.0%| Score: -0.0066
+---------------------------------------------------------------------------
+EP 249/400 | Total Loss: 0.1844 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.5e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.155, Rot:0.0155*1.0=0.015, 
+Grasp:0.0124*10.0=0.124, Done:0.5808*0.2=0.116
+Eval k=1   :  12.89mm    6.5°   98.0%
+Eval k=50  :  15.25mm    7.6°   98.0%
+Eval W 1-50:  14.96mm    7.4° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 250/400 | Total Loss: 0.1884 (Flow:0.072*1.0=0.072, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.4e-05
+    ↳ Flow Details: Pos:0.0331*5.0=0.165, Rot:0.0161*1.0=0.016, 
+Grasp:0.0131*10.0=0.131, Done:0.5800*0.2=0.116
+Eval k=1   :  12.54mm    6.5°   98.0%
+Eval k=50  :  14.57mm    8.1°   98.0%
+Eval W 1-50:  14.45mm    7.8° 98.0%| Score: -0.0057
+---------------------------------------------------------------------------
+EP 251/400 | Total Loss: 0.1873 (Flow:0.071*1.0=0.071, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.4e-05
+    ↳ Flow Details: Pos:0.0318*5.0=0.159, Rot:0.0170*1.0=0.017, 
+Grasp:0.0135*10.0=0.135, Done:0.5796*0.2=0.116
+Eval k=1   :  12.48mm    6.5°   98.0%
+Eval k=50  :  15.15mm    8.6°   98.0%
+Eval W 1-50:  14.68mm    8.1° 98.0%| Score: -0.0024
+---------------------------------------------------------------------------
+EP 252/400 | Total Loss: 0.1857 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.4e-05
+    ↳ Flow Details: Pos:0.0314*5.0=0.157, Rot:0.0164*1.0=0.016, 
+Grasp:0.0123*10.0=0.123, Done:0.5820*0.2=0.116
+Eval k=1   :  12.52mm    6.5°   98.0%
+Eval k=50  :  15.32mm    7.9°   98.0%
+Eval W 1-50:  14.75mm    7.7° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 253/400 | Total Loss: 0.1856 (Flow:0.070*1.0=0.070, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.3e-05
+    ↳ Flow Details: Pos:0.0319*5.0=0.159, Rot:0.0165*1.0=0.017, 
+Grasp:0.0123*10.0=0.123, Done:0.5779*0.2=0.116
+Eval k=1   :  12.21mm    6.6°   98.0%
+Eval k=50  :  14.60mm    8.5°   98.0%
+Eval W 1-50:  14.07mm    8.2° 98.0%| Score: -0.0024
+---------------------------------------------------------------------------
+EP 254/400 | Total Loss: 0.1844 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.3e-05
+    ↳ Flow Details: Pos:0.0316*5.0=0.158, Rot:0.0157*1.0=0.016, 
+Grasp:0.0113*10.0=0.113, Done:0.5812*0.2=0.116
+Eval k=1   :  12.99mm    6.3°   98.0%
+Eval k=50  :  15.58mm    7.4°   98.0%
+Eval W 1-50:  15.21mm    7.3° 98.0%| Score: -0.0098
+---------------------------------------------------------------------------
+EP 255/400 | Total Loss: 0.1856 (Flow:0.070*1.0=0.070, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.3e-05
+    ↳ Flow Details: Pos:0.0313*5.0=0.156, Rot:0.0163*1.0=0.016, 
+Grasp:0.0132*10.0=0.132, Done:0.5784*0.2=0.116
+Eval k=1   :  12.80mm    6.2°   98.0%
+Eval k=50  :  15.43mm    7.8°   98.0%
+Eval W 1-50:  14.81mm    7.5° 98.0%| Score: -0.0083
+---------------------------------------------------------------------------
+EP 256/400 | Total Loss: 0.1837 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.2e-05
+    ↳ Flow Details: Pos:0.0305*5.0=0.152, Rot:0.0156*1.0=0.016, 
+Grasp:0.0124*10.0=0.124, Done:0.5812*0.2=0.116
+Eval k=1   :  21.16mm    9.8°   98.0%
+Eval k=50  :  23.81mm   11.3°   98.0%
+Eval W 1-50:  23.39mm   11.2° 98.0%| Score: 0.0369
+---------------------------------------------------------------------------
+EP 257/400 | Total Loss: 0.1823 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.2e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.155, Rot:0.0156*1.0=0.016, 
+Grasp:0.0108*10.0=0.108, Done:0.5777*0.2=0.116
+Eval k=1   :  13.00mm    6.6°   98.0%
+Eval k=50  :  15.77mm    8.1°   98.0%
+Eval W 1-50:  15.21mm    7.8° 98.0%| Score: -0.0044
+---------------------------------------------------------------------------
+EP 258/400 | Total Loss: 0.1842 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.2e-05
+    ↳ Flow Details: Pos:0.0316*5.0=0.158, Rot:0.0159*1.0=0.016, 
+Grasp:0.0113*10.0=0.113, Done:0.5797*0.2=0.116
+Eval k=1   :  12.77mm    6.5°   98.0%
+Eval k=50  :  14.90mm    8.1°   98.0%
+Eval W 1-50:  14.65mm    7.8° 98.0%| Score: -0.0054
+---------------------------------------------------------------------------
+EP 259/400 | Total Loss: 0.1785 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.1e-05
+    ↳ Flow Details: Pos:0.0287*5.0=0.144, Rot:0.0145*1.0=0.014, 
+Grasp:0.0108*10.0=0.108, Done:0.5798*0.2=0.116
+Eval k=1   :  13.25mm    6.2°   98.0%
+Eval k=50  :  15.91mm    7.8°   98.0%
+Eval W 1-50:  15.39mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 260/400 | Total Loss: 0.1836 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.1e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.156, Rot:0.0156*1.0=0.016, 
+Grasp:0.0118*10.0=0.118, Done:0.5786*0.2=0.116
+Eval k=1   :  12.43mm    6.5°   98.0%
+Eval k=50  :  15.40mm    7.9°   98.0%
+Eval W 1-50:  14.88mm    7.8° 98.0%| Score: -0.0055
+---------------------------------------------------------------------------
+EP 261/400 | Total Loss: 0.1839 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.1e-05
+    ↳ Flow Details: Pos:0.0321*5.0=0.160, Rot:0.0157*1.0=0.016, 
+Grasp:0.0106*10.0=0.106, Done:0.5791*0.2=0.116
+Eval k=1   :  12.45mm    6.2°   98.0%
+Eval k=50  :  15.14mm    7.7°   98.0%
+Eval W 1-50:  14.69mm    7.5° 98.0%| Score: -0.0085
+---------------------------------------------------------------------------
+EP 262/400 | Total Loss: 0.1801 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.0e-05
+    ↳ Flow Details: Pos:0.0299*5.0=0.149, Rot:0.0147*1.0=0.015, 
+Grasp:0.0106*10.0=0.106, Done:0.5796*0.2=0.116
+Eval k=1   :  12.51mm    6.4°   98.0%
+Eval k=50  :  14.96mm    8.0°   98.0%
+Eval W 1-50:  14.68mm    7.7° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 263/400 | Total Loss: 0.1832 (Flow:0.068*1.0=0.068, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.0e-05
+    ↳ Flow Details: Pos:0.0302*5.0=0.151, Rot:0.0156*1.0=0.016, 
+Grasp:0.0131*10.0=0.131, Done:0.5776*0.2=0.116
+Eval k=1   :  12.55mm    6.4°   98.0%
+Eval k=50  :  15.47mm    8.2°   98.0%
+Eval W 1-50:  14.73mm    7.9° 98.0%| Score: -0.0039
+---------------------------------------------------------------------------
+EP 264/400 | Total Loss: 0.1887 (Flow:0.073*1.0=0.073, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 3.0e-05
+    ↳ Flow Details: Pos:0.0325*5.0=0.162, Rot:0.0173*1.0=0.017, 
+Grasp:0.0135*10.0=0.135, Done:0.5801*0.2=0.116
+Eval k=1   :  12.28mm    6.4°   98.0%
+Eval k=50  :  15.19mm    7.8°   98.0%
+Eval W 1-50:  14.68mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 265/400 | Total Loss: 0.1843 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.9e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.155, Rot:0.0161*1.0=0.016, 
+Grasp:0.0125*10.0=0.125, Done:0.5772*0.2=0.115
+Eval k=1   :  12.78mm    6.1°   98.0%
+Eval k=50  :  15.93mm    7.5°   98.0%
+Eval W 1-50:  15.10mm    7.4° 98.0%| Score: -0.0094
+---------------------------------------------------------------------------
+EP 266/400 | Total Loss: 0.1816 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.9e-05
+    ↳ Flow Details: Pos:0.0302*5.0=0.151, Rot:0.0153*1.0=0.015, 
+Grasp:0.0111*10.0=0.111, Done:0.5801*0.2=0.116
+Eval k=1   :  12.78mm    6.2°   98.0%
+Eval k=50  :  15.94mm    7.9°   98.0%
+Eval W 1-50:  15.41mm    7.6° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 267/400 | Total Loss: 0.1857 (Flow:0.070*1.0=0.070, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.9e-05
+    ↳ Flow Details: Pos:0.0324*5.0=0.162, Rot:0.0151*1.0=0.015, 
+Grasp:0.0121*10.0=0.121, Done:0.5796*0.2=0.116
+Eval k=1   :  12.33mm    6.3°   98.0%
+Eval k=50  :  15.59mm    7.8°   98.0%
+Eval W 1-50:  15.11mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 268/400 | Total Loss: 0.1819 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.8e-05
+    ↳ Flow Details: Pos:0.0295*5.0=0.147, Rot:0.0154*1.0=0.015, 
+Grasp:0.0127*10.0=0.127, Done:0.5789*0.2=0.116
+Eval k=1   :  20.54mm   11.5°   98.0%
+Eval k=50  :  23.17mm   13.2°   98.0%
+Eval W 1-50:  22.86mm   12.9° 98.0%| Score: 0.0539
+---------------------------------------------------------------------------
+EP 269/400 | Total Loss: 0.1830 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.8e-05
+    ↳ Flow Details: Pos:0.0310*5.0=0.155, Rot:0.0156*1.0=0.016, 
+Grasp:0.0110*10.0=0.110, Done:0.5804*0.2=0.116
+Eval k=1   :  12.30mm    6.4°   98.0%
+Eval k=50  :  15.32mm    8.1°   98.0%
+Eval W 1-50:  14.83mm    7.7° 98.0%| Score: -0.0059
+---------------------------------------------------------------------------
+EP 270/400 | Total Loss: 0.1803 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.8e-05
+    ↳ Flow Details: Pos:0.0295*5.0=0.147, Rot:0.0146*1.0=0.015, 
+Grasp:0.0114*10.0=0.114, Done:0.5795*0.2=0.116
+Eval k=1   :  12.63mm    6.4°   98.0%
+Eval k=50  :  15.08mm    7.8°   98.0%
+Eval W 1-50:  14.72mm    7.6° 98.0%| Score: -0.0076
+---------------------------------------------------------------------------
+EP 271/400 | Total Loss: 0.1794 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.7e-05
+    ↳ Flow Details: Pos:0.0290*5.0=0.145, Rot:0.0148*1.0=0.015, 
+Grasp:0.0113*10.0=0.113, Done:0.5780*0.2=0.116
+Eval k=1   :  13.02mm    6.3°   98.0%
+Eval k=50  :  15.86mm    8.0°   98.0%
+Eval W 1-50:  15.29mm    7.7° 98.0%| Score: -0.0056
+---------------------------------------------------------------------------
+EP 272/400 | Total Loss: 0.1783 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.7e-05
+    ↳ Flow Details: Pos:0.0293*5.0=0.146, Rot:0.0147*1.0=0.015, 
+Grasp:0.0100*10.0=0.100, Done:0.5780*0.2=0.116
+Eval k=1   :  12.29mm    6.2°   98.0%
+Eval k=50  :  15.27mm    8.1°   98.0%
+Eval W 1-50:  14.65mm    7.7° 98.0%| Score: -0.0063
+---------------------------------------------------------------------------
+EP 273/400 | Total Loss: 0.1821 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.7e-05
+    ↳ Flow Details: Pos:0.0303*5.0=0.152, Rot:0.0154*1.0=0.015, 
+Grasp:0.0114*10.0=0.114, Done:0.5800*0.2=0.116
+Eval k=1   :  12.85mm    6.3°   98.0%
+Eval k=50  :  15.44mm    7.7°   98.0%
+Eval W 1-50:  14.84mm    7.5° 98.0%| Score: -0.0082
+---------------------------------------------------------------------------
+EP 274/400 | Total Loss: 0.1810 (Flow:0.065*1.0=0.065, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.7e-05
+    ↳ Flow Details: Pos:0.0300*5.0=0.150, Rot:0.0153*1.0=0.015, 
+Grasp:0.0110*10.0=0.110, Done:0.5786*0.2=0.116
+Eval k=1   :  13.05mm    6.2°   98.0%
+Eval k=50  :  15.89mm    7.8°   98.0%
+Eval W 1-50:  15.45mm    7.5° 98.0%| Score: -0.0071
+---------------------------------------------------------------------------
+EP 275/400 | Total Loss: 0.1811 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.6e-05
+    ↳ Flow Details: Pos:0.0303*5.0=0.151, Rot:0.0155*1.0=0.016, 
+Grasp:0.0109*10.0=0.109, Done:0.5779*0.2=0.116
+Eval k=1   :  12.37mm    6.1°   98.0%
+Eval k=50  :  15.00mm    7.7°   98.0%
+Eval W 1-50:  14.55mm    7.4° 98.0%| Score: -0.0090
+---------------------------------------------------------------------------
+EP 276/400 | Total Loss: 0.1811 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.6e-05
+    ↳ Flow Details: Pos:0.0304*5.0=0.152, Rot:0.0154*1.0=0.015, 
+Grasp:0.0110*10.0=0.110, Done:0.5768*0.2=0.115
+Eval k=1   :  12.26mm    6.4°   98.0%
+Eval k=50  :  14.88mm    7.9°   98.0%
+Eval W 1-50:  14.37mm    7.6° 98.0%| Score: -0.0073
+---------------------------------------------------------------------------
+EP 277/400 | Total Loss: 0.1811 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.6e-05
+    ↳ Flow Details: Pos:0.0310*5.0=0.155, Rot:0.0145*1.0=0.014, 
+Grasp:0.0104*10.0=0.104, Done:0.5773*0.2=0.115
+Eval k=1   :  13.00mm    6.5°   98.0%
+Eval k=50  :  16.11mm    8.2°   98.0%
+Eval W 1-50:  15.49mm    7.9° 98.0%| Score: -0.0040
+---------------------------------------------------------------------------
+EP 278/400 | Total Loss: 0.1824 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.5e-05
+    ↳ Flow Details: Pos:0.0296*5.0=0.148, Rot:0.0156*1.0=0.016, 
+Grasp:0.0132*10.0=0.132, Done:0.5765*0.2=0.115
+Eval k=1   :  12.60mm    6.6°   98.0%
+Eval k=50  :  15.60mm    8.2°   98.0%
+Eval W 1-50:  15.14mm    7.9° 98.0%| Score: -0.0043
+---------------------------------------------------------------------------
+EP 279/400 | Total Loss: 0.1792 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.5e-05
+    ↳ Flow Details: Pos:0.0291*5.0=0.146, Rot:0.0147*1.0=0.015, 
+Grasp:0.0111*10.0=0.111, Done:0.5779*0.2=0.116
+Eval k=1   :  12.35mm    6.4°   98.0%
+Eval k=50  :  15.40mm    8.0°   98.0%
+Eval W 1-50:  14.74mm    7.7° 98.0%| Score: -0.0065
+---------------------------------------------------------------------------
+EP 280/400 | Total Loss: 0.1830 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.5e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.155, Rot:0.0153*1.0=0.015, 
+Grasp:0.0113*10.0=0.113, Done:0.5797*0.2=0.116
+Eval k=1   :  12.53mm    6.4°   98.0%
+Eval k=50  :  15.76mm    8.2°   98.0%
+Eval W 1-50:  15.04mm    7.9° 98.0%| Score: -0.0043
+---------------------------------------------------------------------------
+EP 281/400 | Total Loss: 0.1846 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.4e-05
+    ↳ Flow Details: Pos:0.0318*5.0=0.159, Rot:0.0165*1.0=0.016, 
+Grasp:0.0116*10.0=0.116, Done:0.5774*0.2=0.115
+Eval k=1   :  12.24mm    6.3°   98.0%
+Eval k=50  :  15.12mm    8.0°   98.0%
+Eval W 1-50:  14.59mm    7.7° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 282/400 | Total Loss: 0.1846 (Flow:0.069*1.0=0.069, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.4e-05
+    ↳ Flow Details: Pos:0.0310*5.0=0.155, Rot:0.0161*1.0=0.016, 
+Grasp:0.0129*10.0=0.129, Done:0.5775*0.2=0.115
+Eval k=1   :  12.76mm    6.3°   98.0%
+Eval k=50  :  15.38mm    8.0°   98.0%
+Eval W 1-50:  15.07mm    7.7° 98.0%| Score: -0.0063
+---------------------------------------------------------------------------
+EP 283/400 | Total Loss: 0.1813 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.4e-05
+    ↳ Flow Details: Pos:0.0309*5.0=0.154, Rot:0.0155*1.0=0.016, 
+Grasp:0.0102*10.0=0.102, Done:0.5775*0.2=0.115
+Eval k=1   :  12.42mm    6.4°   98.0%
+Eval k=50  :  15.58mm    8.1°   98.0%
+Eval W 1-50:  15.00mm    7.8° 98.0%| Score: -0.0047
+---------------------------------------------------------------------------
+EP 284/400 | Total Loss: 0.1791 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.3e-05
+    ↳ Flow Details: Pos:0.0297*5.0=0.149, Rot:0.0144*1.0=0.014, 
+Grasp:0.0107*10.0=0.107, Done:0.5757*0.2=0.115
+Eval k=1   :  12.63mm    6.6°   98.0%
+Eval k=50  :  15.31mm    8.2°   98.0%
+Eval W 1-50:  14.82mm    8.0° 98.0%| Score: -0.0036
+---------------------------------------------------------------------------
+EP 285/400 | Total Loss: 0.1791 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.3e-05
+    ↳ Flow Details: Pos:0.0287*5.0=0.143, Rot:0.0151*1.0=0.015, 
+Grasp:0.0117*10.0=0.117, Done:0.5766*0.2=0.115
+Eval k=1   :  12.37mm    6.3°   98.0%
+Eval k=50  :  15.17mm    7.8°   98.0%
+Eval W 1-50:  14.70mm    7.6° 98.0%| Score: -0.0074
+---------------------------------------------------------------------------
+EP 286/400 | Total Loss: 0.1812 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.3e-05
+    ↳ Flow Details: Pos:0.0300*5.0=0.150, Rot:0.0154*1.0=0.015, 
+Grasp:0.0113*10.0=0.113, Done:0.5785*0.2=0.116
+Eval k=1   :  12.14mm    6.4°   98.0%
+Eval k=50  :  15.18mm    7.9°   98.0%
+Eval W 1-50:  14.70mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 287/400 | Total Loss: 0.1780 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.3e-05
+    ↳ Flow Details: Pos:0.0289*5.0=0.144, Rot:0.0144*1.0=0.014, 
+Grasp:0.0107*10.0=0.107, Done:0.5770*0.2=0.115
+Eval k=1   :  12.13mm    6.4°   98.0%
+Eval k=50  :  14.65mm    7.8°   98.0%
+Eval W 1-50:  14.27mm    7.7° 98.0%| Score: -0.0071
+---------------------------------------------------------------------------
+EP 288/400 | Total Loss: 0.1818 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.2e-05
+    ↳ Flow Details: Pos:0.0312*5.0=0.156, Rot:0.0154*1.0=0.015, 
+Grasp:0.0106*10.0=0.106, Done:0.5759*0.2=0.115
+Eval k=1   :  13.02mm    6.3°   98.0%
+Eval k=50  :  15.90mm    7.7°   98.0%
+Eval W 1-50:  15.42mm    7.6° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 289/400 | Total Loss: 0.1815 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.2e-05
+    ↳ Flow Details: Pos:0.0298*5.0=0.149, Rot:0.0151*1.0=0.015, 
+Grasp:0.0123*10.0=0.123, Done:0.5769*0.2=0.115
+Eval k=1   :  12.62mm    6.4°   98.0%
+Eval k=50  :  15.61mm    7.7°   98.0%
+Eval W 1-50:  15.22mm    7.5° 98.0%| Score: -0.0078
+---------------------------------------------------------------------------
+EP 290/400 | Total Loss: 0.1793 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.2e-05
+    ↳ Flow Details: Pos:0.0293*5.0=0.147, Rot:0.0150*1.0=0.015, 
+Grasp:0.0110*10.0=0.110, Done:0.5769*0.2=0.115
+Eval k=1   :  12.38mm    6.4°   98.0%
+Eval k=50  :  15.42mm    7.9°   98.0%
+Eval W 1-50:  14.94mm    7.7° 98.0%| Score: -0.0058
+---------------------------------------------------------------------------
+EP 291/400 | Total Loss: 0.1824 (Flow:0.067*1.0=0.067, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.1e-05
+    ↳ Flow Details: Pos:0.0306*5.0=0.153, Rot:0.0162*1.0=0.016, 
+Grasp:0.0115*10.0=0.115, Done:0.5761*0.2=0.115
+Eval k=1   :  12.02mm    6.3°   98.0%
+Eval k=50  :  14.14mm    8.0°   98.0%
+Eval W 1-50:  13.94mm    7.8° 98.0%| Score: -0.0059
+---------------------------------------------------------------------------
+EP 292/400 | Total Loss: 0.1757 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.1e-05
+    ↳ Flow Details: Pos:0.0284*5.0=0.142, Rot:0.0139*1.0=0.014, 
+Grasp:0.0098*10.0=0.098, Done:0.5752*0.2=0.115
+Eval k=1   :  12.60mm    6.4°   98.0%
+Eval k=50  :  15.64mm    7.8°   98.0%
+Eval W 1-50:  15.06mm    7.7° 98.0%| Score: -0.0058
+---------------------------------------------------------------------------
+EP 293/400 | Total Loss: 0.1753 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.1e-05
+    ↳ Flow Details: Pos:0.0283*5.0=0.141, Rot:0.0141*1.0=0.014, 
+Grasp:0.0093*10.0=0.093, Done:0.5753*0.2=0.115
+Eval k=1   :  12.34mm    6.6°   98.0%
+Eval k=50  :  15.13mm    8.1°   98.0%
+Eval W 1-50:  14.76mm    7.9° 98.0%| Score: -0.0040
+---------------------------------------------------------------------------
+EP 294/400 | Total Loss: 0.1788 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.1e-05
+    ↳ Flow Details: Pos:0.0296*5.0=0.148, Rot:0.0152*1.0=0.015, 
+Grasp:0.0104*10.0=0.104, Done:0.5741*0.2=0.115
+Eval k=1   :  12.64mm    6.5°   98.0%
+Eval k=50  :  15.64mm    8.2°   98.0%
+Eval W 1-50:  15.18mm    7.9° 98.0%| Score: -0.0034
+---------------------------------------------------------------------------
+EP 295/400 | Total Loss: 0.1776 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.0e-05
+    ↳ Flow Details: Pos:0.0289*5.0=0.145, Rot:0.0146*1.0=0.015, 
+Grasp:0.0103*10.0=0.103, Done:0.5757*0.2=0.115
+Eval k=1   :  11.93mm    6.6°   98.0%
+Eval k=50  :  14.56mm    8.1°   98.0%
+Eval W 1-50:  14.19mm    7.9° 98.0%| Score: -0.0052
+---------------------------------------------------------------------------
+EP 296/400 | Total Loss: 0.1770 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.0e-05
+    ↳ Flow Details: Pos:0.0283*5.0=0.141, Rot:0.0145*1.0=0.014, 
+Grasp:0.0109*10.0=0.109, Done:0.5749*0.2=0.115
+Eval k=1   :  12.22mm    6.5°   98.0%
+Eval k=50  :  15.37mm    8.1°   98.0%
+Eval W 1-50:  14.71mm    7.8° 98.0%| Score: -0.0049
+---------------------------------------------------------------------------
+EP 297/400 | Total Loss: 0.1778 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.0e-05
+    ↳ Flow Details: Pos:0.0292*5.0=0.146, Rot:0.0142*1.0=0.014, 
+Grasp:0.0104*10.0=0.104, Done:0.5757*0.2=0.115
+Eval k=1   :  12.47mm    6.5°   98.0%
+Eval k=50  :  15.32mm    8.1°   98.0%
+Eval W 1-50:  14.84mm    7.9° 98.0%| Score: -0.0040
+---------------------------------------------------------------------------
+EP 298/400 | Total Loss: 0.1796 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 2.0e-05
+    ↳ Flow Details: Pos:0.0295*5.0=0.148, Rot:0.0153*1.0=0.015, 
+Grasp:0.0107*10.0=0.107, Done:0.5771*0.2=0.115
+Eval k=1   :  12.35mm    6.3°   98.0%
+Eval k=50  :  15.37mm    8.1°   98.0%
+Eval W 1-50:  14.68mm    7.8° 98.0%| Score: -0.0051
+---------------------------------------------------------------------------
+EP 299/400 | Total Loss: 0.1781 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.9e-05
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0148*1.0=0.015, 
+Grasp:0.0114*10.0=0.114, Done:0.5747*0.2=0.115
+Eval k=1   :  12.56mm    6.5°   98.0%
+Eval k=50  :  15.69mm    8.2°   98.0%
+Eval W 1-50:  15.09mm    7.9° 98.0%| Score: -0.0039
+---------------------------------------------------------------------------
+EP 300/400 | Total Loss: 0.1728 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.9e-05
+    ↳ Flow Details: Pos:0.0275*5.0=0.138, Rot:0.0135*1.0=0.014, 
+Grasp:0.0086*10.0=0.086, Done:0.5739*0.2=0.115
+Eval k=1   :  12.04mm    6.3°   98.0%
+Eval k=50  :  14.93mm    7.9°   98.0%
+Eval W 1-50:  14.56mm    7.7° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+
+>>> Starting Professional Visualization Eval at Epoch 300 <<<
+  -> Rendering session: mps_Grasp_BellPepper_Red_000_vrs
+[FlowMatchingDataloader] Built 26 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=False | VisForesight=False | TempContrastive=False
+  - 3D PCD Feats : False
+[OK] Evaluator: GT-vs-Pred Hand Traj Teacher-forced (absolute) Visualization 
+finished.
+EP 301/400 | Total Loss: 0.1747 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.9e-05
+    ↳ Flow Details: Pos:0.0279*5.0=0.140, Rot:0.0133*1.0=0.013, 
+Grasp:0.0094*10.0=0.094, Done:0.5769*0.2=0.115
+Eval k=1   :  12.59mm    6.5°   98.0%
+Eval k=50  :  15.83mm    8.2°   98.0%
+Eval W 1-50:  15.12mm    8.0° 98.0%| Score: -0.0030
+---------------------------------------------------------------------------
+EP 302/400 | Total Loss: 0.1757 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.8e-05
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0139*1.0=0.014, 
+Grasp:0.0095*10.0=0.095, Done:0.5744*0.2=0.115
+Eval k=1   :  12.40mm    6.4°   98.0%
+Eval k=50  :  15.80mm    8.3°   98.0%
+Eval W 1-50:  15.00mm    8.0° 98.0%| Score: -0.0030
+---------------------------------------------------------------------------
+EP 303/400 | Total Loss: 0.1772 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.8e-05
+    ↳ Flow Details: Pos:0.0290*5.0=0.145, Rot:0.0142*1.0=0.014, 
+Grasp:0.0098*10.0=0.098, Done:0.5769*0.2=0.115
+Eval k=1   :  12.68mm    6.4°   98.0%
+Eval k=50  :  15.51mm    8.1°   98.0%
+Eval W 1-50:  14.99mm    7.9° 98.0%| Score: -0.0039
+---------------------------------------------------------------------------
+EP 304/400 | Total Loss: 0.1812 (Flow:0.066*1.0=0.066, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.8e-05
+    ↳ Flow Details: Pos:0.0311*5.0=0.155, Rot:0.0150*1.0=0.015, 
+Grasp:0.0104*10.0=0.104, Done:0.5759*0.2=0.115
+Eval k=1   :  12.37mm    6.4°   98.0%
+Eval k=50  :  15.61mm    7.9°   98.0%
+Eval W 1-50:  15.01mm    7.8° 98.0%| Score: -0.0054
+---------------------------------------------------------------------------
+EP 305/400 | Total Loss: 0.1770 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.8e-05
+    ↳ Flow Details: Pos:0.0290*5.0=0.145, Rot:0.0142*1.0=0.014, 
+Grasp:0.0099*10.0=0.099, Done:0.5748*0.2=0.115
+Eval k=1   :  12.64mm    6.3°   98.0%
+Eval k=50  :  15.63mm    7.9°   98.0%
+Eval W 1-50:  15.16mm    7.7° 98.0%| Score: -0.0061
+---------------------------------------------------------------------------
+EP 306/400 | Total Loss: 0.1786 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.7e-05
+    ↳ Flow Details: Pos:0.0303*5.0=0.151, Rot:0.0148*1.0=0.015, 
+Grasp:0.0094*10.0=0.094, Done:0.5744*0.2=0.115
+Eval k=1   :  12.58mm    6.5°   98.0%
+Eval k=50  :  15.74mm    8.2°   98.0%
+Eval W 1-50:  15.34mm    8.0° 98.0%| Score: -0.0024
+---------------------------------------------------------------------------
+EP 307/400 | Total Loss: 0.1773 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.7e-05
+    ↳ Flow Details: Pos:0.0289*5.0=0.144, Rot:0.0138*1.0=0.014, 
+Grasp:0.0104*10.0=0.104, Done:0.5760*0.2=0.115
+Eval k=1   :  12.61mm    6.4°   98.0%
+Eval k=50  :  15.93mm    8.1°   98.0%
+Eval W 1-50:  15.26mm    7.9° 98.0%| Score: -0.0035
+---------------------------------------------------------------------------
+EP 308/400 | Total Loss: 0.1794 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.7e-05
+    ↳ Flow Details: Pos:0.0303*5.0=0.151, Rot:0.0144*1.0=0.014, 
+Grasp:0.0102*10.0=0.102, Done:0.5759*0.2=0.115
+Eval k=1   :  12.76mm    6.3°   98.0%
+Eval k=50  :  15.79mm    8.2°   98.0%
+Eval W 1-50:  15.22mm    7.9° 98.0%| Score: -0.0038
+---------------------------------------------------------------------------
+EP 309/400 | Total Loss: 0.1765 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.7e-05
+    ↳ Flow Details: Pos:0.0288*5.0=0.144, Rot:0.0142*1.0=0.014, 
+Grasp:0.0092*10.0=0.092, Done:0.5777*0.2=0.116
+Eval k=1   :  12.70mm    6.4°   98.0%
+Eval k=50  :  16.29mm    7.9°   98.0%
+Eval W 1-50:  15.61mm    7.6° 98.0%| Score: -0.0060
+---------------------------------------------------------------------------
+EP 310/400 | Total Loss: 0.1800 (Flow:0.065*1.0=0.065, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.6e-05
+    ↳ Flow Details: Pos:0.0302*5.0=0.151, Rot:0.0147*1.0=0.015, 
+Grasp:0.0106*10.0=0.106, Done:0.5757*0.2=0.115
+Eval k=1   :  13.12mm    6.5°   98.0%
+Eval k=50  :  16.26mm    8.0°   98.0%
+Eval W 1-50:  15.77mm    7.8° 98.0%| Score: -0.0041
+---------------------------------------------------------------------------
+EP 311/400 | Total Loss: 0.1739 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.6e-05
+    ↳ Flow Details: Pos:0.0278*5.0=0.139, Rot:0.0135*1.0=0.014, 
+Grasp:0.0093*10.0=0.093, Done:0.5743*0.2=0.115
+Eval k=1   :  13.05mm    6.4°   98.0%
+Eval k=50  :  16.11mm    8.2°   98.0%
+Eval W 1-50:  15.62mm    7.9° 98.0%| Score: -0.0037
+---------------------------------------------------------------------------
+EP 312/400 | Total Loss: 0.1758 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.6e-05
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0139*1.0=0.014, 
+Grasp:0.0096*10.0=0.096, Done:0.5745*0.2=0.115
+Eval k=1   :  12.47mm    6.2°   98.0%
+Eval k=50  :  15.69mm    7.7°   98.0%
+Eval W 1-50:  15.24mm    7.6° 98.0%| Score: -0.0069
+---------------------------------------------------------------------------
+EP 313/400 | Total Loss: 0.1741 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.6e-05
+    ↳ Flow Details: Pos:0.0272*5.0=0.136, Rot:0.0136*1.0=0.014, 
+Grasp:0.0101*10.0=0.101, Done:0.5755*0.2=0.115
+Eval k=1   :  12.58mm    6.7°   98.0%
+Eval k=50  :  16.07mm    8.7°   98.0%
+Eval W 1-50:  15.52mm    8.4° 98.0%| Score: 0.0012
+---------------------------------------------------------------------------
+EP 314/400 | Total Loss: 0.1744 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.5e-05
+    ↳ Flow Details: Pos:0.0280*5.0=0.140, Rot:0.0135*1.0=0.014, 
+Grasp:0.0093*10.0=0.093, Done:0.5743*0.2=0.115
+Eval k=1   :  13.24mm    6.6°   98.0%
+Eval k=50  :  16.50mm    8.7°   98.0%
+Eval W 1-50:  15.85mm    8.3° 98.0%| Score: 0.0011
+---------------------------------------------------------------------------
+EP 315/400 | Total Loss: 0.1753 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.5e-05
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0140*1.0=0.014, 
+Grasp:0.0095*10.0=0.095, Done:0.5728*0.2=0.115
+Eval k=1   :  12.42mm    6.5°   98.0%
+Eval k=50  :  15.17mm    8.0°   98.0%
+Eval W 1-50:  14.80mm    7.8° 98.0%| Score: -0.0056
+---------------------------------------------------------------------------
+EP 316/400 | Total Loss: 0.1741 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.5e-05
+    ↳ Flow Details: Pos:0.0281*5.0=0.140, Rot:0.0137*1.0=0.014, 
+Grasp:0.0089*10.0=0.089, Done:0.5743*0.2=0.115
+Eval k=1   :  12.49mm    6.5°   98.0%
+Eval k=50  :  15.77mm    8.1°   98.0%
+Eval W 1-50:  15.29mm    7.8° 98.0%| Score: -0.0043
+---------------------------------------------------------------------------
+EP 317/400 | Total Loss: 0.1746 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.5e-05
+    ↳ Flow Details: Pos:0.0279*5.0=0.140, Rot:0.0139*1.0=0.014, 
+Grasp:0.0094*10.0=0.094, Done:0.5745*0.2=0.115
+Eval k=1   :  22.01mm   11.7°   96.0%
+Eval k=50  :  25.25mm   13.7°   96.0%
+Eval W 1-50:  24.54mm   13.6° 96.1%| Score: 0.0642
+---------------------------------------------------------------------------
+EP 318/400 | Total Loss: 0.1746 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.5e-05
+    ↳ Flow Details: Pos:0.0279*5.0=0.139, Rot:0.0139*1.0=0.014, 
+Grasp:0.0095*10.0=0.095, Done:0.5745*0.2=0.115
+Eval k=1   :  12.78mm    6.4°   98.0%
+Eval k=50  :  16.63mm    8.3°   98.0%
+Eval W 1-50:  15.73mm    8.0° 98.0%| Score: -0.0026
+---------------------------------------------------------------------------
+EP 319/400 | Total Loss: 0.1792 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.4e-05
+    ↳ Flow Details: Pos:0.0313*5.0=0.156, Rot:0.0139*1.0=0.014, 
+Grasp:0.0091*10.0=0.091, Done:0.5743*0.2=0.115
+Eval k=1   :  12.13mm    6.4°   98.0%
+Eval k=50  :  15.64mm    7.9°   98.0%
+Eval W 1-50:  14.96mm    7.8° 98.0%| Score: -0.0055
+---------------------------------------------------------------------------
+EP 320/400 | Total Loss: 0.1748 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.4e-05
+    ↳ Flow Details: Pos:0.0277*5.0=0.139, Rot:0.0137*1.0=0.014, 
+Grasp:0.0101*10.0=0.101, Done:0.5747*0.2=0.115
+Eval k=1   :  12.81mm    6.5°   98.0%
+Eval k=50  :  16.24mm    8.3°   98.0%
+Eval W 1-50:  15.47mm    8.1° 98.0%| Score: -0.0020
+---------------------------------------------------------------------------
+EP 321/400 | Total Loss: 0.1757 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.4e-05
+    ↳ Flow Details: Pos:0.0283*5.0=0.142, Rot:0.0138*1.0=0.014, 
+Grasp:0.0105*10.0=0.105, Done:0.5722*0.2=0.114
+Eval k=1   :  12.44mm    6.5°   98.0%
+Eval k=50  :  15.45mm    8.4°   98.0%
+Eval W 1-50:  14.88mm    8.1° 98.0%| Score: -0.0023
+---------------------------------------------------------------------------
+EP 322/400 | Total Loss: 0.1759 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.4e-05
+    ↳ Flow Details: Pos:0.0288*5.0=0.144, Rot:0.0139*1.0=0.014, 
+Grasp:0.0094*10.0=0.094, Done:0.5746*0.2=0.115
+Eval k=1   :  12.36mm    6.2°   98.0%
+Eval k=50  :  15.71mm    8.0°   98.0%
+Eval W 1-50:  15.14mm    7.8° 98.0%| Score: -0.0054
+---------------------------------------------------------------------------
+EP 323/400 | Total Loss: 0.1764 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.3e-05
+    ↳ Flow Details: Pos:0.0291*5.0=0.145, Rot:0.0136*1.0=0.014, 
+Grasp:0.0099*10.0=0.099, Done:0.5734*0.2=0.115
+Eval k=1   :  12.89mm    6.4°   98.0%
+Eval k=50  :  16.09mm    8.2°   98.0%
+Eval W 1-50:  15.43mm    7.9° 98.0%| Score: -0.0037
+---------------------------------------------------------------------------
+EP 324/400 | Total Loss: 0.1751 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.3e-05
+    ↳ Flow Details: Pos:0.0280*5.0=0.140, Rot:0.0142*1.0=0.014, 
+Grasp:0.0102*10.0=0.102, Done:0.5724*0.2=0.114
+Eval k=1   :  12.59mm    6.4°   98.0%
+Eval k=50  :  16.13mm    8.1°   98.0%
+Eval W 1-50:  15.50mm    8.0° 98.0%| Score: -0.0030
+---------------------------------------------------------------------------
+EP 325/400 | Total Loss: 0.1774 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.3e-05
+    ↳ Flow Details: Pos:0.0290*5.0=0.145, Rot:0.0149*1.0=0.015, 
+Grasp:0.0104*10.0=0.104, Done:0.5728*0.2=0.115
+Eval k=1   :  21.35mm   10.6°   96.0%
+Eval k=50  :  24.67mm   11.8°   96.0%
+Eval W 1-50:  23.96mm   11.9° 96.0%| Score: 0.0465
+---------------------------------------------------------------------------
+EP 326/400 | Total Loss: 0.1708 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.3e-05
+    ↳ Flow Details: Pos:0.0264*5.0=0.132, Rot:0.0128*1.0=0.013, 
+Grasp:0.0087*10.0=0.087, Done:0.5735*0.2=0.115
+Eval k=1   :  12.61mm    6.3°   98.0%
+Eval k=50  :  16.24mm    8.2°   98.0%
+Eval W 1-50:  15.55mm    7.9° 98.0%| Score: -0.0034
+---------------------------------------------------------------------------
+EP 327/400 | Total Loss: 0.1741 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.3e-05
+    ↳ Flow Details: Pos:0.0276*5.0=0.138, Rot:0.0141*1.0=0.014, 
+Grasp:0.0095*10.0=0.095, Done:0.5741*0.2=0.115
+Eval k=1   :  12.48mm    6.3°   98.0%
+Eval k=50  :  15.95mm    8.0°   98.0%
+Eval W 1-50:  15.27mm    7.7° 98.0%| Score: -0.0060
+---------------------------------------------------------------------------
+EP 328/400 | Total Loss: 0.1698 (Flow:0.055*1.0=0.055, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.2e-05
+    ↳ Flow Details: Pos:0.0254*5.0=0.127, Rot:0.0121*1.0=0.012, 
+Grasp:0.0098*10.0=0.098, Done:0.5733*0.2=0.115
+Eval k=1   :  12.47mm    6.1°   98.0%
+Eval k=50  :  15.63mm    7.7°   98.0%
+Eval W 1-50:  14.95mm    7.5° 98.0%| Score: -0.0081
+---------------------------------------------------------------------------
+EP 329/400 | Total Loss: 0.1768 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.2e-05
+    ↳ Flow Details: Pos:0.0292*5.0=0.146, Rot:0.0144*1.0=0.014, 
+Grasp:0.0097*10.0=0.097, Done:0.5729*0.2=0.115
+Eval k=1   :  12.08mm    6.3°   98.0%
+Eval k=50  :  15.44mm    8.0°   98.0%
+Eval W 1-50:  14.66mm    7.8° 98.0%| Score: -0.0053
+---------------------------------------------------------------------------
+EP 330/400 | Total Loss: 0.1759 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.2e-05
+    ↳ Flow Details: Pos:0.0285*5.0=0.142, Rot:0.0139*1.0=0.014, 
+Grasp:0.0098*10.0=0.098, Done:0.5749*0.2=0.115
+Eval k=1   :  12.24mm    6.4°   98.0%
+Eval k=50  :  15.14mm    8.0°   98.0%
+Eval W 1-50:  14.80mm    7.8° 98.0%| Score: -0.0052
+---------------------------------------------------------------------------
+EP 331/400 | Total Loss: 0.1759 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.2e-05
+    ↳ Flow Details: Pos:0.0293*5.0=0.147, Rot:0.0139*1.0=0.014, 
+Grasp:0.0091*10.0=0.091, Done:0.5721*0.2=0.114
+Eval k=1   :  12.21mm    6.4°   98.0%
+Eval k=50  :  15.34mm    8.0°   98.0%
+Eval W 1-50:  14.88mm    7.8° 98.0%| Score: -0.0054
+---------------------------------------------------------------------------
+EP 332/400 | Total Loss: 0.1714 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.2e-05
+    ↳ Flow Details: Pos:0.0268*5.0=0.134, Rot:0.0131*1.0=0.013, 
+Grasp:0.0089*10.0=0.089, Done:0.5725*0.2=0.114
+Eval k=1   :  12.17mm    6.4°   98.0%
+Eval k=50  :  15.72mm    8.2°   98.0%
+Eval W 1-50:  15.18mm    8.0° 98.0%| Score: -0.0028
+---------------------------------------------------------------------------
+EP 333/400 | Total Loss: 0.1767 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.1e-05
+    ↳ Flow Details: Pos:0.0292*5.0=0.146, Rot:0.0141*1.0=0.014, 
+Grasp:0.0097*10.0=0.097, Done:0.5738*0.2=0.115
+Eval k=1   :  12.52mm    6.4°   98.0%
+Eval k=50  :  16.02mm    8.1°   98.0%
+Eval W 1-50:  15.24mm    7.9° 98.0%| Score: -0.0038
+---------------------------------------------------------------------------
+EP 334/400 | Total Loss: 0.1715 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.1e-05
+    ↳ Flow Details: Pos:0.0269*5.0=0.135, Rot:0.0127*1.0=0.013, 
+Grasp:0.0087*10.0=0.087, Done:0.5744*0.2=0.115
+Eval k=1   :  11.81mm    6.1°   98.0%
+Eval k=50  :  14.89mm    8.1°   98.0%
+Eval W 1-50:  14.37mm    7.8° 98.0%| Score: -0.0062
+---------------------------------------------------------------------------
+EP 335/400 | Total Loss: 0.1709 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.1e-05
+    ↳ Flow Details: Pos:0.0269*5.0=0.134, Rot:0.0130*1.0=0.013, 
+Grasp:0.0081*10.0=0.081, Done:0.5737*0.2=0.115
+Eval k=1   :  12.24mm    6.2°   98.0%
+Eval k=50  :  15.70mm    8.3°   98.0%
+Eval W 1-50:  14.90mm    8.0° 98.0%| Score: -0.0036
+---------------------------------------------------------------------------
+EP 336/400 | Total Loss: 0.1726 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.1e-05
+    ↳ Flow Details: Pos:0.0281*5.0=0.140, Rot:0.0132*1.0=0.013, 
+Grasp:0.0081*10.0=0.081, Done:0.5720*0.2=0.114
+Eval k=1   :  12.14mm    6.1°   98.0%
+Eval k=50  :  15.73mm    7.8°   98.0%
+Eval W 1-50:  14.85mm    7.6° 98.0%| Score: -0.0074
+---------------------------------------------------------------------------
+EP 337/400 | Total Loss: 0.1690 (Flow:0.055*1.0=0.055, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.1e-05
+    ↳ Flow Details: Pos:0.0260*5.0=0.130, Rot:0.0123*1.0=0.012, 
+Grasp:0.0082*10.0=0.082, Done:0.5724*0.2=0.114
+Eval k=1   :  12.51mm    6.3°   98.0%
+Eval k=50  :  16.25mm    8.2°   98.0%
+Eval W 1-50:  15.41mm    7.9° 98.0%| Score: -0.0033
+---------------------------------------------------------------------------
+EP 338/400 | Total Loss: 0.1779 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.1e-05
+    ↳ Flow Details: Pos:0.0297*5.0=0.148, Rot:0.0143*1.0=0.014, 
+Grasp:0.0101*10.0=0.101, Done:0.5734*0.2=0.115
+Eval k=1   :  12.32mm    6.4°   98.0%
+Eval k=50  :  15.42mm    8.4°   98.0%
+Eval W 1-50:  14.75mm    8.1° 98.0%| Score: -0.0019
+---------------------------------------------------------------------------
+EP 339/400 | Total Loss: 0.1716 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-05
+    ↳ Flow Details: Pos:0.0264*5.0=0.132, Rot:0.0133*1.0=0.013, 
+Grasp:0.0097*10.0=0.097, Done:0.5711*0.2=0.114
+Eval k=1   :  12.17mm    6.4°   98.0%
+Eval k=50  :  15.69mm    8.2°   98.0%
+Eval W 1-50:  15.05mm    7.9° 98.0%| Score: -0.0039
+---------------------------------------------------------------------------
+EP 340/400 | Total Loss: 0.1738 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-05
+    ↳ Flow Details: Pos:0.0279*5.0=0.139, Rot:0.0136*1.0=0.014, 
+Grasp:0.0092*10.0=0.092, Done:0.5732*0.2=0.115
+Eval k=1   :  11.93mm    6.3°   98.0%
+Eval k=50  :  15.25mm    8.0°   98.0%
+Eval W 1-50:  14.67mm    7.8° 98.0%| Score: -0.0057
+---------------------------------------------------------------------------
+EP 341/400 | Total Loss: 0.1797 (Flow:0.065*1.0=0.065, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 1.0e-05
+    ↳ Flow Details: Pos:0.0302*5.0=0.151, Rot:0.0152*1.0=0.015, 
+Grasp:0.0106*10.0=0.106, Done:0.5732*0.2=0.115
+Eval k=1   :  12.44mm    6.5°   98.0%
+Eval k=50  :  15.71mm    8.4°   98.0%
+Eval W 1-50:  15.22mm    8.2° 98.0%| Score: -0.0010
+---------------------------------------------------------------------------
+EP 342/400 | Total Loss: 0.1738 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.9e-06
+    ↳ Flow Details: Pos:0.0280*5.0=0.140, Rot:0.0136*1.0=0.014, 
+Grasp:0.0089*10.0=0.089, Done:0.5736*0.2=0.115
+Eval k=1   :  12.32mm    6.3°   98.0%
+Eval k=50  :  15.54mm    8.1°   98.0%
+Eval W 1-50:  15.02mm    7.8° 98.0%| Score: -0.0045
+---------------------------------------------------------------------------
+EP 343/400 | Total Loss: 0.1787 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.7e-06
+    ↳ Flow Details: Pos:0.0293*5.0=0.147, Rot:0.0155*1.0=0.016, 
+Grasp:0.0107*10.0=0.107, Done:0.5736*0.2=0.115
+Eval k=1   :  12.69mm    6.4°   98.0%
+Eval k=50  :  16.36mm    8.1°   98.0%
+Eval W 1-50:  15.63mm    7.9° 98.0%| Score: -0.0036
+---------------------------------------------------------------------------
+EP 344/400 | Total Loss: 0.1784 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.5e-06
+    ↳ Flow Details: Pos:0.0300*5.0=0.150, Rot:0.0144*1.0=0.014, 
+Grasp:0.0101*10.0=0.101, Done:0.5735*0.2=0.115
+Eval k=1   :  12.83mm    6.4°   98.0%
+Eval k=50  :  16.93mm    8.2°   98.0%
+Eval W 1-50:  16.13mm    7.9° 98.0%| Score: -0.0029
+---------------------------------------------------------------------------
+EP 345/400 | Total Loss: 0.1755 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.4e-06
+    ↳ Flow Details: Pos:0.0288*5.0=0.144, Rot:0.0145*1.0=0.015, 
+Grasp:0.0093*10.0=0.093, Done:0.5713*0.2=0.114
+Eval k=1   :  12.73mm    6.3°   98.0%
+Eval k=50  :  16.62mm    7.9°   98.0%
+Eval W 1-50:  15.88mm    7.7° 98.0%| Score: -0.0052
+---------------------------------------------------------------------------
+EP 346/400 | Total Loss: 0.1740 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.2e-06
+    ↳ Flow Details: Pos:0.0278*5.0=0.139, Rot:0.0137*1.0=0.014, 
+Grasp:0.0096*10.0=0.096, Done:0.5725*0.2=0.115
+Eval k=1   :  12.32mm    6.5°   98.0%
+Eval k=50  :  16.03mm    8.4°   98.0%
+Eval W 1-50:  15.15mm    8.1° 98.0%| Score: -0.0020
+---------------------------------------------------------------------------
+EP 347/400 | Total Loss: 0.1769 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 9.1e-06
+    ↳ Flow Details: Pos:0.0293*5.0=0.146, Rot:0.0150*1.0=0.015, 
+Grasp:0.0096*10.0=0.096, Done:0.5721*0.2=0.114
+Eval k=1   :  12.53mm    6.5°   98.0%
+Eval k=50  :  16.24mm    8.2°   98.0%
+Eval W 1-50:  15.47mm    8.0° 98.0%| Score: -0.0025
+---------------------------------------------------------------------------
+EP 348/400 | Total Loss: 0.1732 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.9e-06
+    ↳ Flow Details: Pos:0.0275*5.0=0.138, Rot:0.0137*1.0=0.014, 
+Grasp:0.0093*10.0=0.093, Done:0.5725*0.2=0.115
+Eval k=1   :  11.91mm    6.3°   98.0%
+Eval k=50  :  15.37mm    7.9°   98.0%
+Eval W 1-50:  14.74mm    7.7° 98.0%| Score: -0.0064
+---------------------------------------------------------------------------
+EP 349/400 | Total Loss: 0.1736 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.8e-06
+    ↳ Flow Details: Pos:0.0279*5.0=0.139, Rot:0.0137*1.0=0.014, 
+Grasp:0.0090*10.0=0.090, Done:0.5730*0.2=0.115
+Eval k=1   :  12.34mm    6.3°   98.0%
+Eval k=50  :  15.79mm    8.0°   98.0%
+Eval W 1-50:  15.18mm    7.9° 98.0%| Score: -0.0042
+---------------------------------------------------------------------------
+EP 350/400 | Total Loss: 0.1735 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.6e-06
+    ↳ Flow Details: Pos:0.0285*5.0=0.142, Rot:0.0133*1.0=0.013, 
+Grasp:0.0084*10.0=0.084, Done:0.5722*0.2=0.114
+Eval k=1   :  12.26mm    6.4°   98.0%
+Eval k=50  :  15.54mm    8.0°   98.0%
+Eval W 1-50:  15.16mm    7.8° 98.0%| Score: -0.0048
+---------------------------------------------------------------------------
+EP 351/400 | Total Loss: 0.1726 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.5e-06
+    ↳ Flow Details: Pos:0.0272*5.0=0.136, Rot:0.0136*1.0=0.014, 
+Grasp:0.0094*10.0=0.094, Done:0.5713*0.2=0.114
+Eval k=1   :  12.21mm    6.3°   98.0%
+Eval k=50  :  15.36mm    8.1°   98.0%
+Eval W 1-50:  14.71mm    7.9° 98.0%| Score: -0.0047
+---------------------------------------------------------------------------
+EP 352/400 | Total Loss: 0.1681 (Flow:0.054*1.0=0.054, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.3e-06
+    ↳ Flow Details: Pos:0.0259*5.0=0.129, Rot:0.0123*1.0=0.012, 
+Grasp:0.0075*10.0=0.075, Done:0.5718*0.2=0.114
+Eval k=1   :  12.48mm    6.4°   98.0%
+Eval k=50  :  15.13mm    8.1°   98.0%
+Eval W 1-50:  14.70mm    7.9° 98.0%| Score: -0.0044
+---------------------------------------------------------------------------
+EP 353/400 | Total Loss: 0.1777 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.2e-06
+    ↳ Flow Details: Pos:0.0285*5.0=0.143, Rot:0.0150*1.0=0.015, 
+Grasp:0.0113*10.0=0.113, Done:0.5728*0.2=0.115
+Eval k=1   :  12.50mm    6.3°   98.0%
+Eval k=50  :  15.92mm    8.2°   98.0%
+Eval W 1-50:  15.22mm    7.9° 98.0%| Score: -0.0037
+---------------------------------------------------------------------------
+EP 354/400 | Total Loss: 0.1787 (Flow:0.065*1.0=0.065, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 8.1e-06
+    ↳ Flow Details: Pos:0.0301*5.0=0.150, Rot:0.0144*1.0=0.014, 
+Grasp:0.0109*10.0=0.109, Done:0.5705*0.2=0.114
+Eval k=1   :  12.33mm    6.2°   98.0%
+Eval k=50  :  15.35mm    8.1°   98.0%
+Eval W 1-50:  14.81mm    7.9° 98.0%| Score: -0.0045
+---------------------------------------------------------------------------
+EP 355/400 | Total Loss: 0.1758 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.9e-06
+    ↳ Flow Details: Pos:0.0291*5.0=0.145, Rot:0.0140*1.0=0.014, 
+Grasp:0.0094*10.0=0.094, Done:0.5717*0.2=0.114
+Eval k=1   :  12.36mm    6.3°   98.0%
+Eval k=50  :  15.56mm    8.1°   98.0%
+Eval W 1-50:  14.98mm    7.9° 98.0%| Score: -0.0042
+---------------------------------------------------------------------------
+EP 356/400 | Total Loss: 0.1748 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.8e-06
+    ↳ Flow Details: Pos:0.0284*5.0=0.142, Rot:0.0136*1.0=0.014, 
+Grasp:0.0094*10.0=0.094, Done:0.5729*0.2=0.115
+Eval k=1   :  12.65mm    6.4°   98.0%
+Eval k=50  :  16.15mm    8.2°   98.0%
+Eval W 1-50:  15.60mm    7.9° 98.0%| Score: -0.0030
+---------------------------------------------------------------------------
+EP 357/400 | Total Loss: 0.1747 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.7e-06
+    ↳ Flow Details: Pos:0.0287*5.0=0.143, Rot:0.0138*1.0=0.014, 
+Grasp:0.0093*10.0=0.093, Done:0.5709*0.2=0.114
+Eval k=1   :  12.76mm    6.3°   98.0%
+Eval k=50  :  16.11mm    8.4°   98.0%
+Eval W 1-50:  15.70mm    8.0° 98.0%| Score: -0.0021
+---------------------------------------------------------------------------
+EP 358/400 | Total Loss: 0.1737 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.6e-06
+    ↳ Flow Details: Pos:0.0287*5.0=0.144, Rot:0.0132*1.0=0.013, 
+Grasp:0.0082*10.0=0.082, Done:0.5723*0.2=0.114
+Eval k=1   :  12.14mm    6.4°   98.0%
+Eval k=50  :  15.69mm    8.2°   98.0%
+Eval W 1-50:  15.06mm    8.0° 98.0%| Score: -0.0031
+---------------------------------------------------------------------------
+EP 359/400 | Total Loss: 0.1709 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.5e-06
+    ↳ Flow Details: Pos:0.0268*5.0=0.134, Rot:0.0132*1.0=0.013, 
+Grasp:0.0084*10.0=0.084, Done:0.5720*0.2=0.114
+Eval k=1   :  12.33mm    6.4°   98.0%
+Eval k=50  :  15.73mm    8.1°   98.0%
+Eval W 1-50:  15.21mm    7.9° 98.0%| Score: -0.0041
+---------------------------------------------------------------------------
+EP 360/400 | Total Loss: 0.1701 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.3e-06
+    ↳ Flow Details: Pos:0.0270*5.0=0.135, Rot:0.0125*1.0=0.013, 
+Grasp:0.0078*10.0=0.078, Done:0.5711*0.2=0.114
+Eval k=1   :  12.60mm    6.5°   98.0%
+Eval k=50  :  16.47mm    8.3°   98.0%
+Eval W 1-50:  15.70mm    8.1° 98.0%| Score: -0.0014
+---------------------------------------------------------------------------
+EP 361/400 | Total Loss: 0.1753 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.2e-06
+    ↳ Flow Details: Pos:0.0285*5.0=0.143, Rot:0.0140*1.0=0.014, 
+Grasp:0.0098*10.0=0.098, Done:0.5718*0.2=0.114
+Eval k=1   :  21.36mm    8.5°   98.0%
+Eval k=50  :  24.74mm   10.1°   96.0%
+Eval W 1-50:  24.23mm   10.1° 97.9%| Score: 0.0277
+---------------------------------------------------------------------------
+EP 362/400 | Total Loss: 0.1760 (Flow:0.061*1.0=0.061, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.1e-06
+    ↳ Flow Details: Pos:0.0292*5.0=0.146, Rot:0.0142*1.0=0.014, 
+Grasp:0.0091*10.0=0.091, Done:0.5726*0.2=0.115
+Eval k=1   :  12.70mm    6.5°   98.0%
+Eval k=50  :  16.24mm    8.1°   98.0%
+Eval W 1-50:  15.53mm    8.0° 98.0%| Score: -0.0030
+---------------------------------------------------------------------------
+EP 363/400 | Total Loss: 0.1745 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 7.0e-06
+    ↳ Flow Details: Pos:0.0282*5.0=0.141, Rot:0.0136*1.0=0.014, 
+Grasp:0.0099*10.0=0.099, Done:0.5708*0.2=0.114
+Eval k=1   :  12.37mm    6.3°   98.0%
+Eval k=50  :  15.84mm    7.9°   98.0%
+Eval W 1-50:  15.18mm    7.7° 98.0%| Score: -0.0057
+---------------------------------------------------------------------------
+EP 364/400 | Total Loss: 0.1769 (Flow:0.063*1.0=0.063, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.9e-06
+    ↳ Flow Details: Pos:0.0291*5.0=0.145, Rot:0.0142*1.0=0.014, 
+Grasp:0.0104*10.0=0.104, Done:0.5716*0.2=0.114
+Eval k=1   :  12.87mm    6.4°   98.0%
+Eval k=50  :  16.59mm    8.1°   98.0%
+Eval W 1-50:  15.80mm    7.9° 98.0%| Score: -0.0029
+---------------------------------------------------------------------------
+EP 365/400 | Total Loss: 0.1763 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.8e-06
+    ↳ Flow Details: Pos:0.0292*5.0=0.146, Rot:0.0147*1.0=0.015, 
+Grasp:0.0092*10.0=0.092, Done:0.5727*0.2=0.115
+Eval k=1   :  12.17mm    6.4°   98.0%
+Eval k=50  :  16.15mm    8.0°   98.0%
+Eval W 1-50:  15.29mm    7.9° 98.0%| Score: -0.0042
+---------------------------------------------------------------------------
+EP 366/400 | Total Loss: 0.1691 (Flow:0.055*1.0=0.055, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.7e-06
+    ↳ Flow Details: Pos:0.0251*5.0=0.126, Rot:0.0128*1.0=0.013, 
+Grasp:0.0095*10.0=0.095, Done:0.5712*0.2=0.114
+Eval k=1   :  12.24mm    6.4°   98.0%
+Eval k=50  :  15.82mm    8.2°   98.0%
+Eval W 1-50:  15.13mm    7.9° 98.0%| Score: -0.0037
+---------------------------------------------------------------------------
+EP 367/400 | Total Loss: 0.1747 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.6e-06
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0140*1.0=0.014, 
+Grasp:0.0090*10.0=0.090, Done:0.5720*0.2=0.114
+Eval k=1   :  12.21mm    6.4°   98.0%
+Eval k=50  :  15.83mm    7.9°   98.0%
+Eval W 1-50:  14.99mm    7.8° 98.0%| Score: -0.0050
+---------------------------------------------------------------------------
+EP 368/400 | Total Loss: 0.1704 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.5e-06
+    ↳ Flow Details: Pos:0.0268*5.0=0.134, Rot:0.0130*1.0=0.013, 
+Grasp:0.0084*10.0=0.084, Done:0.5699*0.2=0.114
+Eval k=1   :  12.02mm    6.3°   98.0%
+Eval k=50  :  15.77mm    7.9°   98.0%
+Eval W 1-50:  15.07mm    7.7° 98.0%| Score: -0.0058
+---------------------------------------------------------------------------
+EP 369/400 | Total Loss: 0.1739 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.4e-06
+    ↳ Flow Details: Pos:0.0281*5.0=0.141, Rot:0.0134*1.0=0.013, 
+Grasp:0.0094*10.0=0.094, Done:0.5714*0.2=0.114
+Eval k=1   :  12.43mm    6.2°   98.0%
+Eval k=50  :  16.14mm    7.9°   98.0%
+Eval W 1-50:  15.37mm    7.7° 98.0%| Score: -0.0058
+---------------------------------------------------------------------------
+EP 370/400 | Total Loss: 0.1724 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.3e-06
+    ↳ Flow Details: Pos:0.0279*5.0=0.140, Rot:0.0132*1.0=0.013, 
+Grasp:0.0083*10.0=0.083, Done:0.5715*0.2=0.114
+Eval k=1   :  12.61mm    6.5°   98.0%
+Eval k=50  :  16.28mm    8.3°   98.0%
+Eval W 1-50:  15.53mm    8.0° 98.0%| Score: -0.0020
+---------------------------------------------------------------------------
+EP 371/400 | Total Loss: 0.1719 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.2e-06
+    ↳ Flow Details: Pos:0.0279*5.0=0.139, Rot:0.0127*1.0=0.013, 
+Grasp:0.0082*10.0=0.082, Done:0.5713*0.2=0.114
+Eval k=1   :  12.21mm    6.4°   98.0%
+Eval k=50  :  15.74mm    8.0°   98.0%
+Eval W 1-50:  15.07mm    7.8° 98.0%| Score: -0.0046
+---------------------------------------------------------------------------
+EP 372/400 | Total Loss: 0.1728 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.1e-06
+    ↳ Flow Details: Pos:0.0274*5.0=0.137, Rot:0.0140*1.0=0.014, 
+Grasp:0.0092*10.0=0.092, Done:0.5704*0.2=0.114
+Eval k=1   :  12.77mm    6.4°   98.0%
+Eval k=50  :  16.30mm    8.4°   98.0%
+Eval W 1-50:  15.54mm    8.1° 98.0%| Score: -0.0013
+---------------------------------------------------------------------------
+EP 373/400 | Total Loss: 0.1743 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.1e-06
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0139*1.0=0.014, 
+Grasp:0.0088*10.0=0.088, Done:0.5713*0.2=0.114
+Eval k=1   :  12.28mm    6.4°   98.0%
+Eval k=50  :  15.69mm    7.9°   98.0%
+Eval W 1-50:  15.11mm    7.8° 98.0%| Score: -0.0052
+---------------------------------------------------------------------------
+EP 374/400 | Total Loss: 0.1695 (Flow:0.055*1.0=0.055, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 6.0e-06
+    ↳ Flow Details: Pos:0.0268*5.0=0.134, Rot:0.0126*1.0=0.013, 
+Grasp:0.0076*10.0=0.076, Done:0.5705*0.2=0.114
+Eval k=1   :  12.13mm    6.3°   98.0%
+Eval k=50  :  15.69mm    8.2°   98.0%
+Eval W 1-50:  14.98mm    8.0° 98.0%| Score: -0.0029
+---------------------------------------------------------------------------
+EP 375/400 | Total Loss: 0.1731 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.9e-06
+    ↳ Flow Details: Pos:0.0286*5.0=0.143, Rot:0.0129*1.0=0.013, 
+Grasp:0.0084*10.0=0.084, Done:0.5709*0.2=0.114
+Eval k=1   :  12.64mm    6.5°   98.0%
+Eval k=50  :  16.49mm    8.6°   98.0%
+Eval W 1-50:  15.67mm    8.3° 98.0%| Score: 0.0008
+---------------------------------------------------------------------------
+EP 376/400 | Total Loss: 0.1763 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.8e-06
+    ↳ Flow Details: Pos:0.0289*5.0=0.145, Rot:0.0146*1.0=0.015, 
+Grasp:0.0099*10.0=0.099, Done:0.5709*0.2=0.114
+Eval k=1   :  12.28mm    6.3°   98.0%
+Eval k=50  :  15.80mm    8.1°   98.0%
+Eval W 1-50:  15.24mm    7.9° 98.0%| Score: -0.0039
+---------------------------------------------------------------------------
+EP 377/400 | Total Loss: 0.1729 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.8e-06
+    ↳ Flow Details: Pos:0.0279*5.0=0.139, Rot:0.0133*1.0=0.013, 
+Grasp:0.0090*10.0=0.090, Done:0.5705*0.2=0.114
+Eval k=1   :  12.73mm    6.5°   98.0%
+Eval k=50  :  15.85mm    8.2°   98.0%
+Eval W 1-50:  15.20mm    8.0° 98.0%| Score: -0.0026
+---------------------------------------------------------------------------
+EP 378/400 | Total Loss: 0.1762 (Flow:0.062*1.0=0.062, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.7e-06
+    ↳ Flow Details: Pos:0.0288*5.0=0.144, Rot:0.0148*1.0=0.015, 
+Grasp:0.0098*10.0=0.098, Done:0.5721*0.2=0.114
+Eval k=1   :  12.28mm    6.3°   98.0%
+Eval k=50  :  16.18mm    8.0°   98.0%
+Eval W 1-50:  15.41mm    7.9° 98.0%| Score: -0.0040
+---------------------------------------------------------------------------
+EP 379/400 | Total Loss: 0.1716 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.6e-06
+    ↳ Flow Details: Pos:0.0263*5.0=0.131, Rot:0.0137*1.0=0.014, 
+Grasp:0.0100*10.0=0.100, Done:0.5697*0.2=0.114
+Eval k=1   :  12.94mm    6.4°   98.0%
+Eval k=50  :  16.83mm    8.3°   98.0%
+Eval W 1-50:  16.09mm    8.0° 98.0%| Score: -0.0015
+---------------------------------------------------------------------------
+EP 380/400 | Total Loss: 0.1745 (Flow:0.060*1.0=0.060, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.6e-06
+    ↳ Flow Details: Pos:0.0280*5.0=0.140, Rot:0.0142*1.0=0.014, 
+Grasp:0.0097*10.0=0.097, Done:0.5711*0.2=0.114
+Eval k=1   :  12.36mm    6.5°   98.0%
+Eval k=50  :  16.33mm    8.3°   98.0%
+Eval W 1-50:  15.72mm    8.1° 98.0%| Score: -0.0017
+---------------------------------------------------------------------------
+EP 381/400 | Total Loss: 0.1712 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.5e-06
+    ↳ Flow Details: Pos:0.0272*5.0=0.136, Rot:0.0136*1.0=0.014, 
+Grasp:0.0080*10.0=0.080, Done:0.5710*0.2=0.114
+Eval k=1   :  12.63mm    6.4°   98.0%
+Eval k=50  :  16.58mm    8.2°   98.0%
+Eval W 1-50:  15.74mm    8.0° 98.0%| Score: -0.0026
+---------------------------------------------------------------------------
+EP 382/400 | Total Loss: 0.1692 (Flow:0.055*1.0=0.055, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.5e-06
+    ↳ Flow Details: Pos:0.0268*5.0=0.134, Rot:0.0123*1.0=0.012, 
+Grasp:0.0076*10.0=0.076, Done:0.5700*0.2=0.114
+Eval k=1   :  12.84mm    6.4°   98.0%
+Eval k=50  :  16.96mm    8.5°   98.0%
+Eval W 1-50:  16.09mm    8.2° 98.0%| Score: 0.0002
+---------------------------------------------------------------------------
+EP 383/400 | Total Loss: 0.1728 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.4e-06
+    ↳ Flow Details: Pos:0.0276*5.0=0.138, Rot:0.0138*1.0=0.014, 
+Grasp:0.0089*10.0=0.089, Done:0.5710*0.2=0.114
+Eval k=1   :  12.39mm    6.4°   98.0%
+Eval k=50  :  16.37mm    8.3°   98.0%
+Eval W 1-50:  15.50mm    8.1° 98.0%| Score: -0.0013
+---------------------------------------------------------------------------
+EP 384/400 | Total Loss: 0.1709 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.4e-06
+    ↳ Flow Details: Pos:0.0270*5.0=0.135, Rot:0.0132*1.0=0.013, 
+Grasp:0.0084*10.0=0.084, Done:0.5704*0.2=0.114
+Eval k=1   :  12.69mm    6.3°   98.0%
+Eval k=50  :  16.39mm    8.2°   98.0%
+Eval W 1-50:  15.63mm    8.0° 98.0%| Score: -0.0029
+---------------------------------------------------------------------------
+EP 385/400 | Total Loss: 0.1786 (Flow:0.064*1.0=0.064, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.3e-06
+    ↳ Flow Details: Pos:0.0297*5.0=0.149, Rot:0.0153*1.0=0.015, 
+Grasp:0.0105*10.0=0.105, Done:0.5717*0.2=0.114
+Eval k=1   :   3.87mm    6.4°  100.0%
+Eval k=50  :   7.75mm    7.9°  100.0%
+Eval W 1-50:   7.01mm    7.8°100.0%| Score: -0.0150
+---------------------------------------------------------------------------
+EP 386/400 | Total Loss: 0.1667 (Flow:0.053*1.0=0.053, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.3e-06
+    ↳ Flow Details: Pos:0.0251*5.0=0.125, Rot:0.0122*1.0=0.012, 
+Grasp:0.0078*10.0=0.078, Done:0.5697*0.2=0.114
+Eval k=1   :  12.89mm    6.4°   98.0%
+Eval k=50  :  16.42mm    8.2°   98.0%
+Eval W 1-50:  15.85mm    7.9° 98.0%| Score: -0.0028
+---------------------------------------------------------------------------
+EP 387/400 | Total Loss: 0.1701 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.2e-06
+    ↳ Flow Details: Pos:0.0272*5.0=0.136, Rot:0.0128*1.0=0.013, 
+Grasp:0.0077*10.0=0.077, Done:0.5697*0.2=0.114
+Eval k=1   :  12.46mm    6.3°   98.0%
+Eval k=50  :  15.93mm    8.1°   98.0%
+Eval W 1-50:  15.25mm    7.9° 98.0%| Score: -0.0040
+---------------------------------------------------------------------------
+EP 388/400 | Total Loss: 0.1707 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.2e-06
+    ↳ Flow Details: Pos:0.0277*5.0=0.139, Rot:0.0131*1.0=0.013, 
+Grasp:0.0074*10.0=0.074, Done:0.5697*0.2=0.114
+Eval k=1   :  12.80mm    6.3°   98.0%
+Eval k=50  :  16.68mm    8.1°   98.0%
+Eval W 1-50:  15.79mm    7.9° 98.0%| Score: -0.0031
+---------------------------------------------------------------------------
+EP 389/400 | Total Loss: 0.1702 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.2e-06
+    ↳ Flow Details: Pos:0.0268*5.0=0.134, Rot:0.0130*1.0=0.013, 
+Grasp:0.0080*10.0=0.080, Done:0.5707*0.2=0.114
+Eval k=1   :  12.89mm    6.6°   98.0%
+Eval k=50  :  17.02mm    8.7°   98.0%
+Eval W 1-50:  16.11mm    8.4° 98.0%| Score: 0.0019
+---------------------------------------------------------------------------
+EP 390/400 | Total Loss: 0.1689 (Flow:0.055*1.0=0.055, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-06
+    ↳ Flow Details: Pos:0.0257*5.0=0.129, Rot:0.0122*1.0=0.012, 
+Grasp:0.0086*10.0=0.086, Done:0.5717*0.2=0.114
+Eval k=1   :  12.56mm    6.4°   98.0%
+Eval k=50  :  16.01mm    8.2°   98.0%
+Eval W 1-50:  15.38mm    8.0° 98.0%| Score: -0.0025
+---------------------------------------------------------------------------
+EP 391/400 | Total Loss: 0.1733 (Flow:0.059*1.0=0.059, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-06
+    ↳ Flow Details: Pos:0.0285*5.0=0.142, Rot:0.0128*1.0=0.013, 
+Grasp:0.0087*10.0=0.087, Done:0.5710*0.2=0.114
+Eval k=1   :  12.56mm    6.5°   98.0%
+Eval k=50  :  16.44mm    8.3°   98.0%
+Eval W 1-50:  15.66mm    8.1° 98.0%| Score: -0.0011
+---------------------------------------------------------------------------
+EP 392/400 | Total Loss: 0.1709 (Flow:0.057*1.0=0.057, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-06
+    ↳ Flow Details: Pos:0.0274*5.0=0.137, Rot:0.0132*1.0=0.013, 
+Grasp:0.0079*10.0=0.079, Done:0.5701*0.2=0.114
+Eval k=1   :  12.27mm    6.5°   98.0%
+Eval k=50  :  15.96mm    8.4°   98.0%
+Eval W 1-50:  15.21mm    8.2° 98.0%| Score: -0.0011
+---------------------------------------------------------------------------
+EP 393/400 | Total Loss: 0.1646 (Flow:0.051*1.0=0.051, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-06
+    ↳ Flow Details: Pos:0.0250*5.0=0.125, Rot:0.0115*1.0=0.011, 
+Grasp:0.0062*10.0=0.062, Done:0.5700*0.2=0.114
+Eval k=1   :  12.88mm    6.4°   98.0%
+Eval k=50  :  17.24mm    8.0°   98.0%
+Eval W 1-50:  16.24mm    7.8° 98.0%| Score: -0.0034
+---------------------------------------------------------------------------
+EP 394/400 | Total Loss: 0.1700 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.1e-06
+    ↳ Flow Details: Pos:0.0273*5.0=0.137, Rot:0.0123*1.0=0.012, 
+Grasp:0.0076*10.0=0.076, Done:0.5700*0.2=0.114
+Eval k=1   :  12.86mm    6.5°   98.0%
+Eval k=50  :  17.08mm    8.1°   98.0%
+Eval W 1-50:  16.35mm    8.0° 98.0%| Score: -0.0019
+---------------------------------------------------------------------------
+EP 395/400 | Total Loss: 0.1704 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-06
+    ↳ Flow Details: Pos:0.0274*5.0=0.137, Rot:0.0127*1.0=0.013, 
+Grasp:0.0076*10.0=0.076, Done:0.5700*0.2=0.114
+Eval k=1   :  12.58mm    6.6°   98.0%
+Eval k=50  :  16.42mm    8.3°   98.0%
+Eval W 1-50:  15.59mm    8.1° 98.0%| Score: -0.0018
+---------------------------------------------------------------------------
+EP 396/400 | Total Loss: 0.1681 (Flow:0.054*1.0=0.054, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-06
+    ↳ Flow Details: Pos:0.0261*5.0=0.131, Rot:0.0123*1.0=0.012, 
+Grasp:0.0075*10.0=0.075, Done:0.5703*0.2=0.114
+Eval k=1   :  12.86mm    6.3°   98.0%
+Eval k=50  :  16.85mm    8.3°   98.0%
+Eval W 1-50:  16.01mm    8.0° 98.0%| Score: -0.0018
+---------------------------------------------------------------------------
+EP 397/400 | Total Loss: 0.1684 (Flow:0.054*1.0=0.054, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-06
+    ↳ Flow Details: Pos:0.0256*5.0=0.128, Rot:0.0124*1.0=0.012, 
+Grasp:0.0086*10.0=0.086, Done:0.5694*0.2=0.114
+Eval k=1   :  12.51mm    6.2°   98.0%
+Eval k=50  :  16.27mm    7.9°   98.0%
+Eval W 1-50:  15.66mm    7.7° 98.0%| Score: -0.0050
+---------------------------------------------------------------------------
+EP 398/400 | Total Loss: 0.1696 (Flow:0.056*1.0=0.056, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-06
+    ↳ Flow Details: Pos:0.0267*5.0=0.134, Rot:0.0124*1.0=0.012, 
+Grasp:0.0081*10.0=0.081, Done:0.5699*0.2=0.114
+Eval k=1   :  12.36mm    6.3°   98.0%
+Eval k=50  :  15.94mm    8.1°   98.0%
+Eval W 1-50:  15.34mm    7.9° 98.0%| Score: -0.0038
+---------------------------------------------------------------------------
+EP 399/400 | Total Loss: 0.1721 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-06
+    ↳ Flow Details: Pos:0.0277*5.0=0.139, Rot:0.0136*1.0=0.014, 
+Grasp:0.0084*10.0=0.084, Done:0.5698*0.2=0.114
+Eval k=1   :  12.32mm    6.5°   98.0%
+Eval k=50  :  15.98mm    8.2°   98.0%
+Eval W 1-50:  15.23mm    8.0° 98.0%| Score: -0.0025
+---------------------------------------------------------------------------
+EP 400/400 | Total Loss: 0.1727 (Flow:0.058*1.0=0.058, Vis:0.0000*20.0=0.000, 
+Cont:0.000*0.1=0.000) | lr: 5.0e-06
+    ↳ Flow Details: Pos:0.0280*5.0=0.140, Rot:0.0131*1.0=0.013, 
+Grasp:0.0086*10.0=0.086, Done:0.5713*0.2=0.114
+Eval k=1   :  12.35mm    6.5°   98.0%
+Eval k=50  :  15.88mm    8.2°   98.0%
+Eval W 1-50:  15.24mm    8.0° 98.0%| Score: -0.0026
+---------------------------------------------------------------------------
+
+>>> Starting Professional Visualization Eval at Epoch 400 <<<
+  -> Rendering session: mps_Grasp_BellPepper_Red_000_vrs
+[FlowMatchingDataloader] Built 26 samples.
+  - Hand Method  : aria_mps (key='hands')
+  - Image Input  : rgb_WoArm_WArmObjKpts.png
+  - Frame Mode   : CAMERA_FRAME
+  - Action Mode  : ABSOLUTE
+  - Aux  : ObjDynamics=False | VisForesight=False | TempContrastive=False
+  - 3D PCD Feats : False
+[OK] Evaluator: GT-vs-Pred Hand Traj Teacher-forced (absolute) Visualization 
+finished.
+              Training Progress (Ultimate Multi-Task)              
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Epoch ┃  Loss(Fl|Vs|Tc)   ┃ eval_pos_w ┃ eval_rot_w ┃ eval_f1_w ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│     1 │ 2.176|0.000|0.000 │     0.3176 │      134.1 │     72.2% │
+│     5 │ 0.321|0.000|0.000 │     0.1335 │       42.2 │     98.0% │
+│    10 │ 0.228|0.000|0.000 │     0.0471 │       14.5 │     98.0% │
+│    15 │ 0.184|0.000|0.000 │     0.0261 │       11.2 │     98.0% │
+│    20 │ 0.175|0.000|0.000 │     0.0243 │        9.4 │     98.0% │
+│    25 │ 0.149|0.000|0.000 │     0.0197 │        9.4 │     98.0% │
+│    30 │ 0.153|0.000|0.000 │     0.0180 │        9.4 │     98.0% │
+│    35 │ 0.141|0.000|0.000 │     0.0183 │        8.2 │     98.0% │
+│    40 │ 0.137|0.000|0.000 │     0.0167 │        8.2 │     98.0% │
+│    45 │ 0.134|0.000|0.000 │     0.0161 │        8.3 │     98.0% │
+│    50 │ 0.123|0.000|0.000 │     0.0159 │        8.2 │     98.0% │
+│    55 │ 0.122|0.000|0.000 │     0.0161 │        8.3 │     98.0% │
+│    60 │ 0.120|0.000|0.000 │     0.0157 │        7.5 │     98.0% │
+│    65 │ 0.121|0.000|0.000 │     0.0158 │        7.8 │     98.0% │
+│    70 │ 0.112|0.000|0.000 │     0.0145 │        7.7 │     98.0% │
+│    75 │ 0.109|0.000|0.000 │     0.0158 │        7.3 │     98.0% │
+│    80 │ 0.111|0.000|0.000 │     0.0146 │        7.7 │     98.0% │
+│    85 │ 0.105|0.000|0.000 │     0.0150 │        7.5 │     98.0% │
+│    90 │ 0.100|0.000|0.000 │     0.0148 │        7.5 │     98.0% │
+│    95 │ 0.095|0.000|0.000 │     0.0139 │        7.5 │     98.0% │
+│   100 │ 0.102|0.000|0.000 │     0.0143 │        7.5 │     98.0% │
+│   105 │ 0.097|0.000|0.000 │     0.0149 │        7.2 │     98.0% │
+│   110 │ 0.096|0.000|0.000 │     0.0149 │        7.4 │     98.0% │
+│   115 │ 0.104|0.000|0.000 │     0.0149 │        7.5 │     98.0% │
+│   120 │ 0.094|0.000|0.000 │     0.0145 │        7.5 │     98.0% │
+│   125 │ 0.090|0.000|0.000 │     0.0137 │        7.4 │     98.0% │
+│   130 │ 0.090|0.000|0.000 │     0.0142 │        7.2 │     98.0% │
+│   135 │ 0.094|0.000|0.000 │     0.0144 │        7.5 │     98.0% │
+│   140 │ 0.089|0.000|0.000 │     0.0145 │        7.4 │     98.0% │
+│   145 │ 0.088|0.000|0.000 │     0.0145 │        7.1 │     98.0% │
+│   150 │ 0.082|0.000|0.000 │     0.0146 │        7.3 │     98.0% │
+│   155 │ 0.082|0.000|0.000 │     0.0148 │        7.2 │     98.0% │
+│   160 │ 0.084|0.000|0.000 │     0.0149 │        7.3 │     98.0% │
+│   165 │ 0.084|0.000|0.000 │     0.0145 │        7.3 │     98.0% │
+│   170 │ 0.081|0.000|0.000 │     0.0146 │        7.2 │     98.0% │
+│   175 │ 0.086|0.000|0.000 │     0.0146 │        7.3 │     98.0% │
+│   180 │ 0.086|0.000|0.000 │     0.0150 │        7.2 │     98.0% │
+│   185 │ 0.084|0.000|0.000 │     0.0144 │        7.3 │     98.0% │
+│   190 │ 0.079|0.000|0.000 │     0.0147 │        7.4 │     98.0% │
+│   195 │ 0.082|0.000|0.000 │     0.0143 │        7.4 │     98.0% │
+│   200 │ 0.078|0.000|0.000 │     0.0147 │        7.5 │     98.0% │
+│   205 │ 0.080|0.000|0.000 │     0.0152 │        7.3 │     98.0% │
+│   210 │ 0.079|0.000|0.000 │     0.0146 │        7.3 │     98.0% │
+│   215 │ 0.069|0.000|0.000 │     0.0151 │        7.3 │     98.0% │
+│   220 │ 0.077|0.000|0.000 │     0.0149 │        7.5 │     98.0% │
+│   225 │ 0.073|0.000|0.000 │     0.0151 │        7.5 │     98.0% │
+│   230 │ 0.073|0.000|0.000 │     0.0152 │        7.5 │     98.0% │
+│   235 │ 0.074|0.000|0.000 │     0.0145 │        7.4 │     98.0% │
+│   240 │ 0.069|0.000|0.000 │     0.0145 │        7.5 │     98.0% │
+│   245 │ 0.071|0.000|0.000 │     0.0144 │        7.9 │     98.0% │
+│   250 │ 0.072|0.000|0.000 │     0.0144 │        7.8 │     98.0% │
+│   255 │ 0.070|0.000|0.000 │     0.0148 │        7.5 │     98.0% │
+│   260 │ 0.068|0.000|0.000 │     0.0149 │        7.8 │     98.0% │
+│   265 │ 0.069|0.000|0.000 │     0.0151 │        7.4 │     98.0% │
+│   270 │ 0.064|0.000|0.000 │     0.0147 │        7.6 │     98.0% │
+│   275 │ 0.066|0.000|0.000 │     0.0145 │        7.4 │     98.0% │
+│   280 │ 0.067|0.000|0.000 │     0.0150 │        7.9 │     98.0% │
+│   285 │ 0.064|0.000|0.000 │     0.0147 │        7.6 │     98.0% │
+│   290 │ 0.064|0.000|0.000 │     0.0149 │        7.7 │     98.0% │
+│   295 │ 0.062|0.000|0.000 │     0.0142 │        7.9 │     98.0% │
+│   300 │ 0.058|0.000|0.000 │     0.0146 │        7.7 │     98.0% │
+│   305 │ 0.062|0.000|0.000 │     0.0152 │        7.7 │     98.0% │
+│   310 │ 0.065|0.000|0.000 │     0.0158 │        7.8 │     98.0% │
+│   315 │ 0.061|0.000|0.000 │     0.0148 │        7.8 │     98.0% │
+│   320 │ 0.060|0.000|0.000 │     0.0155 │        8.1 │     98.0% │
+│   325 │ 0.063|0.000|0.000 │     0.0240 │       11.9 │     96.0% │
+│   330 │ 0.061|0.000|0.000 │     0.0148 │        7.8 │     98.0% │
+│   335 │ 0.056|0.000|0.000 │     0.0149 │        8.0 │     98.0% │
+│   340 │ 0.059|0.000|0.000 │     0.0147 │        7.8 │     98.0% │
+│   345 │ 0.061|0.000|0.000 │     0.0159 │        7.7 │     98.0% │
+│   350 │ 0.059|0.000|0.000 │     0.0152 │        7.8 │     98.0% │
+│   355 │ 0.061|0.000|0.000 │     0.0150 │        7.9 │     98.0% │
+│   360 │ 0.056|0.000|0.000 │     0.0157 │        8.1 │     98.0% │
+│   365 │ 0.062|0.000|0.000 │     0.0153 │        7.9 │     98.0% │
+│   370 │ 0.058|0.000|0.000 │     0.0155 │        8.0 │     98.0% │
+│   375 │ 0.059|0.000|0.000 │     0.0157 │        8.3 │     98.0% │
+│   380 │ 0.060|0.000|0.000 │     0.0157 │        8.1 │     98.0% │
+│   385 │ 0.064|0.000|0.000 │     0.0070 │        7.8 │    100.0% │
+│   390 │ 0.055|0.000|0.000 │     0.0154 │        8.0 │     98.0% │
+│   395 │ 0.056|0.000|0.000 │     0.0156 │        8.1 │     98.0% │
+│   400 │ 0.058|0.000|0.000 │     0.0152 │        8.0 │     98.0% │
+└───────┴───────────────────┴────────────┴────────────┴───────────┘
+╭────── DONE ───────╮
+│ Elapsed: 35255.1s │
+╰───────────────────╯
+Preprocessing + training finished successfully.

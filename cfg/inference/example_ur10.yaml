@@ -1,0 +1,94 @@
+# =============================================================================
+# HumanEgo — single-arm UR10e inference config (reference template)
+# =============================================================================
+# A single annotated file wiring the whole stack (run_inference.py reads it).
+# Tune the values marked (TUNE); set the paths/values marked (SET) for your rig.
+# =============================================================================
+
+# ---- POLICY: which checkpoint to run, and the flow-matching solver -----------
+policy:
+  # (SET) trained weights. config.json + dataset_stats.json MUST sit next to it
+  # (the trainer writes them there); they carry the architecture + normalization.
+  # A single UR10e arm needs a checkpoint trained with single_hand: true.
+  # ckpt: "../../humanego_checkpoints/grasp_bellpepper_red_run/grasp_bellpepper/HumanEgo/latest.pt"
+  ckpt: "../../humanego_checkpoints/grasp_bellpepper/HumanEgo/latest.pt"
+  num_inference_steps: 20      # (TUNE) Euler ODE steps. 10-20 is a good range.
+                               # Fewer = faster but coarser actions.
+
+# ---- CONTROL: how predictions become motion --------------------------------
+control:
+  control_hz: 10.0             # (TUNE) control-loop rate -> dt = 1/hz per step.
+                               # Also becomes the `time` arg to rtde_c.servoL().
+  exec_horizon: 8              # (TUNE) predicted steps executed before re-planning.
+                               # Smaller = more reactive/closed-loop, more compute.
+  done_threshold: 0.73         # (TUNE) stop when policy's done prob exceeds this
+  alpha_pos: 0.50               # (TUNE) position EMA smoothing  (higher=smoother/slower)
+  alpha_rot: 0.50               # (TUNE) rotation Slerp smoothing
+  max_pos_step: 0.05           # (TUNE) safety cage: max EE move per step, meters
+  grasp_threshold: 0.7        # (TUNE) predicted grasp prob -> close gripper above this
+  safe_z_min: -0.12            # (SET)  base-frame Z floor; protects the table.
+                               # Also set robot.cfg_paths.right's own safe_z_min —
+                               # the RobotArmUR10 driver enforces its own floor too.
+
+# ---- PERCEPTION: objects + clean image -------------------------------------
+perception:
+  anchor_key: "obj1"           # object that defines the object-centric frame
+  n_init_frames: 10            # RGB-D frames averaged for robust initial poses
+  # (SET) open-vocabulary text prompts for each object the task involves.
+  # Single-object grasp (no obj2) — matches cfg/preprocess/tasks/grasp_bellpepper.yaml.
+  object_prompts:
+    obj1: "red bell pepper ."
+  # (SET) what to inpaint OUT of the image so it looks embodiment-agnostic.
+  # This describes the ROBOT arm/gripper seen at inference time (the training-time
+  # preprocessing erase prompt was "human arms . human hands ." — different subject,
+  # same purpose: keep the image embodiment-agnostic).
+  erase_prompt: "a robot arm . a robot gripper ."
+  # (SET) heavy perception model configs (only if you use the reference pipeline)
+  dinosam_cfg_path: "./cfg/preprocess/base/DINOSAM.yaml"
+  lama_cfg_path: "./cfg/preprocess/base/Lama.yaml"
+  visualkpts_cfg_path: "./cfg/preprocess/base/VisualKpts.yaml"
+
+# # ---- PERCEPTION: objects + clean image -------------------------------------
+# perception:
+#   anchor_key: "obj1"           # object that defines the object-centric frame
+#   n_init_frames: 10            # RGB-D frames averaged for robust initial poses
+#   # (SET) open-vocabulary text prompts for each object the task involves.
+#   object_prompts:
+#     obj1: "a beige white cup ."
+#     obj2: "a dark green cup ."
+#   # (SET) what to inpaint OUT of the image so it looks embodiment-agnostic.
+#   erase_prompt: "a robot arm . a robot gripper ."
+#   # (SET) heavy perception model configs (only if you use the reference pipeline)
+#   dinosam_cfg_path: "./cfg/preprocess/base/DINOSAM.yaml"
+#   lama_cfg_path: "./cfg/preprocess/base/Lama.yaml"
+#   visualkpts_cfg_path: "./cfg/preprocess/base/VisualKpts.yaml"
+
+# # ---- CAMERA: Intel RealSense ------------------------------------------------
+# camera:
+#   type: "realsense"            # "realsense" (default) | "zed" — picks the adapter in run_inference.py
+#   cfg_path: "./cfg/inference/example_ur10/CamRS.yaml"
+
+# ---- CAMERA: Stereolabs ZED --------------------------------------------------
+# (SET) matches the hand-eye calibration in RobotArmUR10.yaml's T_base_in_cam,
+# solved 2026-08-28 from real/calibration/data/zed_handeye_calib/.
+camera:
+  type: "zed"
+  cfg_path: "./cfg/inference/example_ur10/CamZED.yaml"
+
+# ---- ROBOT: the arm(s) ------------------------------------------------------
+robot:
+  sides: ["right"]             # single UR10e. Add "left" + a second cfg_path for dual-arm.
+  # (SET) per-arm driver configs. Each MUST contain the hand-eye extrinsic
+  # T_base_in_cam (4x4). A wrong extrinsic = the robot reaches the wrong spot.
+  cfg_paths:
+    right: "./cfg/inference/example_ur10/RobotArmUR10.yaml"
+  # (SET) T_align bridges YOUR end-effector frame -> the "hand" frame the model was
+  # trained on. The released HumanEgo checkpoints are Aria-MPS-trained, so use the
+  # EE->Aria-hand transform below. Use identity instead if you trained on
+  # teleop/robot data in the same EE convention. Get this wrong and rotations
+  # will be systematically off.
+  T_align:                       # Aria-MPS EE -> hand convention
+    - [-1.0,  0.0,  0.0,  0.0]
+    - [ 0.0,  0.0,  1.0,  0.0]
+    - [ 0.0,  1.0,  0.0,  0.0]
+    - [ 0.0,  0.0,  0.0,  1.0]
