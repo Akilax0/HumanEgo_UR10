@@ -1,0 +1,74 @@
+# Base deps: opening the ZED camera, exercising CamZED.py, and running the
+# UR10e hand-eye calibration capture/solve scripts (real/calibration/).
+numpy
+opencv-python      # NOT headless -- the calibration capture GUI needs cv2.namedWindow/imshow
+pyyaml
+python-box
+scipy               # Rotation, used by the hand-eye solve scripts
+ur_rtde>=1.5.1      # UR10e control; imported as rtde_control / rtde_receive
+pyModbusTCP>=0.2.1  # Robotiq gripper over the UR tool port's Modbus gateway (RobotArmUR10.py) --
+                    # imported lazily inside UR10Arm.__init__, so it's missing from
+                    # HumanEgo/requirements.txt too and won't surface until the arm actually
+                    # connects. Fixed upstream there as well.
+
+# ── HumanEgo perception + policy stack, for running run_inference.py in this
+# same container (pyzed only lives here; the ML stack needs to join it since
+# run_inference.py does camera + perception + policy + robot in one process).
+# Mirrors HumanEgo/requirements.txt, trimmed to what the actual inference-time
+# import chain (run_inference -> policy/controller -> preprocess/DINOSAM,Lama,
+# VisualKpts,OrientAnything -> utils/* -> RobotArmUR10) uses, checked by grep
+# against that chain on 2026-08-28 -- but grep only sees module-level imports,
+# not ones lazily buried inside a function/__init__ (pyModbusTCP was missed
+# this way on the first pass; caught only once UR10Arm actually connected).
+# Treat this trim as "probably right", not proven -- a NameError/ImportError
+# on first real run of a new code path here is more likely a genuine gap than
+# a build problem. Excluded vs. the full file: pyrealsense2/trossen-arm
+# (wrong camera/arm — this rig is ZED + UR10e), projectaria-tools/
+# projectaria-client-sdk/termcolor (Aria VRS/MPS ingestion — training-data
+# only, not referenced by any inference-path file), wandb/accelerate
+# (training-loop tooling), gradio/rerun-sdk/matplotlib/seaborn/plotly (demo/
+# viz, unused live). safetensors is pulled in transitively by transformers.
+
+# PyTorch — pinned to a CUDA 12.x build; matches this image's CUDA 12.1 base.
+# See HumanEgo/requirements.txt's own note: unpinned torch>=2.5 resolves to a
+# cu13x wheel that reports torch.cuda.is_available() == False on this driver.
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+torchvision==0.20.1
+xformers>=0.0.28
+
+scikit-learn>=1.3
+scikit-image>=0.21
+pandas>=2.0
+
+pillow>=10.0
+open3d>=0.18
+imageio>=2.30
+imageio-ffmpeg>=0.5
+pyrender>=0.1.45
+trimesh>=4.0
+
+transformers>=4.40,<5    # 5.x breaks Grounding DINO's AutoProcessor (preprocess/DINOSAM.py)
+sam2>=1.0
+diffusers>=0.25
+timm>=0.9
+einops>=0.7
+rembg>=2.0
+onnxruntime-gpu>=1.17,<1.21   # 1.21+ needs CUDA 13 (libcudart.so.13); torch==2.5.1 here is cu121
+ultralytics>=8.3
+filterpy>=1.4
+ffmpeg-python>=0.2
+
+roma>=1.4
+pyquaternion>=0.9
+smplx>=0.1.28
+
+omegaconf>=2.3      # sam2's build_sam2() composes its model config via Hydra
+hydra-core>=1.3
+pydantic>=2.0
+
+huggingface-hub>=0.23
+tqdm>=4.65
+rich>=13.0
+python-dotenv>=1.0
+requests>=2.31

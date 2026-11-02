@@ -1,0 +1,38 @@
+services:
+  zed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: humanego-zed:latest
+    container_name: humanego_zed
+    # The ZED SDK talks to the camera through its own USB3 driver, not plain
+    # UVC — Stereolabs' own docker docs recommend --privileged + mounting
+    # /dev rather than trying to cherry-pick individual device nodes.
+    privileged: true
+    volumes:
+      - /dev:/dev
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw          # optional: only needed for cv2.imshow / realtime_show
+      - ../..:/workspace                          # conformal_VLA/  ->  /workspace
+      - ../../../humanego_checkpoints:/humanego_checkpoints   # sibling of conformal_VLA/ on host;
+                                                   # matches the "../../humanego_checkpoints/..." path
+                                                   # in cfg/inference/example_ur10.yaml (relative to
+                                                   # /workspace/HumanEgo, two levels up = /)
+      - ${HOME}/.cache/huggingface:/root/.cache/huggingface  # reuse already-downloaded DINO-SAM/SAM2/LaMa weights
+      - ../../../zed_resources:/usr/local/zed_resources  # ZED SDK calibration + license files (read-only)
+    working_dir: /workspace/
+    environment:
+      - DISPLAY=${DISPLAY}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    # Modern GPU reservation syntax (Docker Compose v2 + NVIDIA Container
+    # Toolkit). If your docker-compose is too old to understand this block,
+    # delete it and instead pass `--gpus all` on a plain `docker run`.
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    stdin_open: true
+    tty: true

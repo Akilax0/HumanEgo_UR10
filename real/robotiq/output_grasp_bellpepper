@@ -1,0 +1,136 @@
+(ur10_demo) hand@ShadowPC:~/Documents/Projects/Cook2LTL/UR10_demo/robotiq$ python3 control_gripper_nb.py 
+Gripper activating (calibration running)...
+Gripper activation complete.
+Mode set to Pinch.
+/home/hand/Documents/Projects/Cook2LTL/UR10_demo/robotiq/GripperController.py:241: UserWarning: only first value of 3d vector will be used when not using Individual Control Flag.
+  warnings.warn("only first value of 3d vector will be used when not using Individual Control Flag.")
+gSTA =  3
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  6
+FingerA_PositionReqEcho =  0
+FingerA_Current =  0
+FingerB_Position =  6
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  6
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: c
+Closing gripper
+gSTA=3 (1/2 = object detected, 3 = reached position)
+[112, 113, 112]
+gSTA =  3
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  112
+FingerA_PositionReqEcho =  250
+FingerA_Current =  0
+FingerB_Position =  113
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  112
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: o
+Opening gripper
+[6, 6, 6]
+gSTA =  3
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  6
+FingerA_PositionReqEcho =  0
+FingerA_Current =  0
+FingerB_Position =  6
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  6
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: c
+Closing gripper
+gSTA=1 (1/2 = object detected, 3 = reached position)
+[97, 113, 95]
+gSTA =  1
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  97
+FingerA_PositionReqEcho =  250
+FingerA_Current =  0
+FingerB_Position =  113
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  95
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: o
+Opening gripper
+[6, 6, 6]
+gSTA =  3
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  6
+FingerA_PositionReqEcho =  0
+FingerA_Current =  0
+FingerB_Position =  6
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  6
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: c
+Closing gripper
+gSTA=3 (1/2 = object detected, 3 = reached position)
+[112, 113, 112]
+gSTA =  3
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  112
+FingerA_PositionReqEcho =  250
+FingerA_Current =  0
+FingerB_Position =  113
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  112
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: o
+Opening gripper
+[6, 6, 6]
+gSTA =  3
+gIMC =  3
+gGTO =  1
+gACT =  1
+gMOD =  Pinch Mode
+FaultStatus =  0
+FingerA_Position =  6
+FingerA_PositionReqEcho =  0
+FingerA_Current =  0
+FingerB_Position =  6
+FingerB_PositionReqEcho =  0
+FingerB_Current =  0
+FingerC_Position =  6
+FingerC_PositionReqEcho =  0
+FingerC_Current =  0
+Press c to close, o to open, e to exit: e
+Exiting and closing connection
+Connection closed.
+Connection closed.
