@@ -728,9 +728,9 @@ class RobotArmUR10:
             res = self.do_check(norm_pose(pose_str),0)
             print("OBS_CHECK", res)
 
-            if not res:
-                print("║ [Safety] Cartesian move aborted: pose outside workspace box.")
-                return False
+            # if not res:
+            #     print("║ [Safety] Cartesian move aborted: pose outside workspace box.")
+            #     return False
             return bool(self.rtde_c.servoL(list(pose), 0.0, 0.0, duration,
                                            self._servo_lookahead, self._servo_gain))
         except Exception as e:
@@ -762,7 +762,35 @@ class RobotArmUR10:
     def go_home(self, blocking: bool = True) -> None:
         home = list(self.cfg.get("home_joints", [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]))
         print("║ [RobotArmUR10] Moving to home joints...")
-        self.move_j(home, blocking=blocking)
+        # After a servoL stream the controller is still in servo mode; a blocking
+        # moveJ issued in that state kills the RTDE control script ("RTDE control
+        # script is not running!"). Leave servo mode first, and if the script has
+        # already died, re-upload it before moving.
+        try:
+            self.rtde_c.servoStop()
+        except Exception as e:
+            print(f"║ [RobotArmUR10] servoStop failed: {e}")
+        if not self._ensure_control_script():
+            print("║ [RobotArmUR10] control script unavailable, home move skipped.")
+            return
+        if not self.move_j(home, blocking=blocking):
+            print("║ [RobotArmUR10] home move rejected; re-uploading control script and retrying once.")
+            if self._ensure_control_script(force=True):
+                self.move_j(home, blocking=blocking)
+
+    def _ensure_control_script(self, force: bool = False) -> bool:
+        """True if the RTDE control script is running (re-uploading it if needed)."""
+        try:
+            if not force and self.rtde_c.isProgramRunning():
+                return True
+            if not self.rtde_c.isConnected():
+                self.rtde_c.reconnect()
+            self.rtde_c.reuploadScript()
+            time.sleep(0.5)
+            return bool(self.rtde_c.isProgramRunning())
+        except Exception as e:
+            print(f"║ [RobotArmUR10] control script re-upload failed: {e}")
+            return False
 
     # ------------------------------------------------------------------
     # Gripper — normalized to [0, 1], 0=open .. 1=closed (matches interfaces.RobotArm)

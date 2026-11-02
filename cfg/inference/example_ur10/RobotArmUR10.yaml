@@ -11,7 +11,8 @@ gripper_ip: "10.0.0.187"
 # Leave at zero to use whatever TCP is already configured on the controller.
 # Values are for the gripper tip -> change if necessary 
 # tcp_offset: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # (SET)
-tcp_offset: [0.0, 0.0, 0.2030, 0.0, 0.0, 0.0]
+# # tcp_offset: [0.0, 0.0, 0.2030, 0.0, 0.0, 0.0]   # fingertip; used Sep 16 - Nov 2 2026, gave tips-only grasps
+tcp_offset: [0.0, 0.0, 0.1615, 0.0, 0.0, 0.0]     # wrist-equivalent used in the Aug 27-30 runs that grasped; lower if still shallow
 # tcp_offset: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 payload_kg: 2.3 
 payload_cog: [0.0, 0.0, 0.081]                              # (SET) end-effector mass; 0 = skip setPayload()
@@ -39,16 +40,31 @@ payload_cog: [0.0, 0.0, 0.081]                              # (SET) end-effector
 # 85.1 deg rotation spread. See real/calibration/data/zed_handeye_calib/
 # (calibration_report.json has the full report; T_base_in_cam.npy has this
 # matrix in binary form).
+# T_base_in_cam: [
+#     [ 0.04218438, -0.99035794, -0.13195312, -0.10062096],
+#     [-0.99111635, -0.02480735, -0.13066363,  0.73718414],
+#     [ 0.12613036,  0.13629285, -0.98260643,  1.05867879],
+#     [ 0.00000000,  0.00000000,  0.00000000,  1.00000000],
+# ]
+
+
+# Nov 2 Calibration 
 T_base_in_cam: [
-    [ 0.04218438, -0.99035794, -0.13195312, -0.10062096],
-    [-0.99111635, -0.02480735, -0.13066363,  0.73718414],
-    [ 0.12613036,  0.13629285, -0.98260643,  1.05867879],
+    [ 0.008096, -0.997967, -0.063211, -0.154315],
+    [-0.997869, -0.003970, -0.065127,  0.618838],
+    [ 0.064744,  0.063604, -0.995873,  1.071746],
     [ 0.00000000,  0.00000000,  0.00000000,  1.00000000],
 ]
 
 # home_joints: [-1.5708, -1.5708, 1.5708, -1.5708, -1.5708, 0.0]   # (SET) 6 joints, radians
 # home_joints: [2.22878, -1.1800, 1.8816 ,-0.4864,-0.1218, 0.7106]   # (SET) 6 joints, radians
-home_joints: [1.7866, -1.3887 , 1.8116518 ,-0.696037,-0.86289,0.75066]   # (SET) 6 joints, radians
+# home_joints: [1.7866, -1.3887 , 1.8116518 ,-0.696037,-0.86289,0.75066]   # home used Sep-Oct 2026
+# 2026-11-02: taught from the live arm pose (tcp x 0.387, y -0.409, z 0.417 m); wrist3 = 226.8 deg
+# home_joints: [1.86496, -1.56993, 1.93723, -0.49885, -0.48764, 3.95901]   # home taught 2026-11-02 (earlier today)
+# 2026-11-02 (2nd): taught from the live arm pose (tcp x 0.764, y -0.354, z 0.394 m); wrist3 = 220.6 deg
+# home_joints: [2.11976, -1.28426, 1.66188, -0.40542, -0.01044, 3.85068]   # home taught 2026-11-02 (2nd)
+# 2026-11-02 (3rd): taught from the live arm pose (tcp x 0.655, y -0.243, z 0.305 m); wrist3 = 28.3 deg
+home_joints: [2.16268, -1.12156, 1.65114, -0.39598, -0.63444, 0.49354]   # (SET) 6 joints, radians
 
 # --- Cartesian servo tuning (rtde_c.servoL, used every closed-loop control step) ---
 servo_lookahead_time: 0.1     # (TUNE) s, RTDE servo smoothing window

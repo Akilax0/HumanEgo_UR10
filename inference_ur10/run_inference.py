@@ -322,6 +322,10 @@ def run(cfg_path: str, device: str = "cuda") -> None:
     n = cfg["perception"].get("n_init_frames", 10)
     print("n",n)
     static_objs = perception.estimate_objects([cam.get_frame() for _ in range(n)])
+    for _k, _o in static_objs.items():                      # detected object poses (camera frame), once per episode
+        _T = getattr(_o, "T_in_cam", None)
+        _pos = _T[:3, 3].tolist() if _T is not None else getattr(_o, "pos", None)
+        print(f"[run] detected {_k}: pos_in_cam={np.round(_pos, 4).tolist() if _pos is not None else _o}")
     anchor = static_objs.get(anchor_key)               # fixed object-centric reference for the episode
     for arm in arms.values():
         arm.set_gripper(0.0, blocking=True)            # open
@@ -343,7 +347,7 @@ def run(cfg_path: str, device: str = "cuda") -> None:
             objs = latch_objects(static_objs, hands_in_cam, grippers, latches,
                                  anchor_key, controller.grasp_threshold)
 
-            # print("Objs: ",objs)
+            print("Objs: ",objs)
             # build the policy inputs: clean image, ICT, and (if region-attn) anchor UV
             clean = perception.make_clean_image(frame, hands_in_cam, grippers)
             x_ict, ict_mask = policy.build_ict(hands_in_cam, grippers, objs, anchor_key)

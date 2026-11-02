@@ -11,7 +11,9 @@ policy:
   # (the trainer writes them there); they carry the architecture + normalization.
   # A single UR10e arm needs a checkpoint trained with single_hand: true.
   # ckpt: "../../humanego_checkpoints/grasp_bellpepper_red_run/grasp_bellpepper/HumanEgo/latest.pt"
-  ckpt: "../../humanego_checkpoints/grasp_bellpepper/HumanEgo/latest.pt"
+  ckpt: "../../humanego_checkpoints/grasp_bellpepper_grip/HumanEgo/latest.pt"
+  # ckpt: "../../humanego_checkpoints/grasp_bellpepper/HumanEgo/latest.pt"   # Sep 14 run, 105 sessions
+  # ckpt: "../../humanego_checkpoints/grasp_bellpepper_grip/HumanEgo/latest.pt" # Nov 2 run (grip retake, 75 sessions)
   num_inference_steps: 20      # (TUNE) Euler ODE steps. 10-20 is a good range.
                                # Fewer = faster but coarser actions.
 
@@ -25,7 +27,8 @@ control:
   alpha_pos: 0.50               # (TUNE) position EMA smoothing  (higher=smoother/slower)
   alpha_rot: 0.50               # (TUNE) rotation Slerp smoothing
   max_pos_step: 0.05           # (TUNE) safety cage: max EE move per step, meters
-  grasp_threshold: 0.7        # (TUNE) predicted grasp prob -> close gripper above this
+  # grasp_threshold: 0.7        # Sep-Oct 2026; needs raw grasp > 0.85, almost never fires
+  grasp_threshold: 0.62       # (TUNE) policy.py sigmoids the regressed 0/1 grasp value, so 0.62 == raw > 0.5
   safe_z_min: -0.12            # (SET)  base-frame Z floor; protects the table.
                                # Also set robot.cfg_paths.right's own safe_z_min —
                                # the RobotArmUR10 driver enforces its own floor too.
@@ -38,6 +41,7 @@ perception:
   # Single-object grasp (no obj2) — matches cfg/preprocess/tasks/grasp_bellpepper.yaml.
   object_prompts:
     obj1: "red bell pepper ."
+    # obj1: "red apple ."
   # (SET) what to inpaint OUT of the image so it looks embodiment-agnostic.
   # This describes the ROBOT arm/gripper seen at inference time (the training-time
   # preprocessing erase prompt was "human arms . human hands ." — different subject,

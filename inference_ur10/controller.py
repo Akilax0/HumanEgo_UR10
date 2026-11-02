@@ -98,7 +98,10 @@ class TrajectoryController:
                     # (Production code optionally nudges the EE up in Z to escape singularities.)
                     self._last_cmd[side] = arm.get_T_ee_in_cam()
                 grasp = float(grasp_per_arm[side][k])
-                print("Grasp Value:",grasp)
+                # policy.py applies a sigmoid to the regressed 0/1 grasp value, so this
+                # number lives in [0.50, 0.73]; the raw value is recovered for the log.
+                _raw = float(np.log(grasp / (1.0 - grasp))) if 0.0 < grasp < 1.0 else float("nan")
+                print(f"Grasp Value: {grasp:.4f}  (raw regressed {_raw:+.3f}; threshold {self.grasp_threshold})")
                 arm.set_gripper(1.0 if grasp > self.grasp_threshold else 0.0)
             time.sleep(dt)
 
